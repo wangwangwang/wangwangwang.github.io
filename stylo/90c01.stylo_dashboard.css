@@ -75,20 +75,17 @@
 .dash .dash-leftContainer .dash_langContainer {
 	display: flex; height: 40px; margin: 0 0 0 0; width: calc(100% - 20px); padding: 0 10px; justify-content: flex-start; align-items: center;
 }
-.dash .dash-leftContainer .dash_langContainer a {
+.dash .dash-leftContainer .dash_langContainer a, .dash .dash-leftContainer .dash_langContainer span {
 	margin: 0 3px 0 0;
 }
 .dash .dash-leftContainer .dash_langContainer a:last-child {
 	margin: 0 0 0 0;
 }
-.dash .dash-leftContainer .dash_langContainer a img {
-	height: 16px; border: 1px solid rgba(0,0,0,0.2);
+.dash .dash-leftContainer .dash_langContainer a img, .dash .dash-leftContainer .dash_langContainer span img {
+	height: 16px; border: 1px solid rgba(0,0,0,0.2); -webkit-filter: grayscale(100%); filter: grayscale(100%);
 }
-.dash .dash-leftContainer .dash_langContainer a:hover img {
+.dash .dash-leftContainer .dash_langContainer a:hover img, .dash .dash-leftContainer .dash_langContainer .active img {
 	-webkit-filter: grayscale(0%); filter: grayscale(0%);
-}
-.dash .dash-leftContainer .dash_langContainer .langflag-inactive img {
-	-webkit-filter: grayscale(100%); filter: grayscale(100%);
 }
 
 /** DASH LANGUAGE **/
@@ -276,6 +273,24 @@
 }
 
 /** DASHBOARD FORMS **/
+
+/** FORM ERRORS **/
+
+.dash-rightContainer form .field_with_errors input[type=text], .dash-rightContainer form .field_with_errors textarea, .dash-rightContainer form .field_with_errors input[type=password], .dash-rightContainer form .field_with_errors input[type=email], .dash-rightContainer form .field_with_errors select, .dashModal .field_with_errors input[type=text], dashModal .field_with_errors textarea, .dashModal .field_with_errors input[type=password], .dashModal .field_with_errors input[type=email], .dashModal .field_with_errors select {
+	border: 1px solid rgba(255,0,0,1)!important; color: rgba(255,0,0,1); background-color: rgba(255,255,255,0.3); font:14px/14px 'ubuntu'; font-weight: 400; margin: 0; padding: 10px;
+}
+
+.form_errorMessage {
+	background-color: rgba(255,0,0,0.1); border: 1px solid rgba(255,0,0,0.5); padding: 10px; margin: 0 0 10px 0; color: rgba(255,0,0,1);
+}
+.form_errorMessage ul {
+	margin: 0 0 0 10px; padding: 0; list-style-type: disc;
+}
+.form_errorMessage ul li {
+	margin: 0; padding: 0;
+}
+
+/** FORM ERRORS **/
 
 /** DASH INFO CONTAINER **/
 
@@ -467,22 +482,6 @@ button.buttonLine:disabled {
 		border-radius: 60px;
 	}
 
-	.searchbarContainer {
-		flex-direction: column-reverse; justify-content:space-between; align-items: center; width: calc(100% - 40px); height: auto; padding: 25px 20px 10px 20px;
-	}
-	.searchbarContainer .topRightNavContainer {
-		display: flex; justify-content: space-between; width: 100%; margin: 0 0 10px 0;
-	}
-	.searchbarContainer .topRightNavContainer .hamburger {
-		margin: 0;
-	}
-	.searchbarContainer form {
-		width: calc(100% - 0px);
-	}
-	.searchbarContainer .logo {
-		height: 50px; margin: 0 0 10px 0;
-	}
-
 	.dash .dash-rightContainer {
 		width: calc(100% - 0px)!important; margin: 0; padding: 0px;
 	}
@@ -500,6 +499,24 @@ button.buttonLine:disabled {
 	}
 	.dash .dash-leftContainer .dash_nav {
 		width: calc(100% - 0px); padding: 0 0px 0 0px;
+	}
+
+
+
+	.searchbarContainer {
+		flex-direction: column-reverse; justify-content:space-between; align-items: center; width: calc(100% - 40px); height: auto; padding: 25px 20px 10px 20px;
+	}
+	.searchbarContainer .topRightNavContainer {
+		display: flex; justify-content: space-between; width: 100%; margin: 0 0 10px 0;
+	}
+	.searchbarContainer .topRightNavContainer .hamburger {
+		margin: 0;
+	}
+	.searchbarContainer form {
+		width: calc(100% - 0px);
+	}
+	.searchbarContainer .logo {
+		height: 50px; margin: 0 0 10px 0;
 	}
 
 
