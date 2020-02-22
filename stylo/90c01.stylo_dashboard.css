@@ -535,6 +535,13 @@ button.buttonLine:disabled {
 
 /** END OF DASHBOARD NESTED LIST SELECTOR **/
 
+.toptablefilterform {
+	display: flex; justify-content: flex-start; align-items: flex-end; flex-wrap: wrap;
+}
+.toptablefilterform .uk-margin {
+	margin: 0 10px 0 0!important; width: 40%;
+}
+
 /** DASH CONTROL **/
 
 @media only screen and (max-width: 768px) {
@@ -589,5 +596,8 @@ button.buttonLine:disabled {
 		height: 50px; margin: 0 0 10px 0;
 	}
 
+	.toptablefilterform .uk-margin {
+		margin: 0 0 10px 0!important; width: 100%;
+	}
 
 }

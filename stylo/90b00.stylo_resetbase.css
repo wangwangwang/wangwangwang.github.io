@@ -5,7 +5,7 @@ html {
 	font-family: "ubuntu"; font-size: 12px;
 }
 body {
-	overflow-y:auto; overflow-x: hidden; color: #000 !important;
+	overflow-y:hidden; overflow-x: hidden; color: #000 !important;
 }
 a {
 	text-decoration: none!important;
@@ -80,6 +80,8 @@ h6	{
 .w500				{ width: 500px; }
 
 .pad1cm			{ padding: 10mm 10mm 0 10mm; }
+.pad10			{ padding: 10px; }
+.pad20			{ padding: 20px; }
 
 ::-webkit-scrollbar {
 	width: 10px; height: 5px;
@@ -144,6 +146,15 @@ fieldset {
 }
 .backcolor-darkcerulean {
 	background-color: #00467d!important; color: #FFF!important;
+}
+.backcolor-greyt1 {
+	background-color: rgba(0,0,0,0.02);
+}
+.backcolor-greyt5 {
+	background-color: rgba(0,0,0,0.05);
+}
+.backcolor-greyt10 {
+	background-color: rgba(0,0,0,0.1);
 }
 
 .animated_backcolor_blue {
@@ -255,5 +266,6 @@ fieldset {
 	.flexGridContainer {
 		flex-direction: column;
 	}
+
 
 }

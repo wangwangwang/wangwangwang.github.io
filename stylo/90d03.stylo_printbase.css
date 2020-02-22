@@ -1,5 +1,9 @@
 /** START OF REPORTS STYLESHEETS **/
 
+body {
+	overflow:auto!important;
+}
+
 .report_page
 				{ display: block; width: 210mm!important; height: 297mm!important; background-color: #FFF!important; margin: 0mm auto 10mm auto; overflow: hidden!important; padding: 0; border: 1px solid rgba(0,0,0,0.10);  }
 .report_page:last-child
@@ -124,4 +128,11 @@
 	.printv3_languageselector
 						{ display: none; }
 
+}
+
+@media only screen and (max-width: 768px) {
+
+	body {
+		overflow-y:hidden;
+	}
 }
