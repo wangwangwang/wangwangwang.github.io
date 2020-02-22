@@ -1,0 +1,186 @@
+.cyco_assessment {
+	display: flex; flex-direction: column; justify-content: flex-start; align-items: center; width: 100vw; height: 100vh; color: #FFF!important;
+
+	background: linear-gradient(270deg, #007bd6, #2884b3, #005f8f);
+	background-size: 600% 600%;
+	-webkit-animation: cyco_assessment 30s ease infinite;
+	-moz-animation: cyco_assessment 30s ease infinite;
+	-o-animation: cyco_assessment 30s ease infinite;
+	animation: cyco_assessment 30s ease infinite;
+}
+
+@-webkit-keyframes cyco_assessment {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes cyco_assessment {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes cyco_assessment {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes cyco_assessment {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.cyco_assessment .top_container {
+	width: calc(100% - 40px); height: 100px; display: flex; justify-content: center; align-items: center; padding: 0 20px;
+}
+.cyco_assessment .mid_container {
+	width: calc(100% - 40px); height: calc(100vh - 120px); display: block; justify-content: flex-start; align-items: flex-start; padding: 0px 20px 20px 20px; overflow-x: hidden; overflow-y: auto;
+}
+.cyco_assessment .bottom_container {
+	width: calc(100% - 40px); height: 0px; display: flex; justify-content: flex-start; align-items: flex-start; padding: 0 20px;
+}
+
+.cyco_assessment .top_container .top_logo {
+	display: block; height: 60px;
+}
+
+
+.cyco_assessment h2 {
+	font:26px/30px 'ubuntu'!important; font-weight: 300!important; margin: 0 0 10px 0; text-align: center; color: #FFF!important;
+}
+.cyco_assessment h3 {
+	font:24px/24px 'ubuntu'!important; font-weight: 400!important; margin: 0 0 10px 0; text-align: center; color: #FFF!important;
+}
+.cyco_assessment h6 {
+	font:12px/12px 'ubuntu'!important; font-weight: 300!important; margin: 0 0 20px 0; text-align: center; color: #FFF!important;
+}
+
+.cyco_assessment .languageListContainer {
+	width: 30%; min-width: 400px; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; margin: 0 auto;
+}
+.cyco_assessment .languageListContainer .languageListItem {
+	width: calc((100% / 2) - 10px); display: flex; justify-content: center; align-items: center; height: 120px; color: rgba(255,255,255,1);!important; background-color: rgba(255,255,255,0.1); font:16px/16px 'ubuntu'!important; font-weight: 400!important; flex-direction: column; margin: 20px 0 0 0;
+}
+.cyco_assessment .languageListContainer .languageListItem:nth-child(1), .cyco_assessment .languageListContainer .languageListItem:nth-child(2) {
+	margin: 0 0 0 0;
+}
+.cyco_assessment .languageListContainer .languageListItem:hover {
+	color: rgba(0,70,125,1.0);!important; background-color: rgba(255,255,255,0.3);
+}
+.cyco_assessment .languageListContainer .languageListItem:hover img {
+	-webkit-filter: grayscale(0%); filter: grayscale(0%);
+}
+.cyco_assessment .languageListContainer img {
+	height: 40px; margin: 0 0 10px 0; -webkit-filter: grayscale(100%); filter: grayscale(100%);
+}
+
+.cyco_assessment .mid_container form {
+	width: calc(50% - 0px); flex-direction: column; min-width: 400px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: center;
+}
+.cyco_assessment .mid_container form .formflex2 {
+	width: calc(100% - 0px); min-width: 400px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;
+}
+.cyco_assessment .mid_container form .progressbar {
+	display: block; width: 100%; height: 5px; background-color: rgba(255,255,255,0.1); margin: 0 0 20px 0; border-radius: 10px; overflow: hidden;
+}
+.cyco_assessment .mid_container form .progressbar .progressbarvalue {
+	display: block; height: 5px; background-color: rgba(255,255,255,1);
+}
+.cyco_assessment .mid_container form .form_item {
+	width: calc(50% - 10px);
+}
+.cyco_assessment .mid_container form label {
+	font:12px/12px 'ubuntu'!important; font-weight: 300!important; margin: 0 0 0 0; color: rgba(255,255,255,1); display: block;
+}
+
+.cyco_assessment .mid_container form input[type=text], .cyco_assessment .mid_container form input[type=Email], .cyco_assessment .mid_container form input[type=tel], .cyco_assessment .mid_container form input[type=date] {
+	border: 0px; border-bottom: 1px solid rgba(255,255,255,0.5); color: rgba(255,255,255,1); background-color: rgba(255,255,255,0); font:16px/16px 'ubuntu'; font-weight: 400; margin: 0 0 20px 0; padding: 0px 10px; height: 40px;
+}
+.cyco_assessment .mid_container form input[type=text]:-webkit-autofill, .cyco_assessment .mid_container form input[type=Email]:-webkit-autofill, .cyco_assessment .mid_container form input[type=tel]:-webkit-autofill, .cyco_assessment .mid_container form input[type=date]:-webkit-autofill {
+	border: 0px; border-bottom: 1px solid rgba(255,255,255,0.5); color: rgba(255,255,255,1); background-color: rgba(255,255,255,0); font:16px/16px 'ubuntu'; font-weight: 400; margin: 0 0 20px 0; padding: 0px 10px; height: 40px;
+}
+.cyco_assessment .mid_container form input[type=text]::placeholder, .cyco_assessment .mid_container form input[type=Email]::placeholder, .cyco_assessment .mid_container form input[type=tel]::placeholder {
+	color: rgba(255,255,255,0.3);
+}
+
+.cyco_assessment .mid_container form select {
+	border: 0px; border-bottom: 1px solid rgba(255,255,255,0.5); color: rgba(255,255,255,1); background-color: rgba(255,255,255,0); font:16px/16px 'ubuntu'; font-weight: 400; margin: 0 0 20px 0; padding: 0px 10px; height: 40px;
+}
+.cyco_assessment .mid_container form select option {
+	font:13px/13px 'ubuntu'; font-weight: 400;
+}
+
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 1;
+}
+
+.cyco_assessment .mid_container form input[type=submit] {
+	border: 0; background-color:  rgba(255,255,255,0.8); color: rgba(0,70,125,0.8); font:16px/16px 'ubuntu'; font-weight: 500; margin: 0; padding: 15px 0; width: 120px; border-radius: 0px;
+}
+.cyco_assessment .mid_container form input[type=submit]:hover {
+	background-color:  rgba(255,255,255,1); color: rgba(0,70,125,1);
+}
+
+.cyco_assessment .mid_container form .login_form_rangeselected {
+	font:16px/16px 'ubuntu'; font-weight: 500; margin: 0 0 10px 0; padding: 0; color: #000;
+}
+
+.cyco_assessment .mid_container form input[type=range]{
+	width: 100%; height: 23px;
+}
+.cyco_assessment .mid_container form input[type=range]:focus {
+  outline: none;
+}
+.cyco_assessment .mid_container form input[type=range]::-webkit-slider-runnable-track {
+  width: 100%; height: 1px; cursor: pointer; animate: 0.2s; background: rgba(255,255,255,0.5);
+}
+.cyco_assessment .mid_container form input[type=range]::-webkit-slider-thumb {
+  border: 0px solid #000; height: 21px; width: 21px; border-radius: 50%; background: rgba(255,255,255,1); cursor: pointer; -webkit-appearance: none; margin: -10px 0 0 0;
+}
+.cyco_assessment .mid_container form input[type=range]:focus::-webkit-slider-runnable-track {
+  background: rgba(255,255,255,1);
+}
+.cyco_assessment .mid_container form input[type=range]::-moz-range-track {
+  width: 100%; height: 1px; cursor: pointer; animate: 0.2s; background: rgba(255,255,255,0.5);
+}
+.cyco_assessment .mid_container form input[type=range]::-moz-range-thumb {
+  border: 0px solid #FFF; height: 21px; width: 21px; border-radius: 50%; background: rgba(255,255,255,1); cursor: pointer; -webkit-appearance: none; margin: -10px 0 0 0;
+}
+.cyco_assessment .mid_container form input[type=range]::-ms-track {
+  width: 100%; height: 1px; cursor: pointer; animate: 0.2s; background: rgba(255,255,255,0.5);
+}
+.cyco_assessment .mid_container form input[type=range]::-ms-thumb {
+  border: 0px solid #FFF; height: 21px; width: 21px; border-radius: 50%; background: rgba(255,255,255,1); cursor: pointer; -webkit-appearance: none; margin: -10px 0 0 0;
+}
+
+.uk-select:not([multiple]):not([size]) {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 20px;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjQgMTJjMC02LjYyNy01LjM3My0xMi0xMi0xMnMtMTIgNS4zNzMtMTIgMTIgNS4zNzMgMTIgMTIgMTIgMTItNS4zNzMgMTItMTJ6bS0xOC4wMDUtMS41NjhsMS40MTUtMS40MTQgNC41OSA0LjU3NCA0LjU3OS00LjU3NCAxLjQxNiAxLjQxNC01Ljk5NSA1Ljk4OC02LjAwNS01Ljk4OHoiLz48L3N2Zz4=');
+		background-repeat: no-repeat, repeat;
+		background-position: right .7em top 50%, 0 0;
+		background-size: 0 auto, 100%;
+}
+
+.cyco_assessment .mid_container .termConditionContainer {
+	width: calc(50% - 20px); height: 55vh; overflow-y: auto; padding: 0 20px 0 0; margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+	.cyco_assessment .languageListContainer {
+		width: 100%;
+	}
+	.cyco_assessment .mid_container form {
+		width: 100%;
+	}
+	.cyco_assessment .mid_container .termConditionContainer {
+		width: calc(100% - 20px); height: 55vh; overflow-y: auto; padding: 0 20px 0 0;
+	}
+	.cyco_assessment .mid_container form .form_item {
+		width: calc(100% - 0px);
+	}
+}

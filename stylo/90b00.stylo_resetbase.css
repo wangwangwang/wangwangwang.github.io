@@ -5,7 +5,7 @@ html {
 	font-family: "ubuntu"; font-size: 12px;
 }
 body {
-	overflow-y:hidden; overflow-x: hidden; color: #000 !important;
+	overflow-y:auto; overflow-x: hidden; color: #000 !important;
 }
 a {
 	text-decoration: none!important;
@@ -38,6 +38,9 @@ h6	{
 
 .colorCavlentBlue {
  color: rgba(0,70,125,1.0);
+}
+.colorWhite {
+	color: #FFF!important;
 }
 
 .sep1				{ height: 1px; }
@@ -75,6 +78,8 @@ h6	{
 .w250				{ width: 250px; }
 .w300				{ width: 300px; }
 .w500				{ width: 500px; }
+
+.pad1cm			{ padding: 10mm 10mm 0 10mm; }
 
 ::-webkit-scrollbar {
 	width: 10px; height: 5px;
@@ -192,6 +197,9 @@ fieldset {
 
 .flexGridContainer {
 	display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; width: 100%;
+}
+.flexGridContainer_pad5mm {
+	display: flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-start; align-items: flex-start; width: calc(100% - 10mm); padding: 5mm 5mm 0mm 5mm;
 }
 .flexGridContainer .fg100p {
 	width: 100%;

@@ -1,0 +1,127 @@
+/** START OF REPORTS STYLESHEETS **/
+
+.report_page
+				{ display: block; width: 210mm!important; height: 297mm!important; background-color: #FFF!important; margin: 0mm auto 10mm auto; overflow: hidden!important; padding: 0; border: 1px solid rgba(0,0,0,0.10);  }
+.report_page:last-child
+				{ margin: 10mm auto; }
+.report_page > .report_page_cover
+				{ display: flex; width: 100%; height: 297mm; margin: 0; flex-direction: column; align-items: center; }
+
+
+.report_page > .report_page_content
+				{ display: block; width: calc(100% - 40mm); height: 272mm; margin: 0; padding: 10mm 20mm 0mm 20mm; flex-direction: column; z-index: 10; }
+.report_page > .report_page_content .report_page_content_main_title
+				{ font:30pt/30pt 'Open Sans'; font-weight: 300; text-align: center; color: #00467d!important; margin: 0 0 5mm 0; text-transform: uppercase; }
+.report_page > .report_page_content .report_page_content_main_title_small
+				{ font:18pt/18pt 'Open Sans'; font-weight: 300; text-align: center; color: #00467d!important; margin: 0 0 5mm 0; text-transform: uppercase; }
+.report_page > .report_page_content .report_page_content_sub_title
+				{ font:20pt/20pt 'Open Sans'; font-weight: 300; text-align: center; color: #00467d!important; margin: 0; text-transform: uppercase; }
+.report_page > .report_page_content .report_page_content_subsub_title
+				{ font:12pt/12pt 'Work Sans'; font-weight: 400; text-align: center; color: #00467d!important; margin: 0; text-transform: uppercase; }
+.report_page > .report_page_content .report_page_combine_title
+				{ display: flex; align-content: center; justify-content: center; }
+
+
+.report_page > .report_page_footer
+				{ display:block; position: relative; z-index: 2; width: calc(100% - 10mm); height: 15mm; margin: 0; padding: 0mm 5mm; }
+.report_page > .report_page_footer > img
+				{ display: block; position: absolute; height: 9mm; margin: -12mm 0 0 0; }
+.report_page > .report_page_footer > div:first-child
+				{ display: flex; align-items:flex-end; justify-content: center; flex-direction: column; font:8pt/8pt 'Work Sans'; font-weight: 400; color: #FFF!important; width: 100%; text-align: right; height: 15mm; }
+.report_page > .report_page_footer > div:first-child > div
+				{ margin-bottom: 2mm; color: #FFF!important; }
+.report_page > .report_page_footer > div:first-child > div:last-child
+				{ margin-bottom: 0mm; }
+
+.report_page > .report_page_cover > .report_page_cover_mainlogo
+				{ width: 50mm; }
+.report_page > .report_page_cover > .report_page_cover_title
+				{ font:40pt/40pt 'Open Sans'; font-weight: 300; text-align: center; color: #00467d!important; }
+.report_page > .report_page_cover > .report_page_cover_profiledata
+				{ margin-bottom: 3mm; }
+.report_page > .report_page_cover > .report_page_cover_profiledata > div:nth-child(1)
+				{ font:8pt/18pt 'Work Sans'; font-weight: 400; text-align: center; color: #000!important; margin: 0; }
+.report_page > .report_page_cover > .report_page_cover_profiledata > div:nth-child(2)
+				{ font:12pt/12pt 'Work Sans'; font-weight: 400; text-align: center; color: #00467d!important; margin: 0; }
+.report_page > .report_page_cover > .report_page_cover_support
+				{ display: flex; margin: 0; }
+.report_page > .report_page_cover > .report_page_cover_support > img
+				{ display: block; width: 30mm; margin: 0 2mm; }
+.report_page > .report_page_cover > .report_page_cover_smalltext
+				{ font:8pt/10pt 'Work Sans'; font-weight: 400; text-align: center; width: 80%; color: #666!important; margin: 0; }
+
+.report_page > .report_page_content .report_page_content_sub_title
+				{ display: flex; align-items: center; justify-content: center; }
+.report_page > .report_page_content .report_page_content_sub_title span
+				{ display: flex; font:17pt/17pt 'Open Sans'; font-weight: 700; width: 12mm; height: 12mm; margin:0 2mm 0 0; align-items: center; justify-content: center; border-radius: 10mm; }
+
+.report_page > .report_page_content .report_page_content_subsub_title
+				{ display: flex; align-items: center; justify-content: center; }
+.report_page > .report_page_content .report_page_content_subsub_title span
+				{ display: flex; font:12pt/12pt 'Open Sans'; font-weight: 700; width: 8mm; height: 8mm; margin:0 2mm 0 0; align-items: center; justify-content: center; }
+
+
+.report_page_content .column2container
+				{ column-count: 2; column-gap: 4mm; text-align: justify; }
+.report_page_content .column2container .column_break
+				{ -webkit-column-break-inside: avoid; page-break-inside: avoid; break-inside: avoid; margin-bottom: 0; }
+
+.column2container
+				{ column-count: 2; column-gap: 10mm; text-align: justify; }
+.column2container > .column_items
+				{ margin: 0 0 6mm 0; }
+.column2container > .column_items > p
+				{ margin: 3mm 0 0 0; }
+.column_break
+				{ -webkit-column-break-inside: avoid; page-break-inside: avoid; break-inside: avoid; }
+
+
+/** END OF REPORTS STYLESHEETS **/
+
+/** START OF TICKET PRINTOUT **/
+
+.ticket_items {
+	display: flex; flex-direction: column; width: calc((100% / 4) - 4.2mm); height: 52.5mm; margin: 0 0 0 0; border: 0.1mm solid rgba(0,0,0,0.5); padding: 2mm; justify-content: center; align-items: center; align-content: center;
+}
+.ticket_items .ticket_url {
+	font:9pt/9pt 'Open Sans'; font-weight: 600; margin: 0 0 1mm 0;
+}
+.ticket_items .ticket_text {
+	font:8pt/8pt 'Open Sans'; font-weight: 400; margin: 0 0 1mm 0;
+}
+.ticket_items .print_ticket_qr {
+	width: 22.5mm; margin: 0 0 1mm 0;
+}
+/** END OF TICKET PRINTOUT **/
+
+
+@media print {
+	@page {
+		size: 210mm 297mm;
+		margin: 0mm 0mm 0mm 0mm!important;
+	}
+    body 			{ width: 100%!important; max-width: 100%!important;  padding: 0; margin: 0; -webkit-print-color-adjust: exact!important; }
+	p 				{ font: 12pt/16pt 'Work Sans'; }
+	.dash_left		{ display: none; width: 100%; height: 100%; }
+	.dash_right		{ width: calc(100% - 40px); left:0px; }
+	.heading		{ font: 20pt/20pt 'Work Sans'; position: relative; display: block; width: auto; padding: 10pt; }
+
+	.report_page_landscape
+					{ margin: 0; padding: 0; border: 0px; }
+
+	.report_page
+					{ margin: 0; padding: 0; border: 0px; }
+	.report_page:last-child
+					{ margin: 0; }
+	.report_page p
+					{ font:9pt/10pt 'Work Sans'; font-weight: 400; }
+
+	.report_nav		{ display: none!important; margin: 0!important; padding: 0!important; }
+	.content_nav 	{ display: none!important; margin: 0!important; padding: 0!important; }
+
+	.printv3_reportcontainer
+						{ display: block; width: auto; margin: 0 0 0 0; padding: 0 0 0 0; }
+	.printv3_languageselector
+						{ display: none; }
+
+}

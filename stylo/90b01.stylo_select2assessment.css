@@ -1,0 +1,87 @@
+.select2-container {
+  vertical-align: middle;
+ 	width: 100% !important; }
+  .select2-container .select2-selection--single {
+    height: 40px; }
+    .select2-container .select2-selection--single .select2-selection__rendered {
+      padding-left: 10px;
+      padding-right: 10px;
+			font:14px/14px 'ubuntu'; }
+  .select2-container[dir="rtl"] .select2-selection--single .select2-selection__rendered {
+    padding-right: 10px;
+    padding-left: 10px; }
+  .select2-container .select2-selection--multiple {
+    min-height: 34px; }
+    .select2-container .select2-selection--multiple .select2-selection__rendered {
+      padding-left: 10px; }
+    .select2-container .select2-search--inline .select2-search__field {
+      font-size: 14px;
+      margin-top: 10px; }
+
+.select2-dropdown {
+  background-color: white;
+  border: 1px solid rgba(0,0,0,0.1); }
+
+.select2-container--default .select2-selection--single {
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,0);
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+  border-radius: 0px !important;
+  margin: 0 0 20px 0; }
+  .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #FFF;
+    font: 16px/16px 'ubuntu';
+    line-height: 16px;
+		padding: 10px;
+    height: 40px; }
+  .select2-container--default .select2-selection--single .select2-selection__placeholder {
+    color: #FFF; }
+  .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 14px;
+    top: 13px;
+    right: 5px; }
+    .select2-container--default .select2-selection--single .select2-selection__arrow b {
+      border-color: rgba(255,255,255,1) transparent transparent transparent; }
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+  border-color: transparent transparent rgba(255,255,255,1) transparent; }
+
+.select2-container--default .select2-selection--multiple {
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 0px !important; }
+  .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    border: 1px solid rgba(0,0,0,0.1); }
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+  border: solid rgba(0,0,0,0.1) 1px; }
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  border: 1px solid rgba(0,0,0,0.1); font:14px/14px 'ubuntu'; }
+
+.select2-container--classic .select2-selection--single {
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 0px!important;
+  outline: 0; }
+  .select2-container--classic .select2-selection--single .select2-selection__arrow {
+    border-left: 1px solid rgba(0,0,0,0.1); }
+    .select2-container--classic .select2-selection--single .select2-selection__arrow b {
+      border-color: rgba(0,0,0,0.1) transparent transparent transparent; }
+
+.select2-container--classic[dir="rtl"] .select2-selection--single .select2-selection__arrow {
+  border-right: 1px solid rgba(0,0,0,0.1); }
+
+    .select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow b {
+      border-color: transparent transparent rgba(0,0,0,0.1) transparent; }
+
+.select2-container--classic .select2-selection--multiple {
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 0px!important; }
+  .select2-container--classic .select2-selection--multiple .select2-selection__choice {
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 0px!important; }
+
+.select2-container--classic .select2-search--dropdown .select2-search__field {
+  border: 1px solid rgba(0,0,0,0.1); }
+
+.select2-container--classic.select2-container--open .select2-dropdown {
+  border-color: #5897fb; }

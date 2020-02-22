@@ -58,9 +58,6 @@
 .dash .dash-leftContainer .dash_nav ul {
 	padding: 10px;
 }
-.dash .dash-leftContainer .dash_nav ul li {
-
-}
 .dash .dash-leftContainer .dash_nav ul li a {
 	font:12px/12px 'ubuntu'; font-weight: 400; color: rgba(0,0,0,0.5);
 }
@@ -234,7 +231,7 @@
   outline: none;
 }
 .dash-rightContainer form input[type=range]::-webkit-slider-runnable-track, .dashModal input[type=range]::-webkit-slider-runnable-track {
-  width: 100%; height: 1px; cursor: pointer; animate: 0.2s; background: rgba(0,0,0,0.1);
+  width: 100%; height: 1px; cursor: pointer; animation: 0.2s; background: rgba(0,0,0,0.1);
 }
 .dash-rightContainer form input[type=range]::-webkit-slider-thumb, .dashModal input[type=range]::-webkit-slider-thumb {
   border: 0px solid #000; height: 21px; width: 21px; border-radius: 50%; background: rgba(0,70,125,1); cursor: pointer; -webkit-appearance: none; margin: -10px 0 0 0;
@@ -243,13 +240,13 @@
   background: rgba(0,70,125,1);
 }
 .dash-rightContainer form input[type=range]::-moz-range-track, .dashModal input[type=range]::-moz-range-track {
-  width: 100%; height: 1px; cursor: pointer; animate: 0.2s; background: rgba(0,0,0,0.1);
+  width: 100%; height: 1px; cursor: pointer; animation: 0.2s; background: rgba(0,0,0,0.1);
 }
 .dash-rightContainer form input[type=range]::-moz-range-thumb, .dashModal input[type=range]::-moz-range-thumb {
   border: 0px solid #FFF; height: 21px; width: 21px; border-radius: 50%; background: rgba(0,70,125,1); cursor: pointer; -webkit-appearance: none; margin: -10px 0 0 0;
 }
 .dash-rightContainer form input[type=range]::-ms-track, .dashModal input[type=range]::-ms-track {
-  width: 100%; height: 1px; cursor: pointer; animate: 0.2s; background: rgba(0,0,0,0.1);
+  width: 100%; height: 1px; cursor: pointer; animation: 0.2s; background: rgba(0,0,0,0.1);
 }
 .dash-rightContainer form input[type=range]::-ms-thumb, .dashModal input[type=range]::-ms-thumb {
   border: 0px solid #FFF; height: 21px; width: 21px; border-radius: 50%; background: rgba(0,70,125,1); cursor: pointer; -webkit-appearance: none; margin: -10px 0 0 0;
@@ -347,13 +344,13 @@
 }
 
 .dashMasonry .cardChart .cardChartContainer {
-	height: 200px; h: 100%;
+	height: 200px;
 }
 .dashMasonry .cardChart .cardBigChartContainer {
-	height: 300px; h: 100%;
+	height: 300px;
 }
 .dashMasonry .cardChart .cardBiggerChartContainer {
-	height: 400px; h: 100%;
+	height: 400px;
 }
 
 .dashMasonry .cardToDo .todoContainer {
@@ -464,6 +461,79 @@ button.buttonLine:disabled {
 .buttonSquare:disabled	{
 	display: flex; background-color:  rgba(0,0,0,0.2); color: rgba(255,255,255,0.3); font:12px/12px 'ubuntu'; font-weight: 400; padding:  0; width: 40px; height:40px; border-radius: 0px; justify-content: center; align-items: center;
 }
+
+/** START OF DASHBOARD NESTED LIST SELECTOR **/
+
+.nestedlistselector	{
+	display: block; width: 100%;
+}
+.nestedlistselector ul {
+	list-style-type: none; margin: 0; padding: 0;
+}
+.nestedlistselector .selectoritems {
+	display: flex; align-items: center; justify-content: space-between; width: 100%;
+}
+.nestedlistselector .selectoritems:hover {
+	background-color: #00467d; color: #FFF;
+}
+.nestedlistselector .selectoritems > .selectoritem_label {
+	width: calc(100% - 363px); padding: 0px 10px; font:12px/12px 'ubuntu'; font-weight: 400; min-height: 24px;
+}
+.nestedlistselector .selectoritems > .selectoritem_status {
+	display: flex; margin: 0; width:90px; min-height: 24px; align-items: center; justify-content: center; border-left: 1px solid rgba(255,255,255,1); font:12px/12px 'ubuntu'; font-weight: 400;
+}
+.nestedlistselector .selectoritems > .selectoritem_status > input {
+	margin: 0!important; padding: 0!important;
+}
+.nestedlistselector .selectoritems > .selectoritem_label_a {
+	width: auto; padding: 0px 10px; font:12px/12px 'ubuntu'; font-weight: 400; min-height: 24px; display: flex; align-items: center;
+}
+.nestedlistselector .selectoritems > .selectoritem_options {
+	width: auto; padding: 0px; font:12px/12px 'ubuntu'; font-weight: 400; min-height: 24px; display: flex; align-items: center;
+}
+.nestedlistselector .selectoritems > .selectoritem_options > .selectoritem_options_i30 {
+	width: 30px; padding: 0px; font:12px/12px 'ubuntu'; font-weight: 400; min-height: 24px; display: flex; align-items: center; justify-content: center;
+}
+.nestedlistselector .selectoritems > .selectoritem_options > .selectoritem_options_i80 {
+	width: 80px; padding: 0px; font:12px/12px 'ubuntu'; font-weight: 400; min-height: 24px; display: flex; align-items: center; justify-content: center;
+}
+.nestedlistselector .selectoritems > .selectoritem_options > .selectoritem_options_i100 {
+	width: 100px; padding: 0px; font:12px/12px 'ubuntu'; font-weight: 400; min-height: 24px; display: flex; align-items: center; justify-content: center;
+}
+.nestedlistselector .selectoritems > .selectoritem_options > .selectoritem_options_i120 {
+	width: 120px; padding: 0px; font:12px/12px 'ubuntu'; font-weight: 400; min-height: 24px; display: flex; align-items: center; justify-content: center;
+}
+
+
+
+/** 1st level **/
+.nestedlistselector > ul {
+	margin: 0 0 0 0; border: 1px solid rgba(0,0,0,0.10);
+}
+.nestedlistselector > ul > li > .selectoritems {
+	background-color: #00467d; color: #fff;
+}
+
+/** 2nd Level to Infinity and Beyond **/
+.nestedlistselector > ul > li ul {
+	margin: 0 0 0 50px; border-left: 1px solid rgba(0,0,0,0.10);
+}
+.nestedlistselector > ul > li ul li {
+	border-top: 1px solid rgba(0,0,0,0.10);
+}
+.nestedlistselector > ul > li ul li:hover {
+	background-color: rgba(0,0,0,0.05);
+}
+
+
+.nestedcell {
+	display: flex; justify-content: flex-start; align-items:center; height: 100%; width: 100%;
+}
+.tabletab {
+	min-width: 20px!important; display: flex; justify-content: flex-start; align-items: center; margin: 0 0 0 0; padding: 0 0 0 0; color: rgba(0,0,0,0.4);
+}
+
+/** END OF DASHBOARD NESTED LIST SELECTOR **/
 
 /** DASH CONTROL **/
 
