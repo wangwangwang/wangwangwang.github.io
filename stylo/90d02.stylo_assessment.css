@@ -176,20 +176,22 @@
 }
 
 .questionnaireABContainer {
-	display: flex; align-items: flex-end;
+	display: flex; align-items: flex-start;
 }
-.questionnaireABContainer .ABleft {
-	width: calc(50% - 1px); padding: 10px; border-right: 1px solid #FFF; text-align: right;
-}
-.questionnaireABContainer .ABright {
-	width: 50%; padding: 10px; text-align: left;
+.questionnaireABContainer .ABleft, .questionnaireABContainer .ABright {
+	width: 50%; padding: 10px;
 }
 
-.questionnaireABContainer .ABleft h4 {
-	text-align: right;
+.cyco_assessment .mid_container form label .abcheckbox {
+	display: none;
 }
-.questionnaireABContainer .ABright h4 {
-	text-align: left;
+.cyco_assessment .mid_container form label .ab_radio {
+	display: flex; width: calc(100% - 42px); height: 120px; padding: 20px; justify-content: center; text-align: center; align-items: center; font:18px/18px 'ubuntu'!important; font-weight: 400!important; margin: 0 0 10px 0; color: #FFF!important; border: 1px solid rgba(255,255,255,0.5); border-radius: 10px;
+}
+.cyco_assessment .mid_container form label .abcheckbox:checked {
+}
+.cyco_assessment .mid_container form label .abcheckbox:checked + .ab_radio {
+	border: 1px solid rgba(255,255,255,1); background-color: rgba(255,255,255,1); color: rgba(0,70,125,0.8)!important;
 }
 
 
@@ -255,5 +257,8 @@
 	}
 	.cyco_assessment .mid_container .questionnaireContainer {
 		min-height: calc(100vh - 100px);
+	}
+	.cyco_assessment .mid_container form label .ab_radio {
+		font:16px/16px 'ubuntu'!important;
 	}
 }
