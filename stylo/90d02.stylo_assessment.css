@@ -51,6 +51,9 @@
 .cyco_assessment h3 {
 	font:24px/24px 'ubuntu'!important; font-weight: 400!important; margin: 0 0 10px 0; text-align: center; color: #FFF!important;
 }
+.cyco_assessment h4 {
+	font:20px/20px 'ubuntu'!important; font-weight: 300!important; margin: 0 0 10px 0; color: #FFF!important;
+}
 .cyco_assessment h6 {
 	font:12px/12px 'ubuntu'!important; font-weight: 300!important; margin: 0 0 20px 0; text-align: center; color: #FFF!important;
 }
@@ -75,7 +78,7 @@
 }
 
 .cyco_assessment .mid_container form {
-	width: calc(50% - 0px); flex-direction: column; min-width: 400px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: center;
+	width: calc(60% - 0px); flex-direction: column; min-width: 400px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: center;
 }
 .cyco_assessment .mid_container form .formflex2 {
 	width: calc(100% - 0px); min-width: 400px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;
@@ -156,6 +159,41 @@
   border: 0px solid #FFF; height: 21px; width: 21px; border-radius: 50%; background: rgba(255,255,255,1); cursor: pointer; -webkit-appearance: none; margin: -10px 0 0 0;
 }
 
+.cyco_assessment .mid_container form .questionnaireCheckboxLabel {
+	font:18px/18px 'ubuntu'!important; font-weight: 300!important; margin: 0 0 10px 0; color: #FFF!important; display: flex; align-items: center;
+}
+.cyco_assessment .mid_container form label input[type=checkbox] {
+	border: 2px solid rgba(255,255,255,0.3); background-color: transparent; width: 30px; height: 30px; margin: 0 5px 0 0; border-radius: 50%;
+}
+.cyco_assessment .mid_container form label span {
+	margin: 0 0 0 5px; color: rgba(255,255,255,0.6);
+}
+.cyco_assessment .mid_container form label input[type=checkbox]:checked {
+	border: 2px solid  rgba(255,255,255,1);
+}
+.cyco_assessment .mid_container form label input[type=checkbox]:checked + span {
+	color: rgba(255,255,255,1);
+}
+
+.questionnaireABContainer {
+	display: flex; align-items: flex-end;
+}
+.questionnaireABContainer .ABleft {
+	width: calc(50% - 1px); padding: 10px; border-right: 1px solid #FFF; text-align: right;
+}
+.questionnaireABContainer .ABright {
+	width: 50%; padding: 10px; text-align: left;
+}
+
+.questionnaireABContainer .ABleft h4 {
+	text-align: right;
+}
+.questionnaireABContainer .ABright h4 {
+	text-align: left;
+}
+
+
+
 .uk-select:not([multiple]):not([size]) {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -170,6 +208,38 @@
 	width: calc(50% - 20px); height: 55vh; overflow-y: auto; padding: 0 20px 0 0; margin: 0 auto;
 }
 
+.cyco_assessment .dash_langContainer {
+	position: fixed; top: 10px; left: 10px; width: 30px; height: 30px; border-radius: 50%; border: 1px solid #FFF; background-size: cover;
+}
+.cyco_assessment .dash_langContainer .dash_langSelect {
+	display: none; position: absolute; padding:40px 0 0 0;
+}
+.cyco_assessment .dash_langContainer:hover .dash_langSelect {
+	display: block;
+}
+.cyco_assessment .dash_langContainer .dash_langSelect a {
+	display: flex; align-items: center; margin:  0 0 5px 0; color: rgba(255, 255, 255, 0.5);
+}
+.cyco_assessment .dash_langContainer .dash_langSelect a:hover {
+	color: rgba(255, 255, 255, 1);
+}
+.cyco_assessment .dash_langContainer .dash_langSelect a img {
+	height: 20px; margin: 0 5px 0 0;
+}
+
+.cyco_assessment .mid_container .questionnaireContainer {
+	display: flex; flex-direction: column; justify-content: flex-start; align-items: center; width: 100%;
+}
+
+.cyco_assessment .mid_container .tandcform label input[type=checkbox] {
+	border: 1px solid rgba(255,255,255,0.6); background-color: transparent; width: 22px; height: 22px; margin: 0 5px 0 0; border-radius: 50%;
+}
+.cyco_assessment .mid_container .tandcform label input[type=checkbox]:checked {
+	border: 1px solid  rgba(255,255,255,1); background-color:rgba(0,70,125,1);
+}
+
+
+
 @media only screen and (max-width: 768px) {
 	.cyco_assessment .languageListContainer {
 		width: 100%;
@@ -182,5 +252,8 @@
 	}
 	.cyco_assessment .mid_container form .form_item {
 		width: calc(100% - 0px);
+	}
+	.cyco_assessment .mid_container .questionnaireContainer {
+		min-height: calc(100vh - 100px);
 	}
 }
