@@ -275,6 +275,18 @@
 	display: block; margin: 0 0 5px 0;
 }
 
+.asses_thankyou {
+	display: flex; width: 100%; height: 100%; justify-content: center; align-items: center; flex-direction: column;
+}
+.asses_thankyou .asses_thankyou_item01 {
+	font: 24px/24px 'ubuntu'!important; font-weight: 500!important; color: #FFF; margin: 0 0 10px 0;
+}
+.asses_thankyou .asses_thankyou_item02 {
+	font: 16px/16px 'ubuntu'!important; font-weight: 300!important; color: rgba(255,255,255, 0.5);
+}
+.asses_thankyou .asses_thankyou_item02 span {
+	font: 16px/16px 'ubuntu'!important; font-weight: 500!important; color: #FFF;
+}
 
 
 @media only screen and (max-width: 768px) {
