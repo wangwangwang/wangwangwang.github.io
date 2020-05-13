@@ -544,6 +544,10 @@ button.buttonLine:disabled {
 
 /** DASH CONTROL **/
 
+.right			{ text-align: right !important; }
+.uk-label-draft		{ background-color: #808080; color: #fff; }
+.uk-label-normal	{ background-color: #1e87f0; color: #fff; }
+
 @media only screen and (max-width: 768px) {
 
 	.dash .dash-leftContainer {

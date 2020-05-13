@@ -175,6 +175,22 @@
 	color: rgba(255,255,255,1);
 }
 
+.cyco_assessment .mid_container form .asses_form_dateselect {
+	display: flex; width: 100%; flex-direction: row; justify-content: space-between;
+}
+.cyco_assessment .mid_container form .asses_form_dateselect select option {
+	color: #000; font:13px/13px 'ubuntu'; font-weight: 400;
+}
+.cyco_assessment .mid_container form .asses_form_dateselect select:nth-child(1) {
+	width: calc(20% - (20px / 3));
+}
+.cyco_assessment .mid_container form .asses_form_dateselect select:nth-child(2) {
+	width: calc(50% - (20px / 3));
+}
+.cyco_assessment .mid_container form .asses_form_dateselect select:nth-child(3) {
+	width: calc(30% - (20px / 3));
+}
+
 .questionnaireABContainer {
 	display: flex; align-items: flex-start;
 }
@@ -209,6 +225,12 @@
 .cyco_assessment .mid_container .termConditionContainer {
 	width: calc(50% - 20px); height: 55vh; overflow-y: auto; padding: 0 20px 0 0; margin: 0 auto;
 }
+.cyco_assessment .mid_container .termConditionContainer ol {
+	margin: 5px 0 0 0; padding: 0 0 0 25px;
+}
+.cyco_assessment .mid_container .termConditionContainer li {
+	margin: 0 0 5px 0; font: 12px/14px 'ubuntu'!important; font-weight: 300!important;
+}
 
 .cyco_assessment .dash_langContainer {
 	position: fixed; top: 10px; left: 10px; width: 30px; height: 30px; border-radius: 50%; border: 1px solid #FFF; background-size: cover;
@@ -238,6 +260,16 @@
 }
 .cyco_assessment .mid_container .tandcform label input[type=checkbox]:checked {
 	border: 1px solid  rgba(255,255,255,1); background-color:rgba(0,70,125,1);
+}
+
+.cyco_assessment .mid_container .questionnaireContainer .ab_slider_indicator {
+	display: flex; width: 100%; justify-content: space-between; margin: 10px 0 0 0; font: 16px/16px 'ubuntu'!important; font-weight: 400!important;
+}
+.cyco_assessment .mid_container .questionnaireContainer .ab_slider_indicator div {
+	text-align: center;
+}
+.cyco_assessment .mid_container .questionnaireContainer .ab_slider_indicator div span {
+	display: block; margin: 0 0 5px 0;
 }
 
 
