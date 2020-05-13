@@ -1,0 +1,607 @@
+.dash {
+	display: block; margin: 0; padding: 0; z-index: 1;
+}
+
+.dash .dash-leftContainer {
+	display: block; position: fixed; width: 250px; height: 100vh;
+}
+.dash .dash-leftContainer .dash_logoContainer {
+	display: flex; justify-content: center; align-items: center; width: 100%; height: 100px;
+}
+.dash .dash-leftContainer .dash_logoContainer img {
+	height: 50px;
+}
+
+/** PROFILE NAVIGATION **/
+
+.dash .dash-leftContainer .dash-profileContainer {
+	display: flex; flex-direction: row; justify-content: flex-start; align-items: center; width: calc(100% - 15px); padding: 10px 5px 10px 10px; background-color: rgba(0,70,125,0.1); border-radius: 0px 60px 60px 0px;
+}
+.dash .dash-leftContainer .dash-profileContainer .dash_avatar {
+	display: flex; width: 38px; height: 38px; margin: 0 5px 0 0; border-radius: 50%; background-size: cover!important; justify-content: center; align-items: center; background-position: center!important; border: 2px solid rgba(0,70,125,1);
+}
+.dash .dash-leftContainer .dash-profileContainer .logout_container {
+	display: flex; width: 40px; height: 40px; justify-content: flex-end; align-items: center;
+}
+.dash .dash-leftContainer .dash-profileContainer .logout_container a {
+	display: flex; width: 30px; height: 30px; border-radius: 50%; justify-content: center; align-items: center; background-color: rgba(255,255,255,0.3); color: rgba(0,70,125,1);
+}
+.dash .dash-leftContainer .dash-profileContainer .logout_container a:hover {
+	background-color: rgba(255,255,255,1); color: rgba(0,70,125,1);
+}
+.dash .dash-leftContainer .dash-profileContainer .dash_textContainer {
+	width: calc(100% - 95px);
+}
+.dash .dash-leftContainer .dash-profileContainer .dash_textContainer div:nth-child(1) {
+	font:12px/12px 'ubuntu'; font-weight: 500; color: rgba(0,70,125,1);
+}
+.dash .dash-leftContainer .dash-profileContainer .dash_textContainer div:nth-child(2) {
+	font:9px/9px 'ubuntu'; font-weight: 400; color: rgba(0,0,0,1); margin: 3px 0 0 0;
+}
+
+/** PROFILE NAVIGATION **/
+
+/** DASH NAVIGATION **/
+
+.dash .dash-leftContainer .dash_nav {
+	height: calc(100% - 210px); margin: 10px 0 0 0; overflow-y: auto; width: calc(100% - 15px); padding: 0 5px 0 10px;
+}
+.dash .dash-leftContainer .dash_nav::-webkit-scrollbar {
+	width: 5px; height: 5px;
+}
+.dash .dash-leftContainer .dash_nav::-webkit-scrollbar-track {
+	background: rgba(0,0,0,0.0)!important;
+}
+.dash .dash-leftContainer .dash_nav::-webkit-scrollbar-thumb {
+	background: rgba(0,70,125,1.0)!important;
+}
+.dash .dash-leftContainer .dash_nav ul {
+	padding: 10px;
+}
+.dash .dash-leftContainer .dash_nav ul li a {
+	font:12px/12px 'ubuntu'; font-weight: 400; color: rgba(0,0,0,0.5);
+}
+.dash .dash-leftContainer .dash_nav ul li a:hover, .dash .dash-leftContainer .dash_nav .uk-active > a {
+	color: rgba(0,70,125,1);
+}
+
+/** DASH NAVIGATION **/
+
+/** DASH LANGUAGE **/
+
+.dash .dash-leftContainer .dash_langContainer {
+	display: flex; height: 40px; margin: 0 0 0 0; width: calc(100% - 20px); padding: 0 10px; justify-content: flex-start; align-items: center;
+}
+.dash .dash-leftContainer .dash_langContainer a, .dash .dash-leftContainer .dash_langContainer span {
+	margin: 0 3px 0 0;
+}
+.dash .dash-leftContainer .dash_langContainer a:last-child {
+	margin: 0 0 0 0;
+}
+.dash .dash-leftContainer .dash_langContainer a img, .dash .dash-leftContainer .dash_langContainer span img {
+	height: 16px; border: 1px solid rgba(0,0,0,0.2); -webkit-filter: grayscale(100%); filter: grayscale(100%);
+}
+.dash .dash-leftContainer .dash_langContainer a:hover img, .dash .dash-leftContainer .dash_langContainer .active img {
+	-webkit-filter: grayscale(0%); filter: grayscale(0%);
+}
+
+/** DASH LANGUAGE **/
+
+
+.dash .dash-rightContainer {
+	display: block; position: relative; width: calc(100% - 250px); margin: 0 0 0 250px; padding: 0;
+}
+
+/** SEARCH BAR CONTAINER **/
+
+.searchbarContainer {
+	display: flex; justify-content:space-between; align-items: center; width: calc(100% - 40px); height: 100px; padding: 0 20px;
+}
+.searchbarContainer .topRightNavContainer {
+	display: flex; justify-content: flex-start; align-items: center; width: auto; height: auto;
+}
+.searchbarContainer .topRightNavContainer div {
+	display: flex;
+}
+.searchbarContainer .topRightNavContainer a {
+	display: flex; justify-content: center; align-items: center; width: 36px; height: 36px; background-color: rgba(0,70,125,0.8); color: rgba(255,255,255,0.8); border-radius: 50%; margin: 0 0 0 4px;
+}
+.searchbarContainer .topRightNavContainer a:hover {
+	background-color: rgba(0,70,125,1); color: rgba(255,255,255,1); border-radius: 50%;
+}
+
+.searchbarContainer form {
+	width: calc(100% - 80px);
+}
+.searchbarContainer form .form_item {
+	width: 100%; display: flex; flex-direction: row; justify-content: flex-start; align-items: center;
+}
+.searchbarContainer form .form_item input[type=text] {
+	border: 0; border-bottom: 1px solid rgba(0,70,125,0.2); color: rgba(0,70,125,1); background-color: transparent; font:18px/18px 'ubuntu'; font-weight: 400; margin: 0; width: calc(100% - 110px);
+}
+.searchbarContainer form .form_item input[type=text]::placeholder {
+	color: rgba(0,70,125,0.5);
+}
+.searchbarContainer form .form_item input[type=submit] {
+	border: 0; background-color: rgba(0,70,125,0.8); color: rgba(255,255,255,0.8); font:16px/16px 'ubuntu'; font-weight: 500; margin: 0 0 0 10px; padding: 10px 0; width: 100px; border-radius: 50px; text-transform: none;
+}
+.searchbarContainer form .form_item input[type=submit]:hover, .login_form_container form .form_item input[type=submit]:focus {
+	background-color: rgba(0,70,125,1); color: rgba(255,255,255,1);
+}
+
+/** SEARCH BAR CONTAINER **/
+
+/** TITLE BAR CONTAINER **/
+
+.dash .titleContainer {
+	display: flex; flex-direction: column; justify-content: center; align-items: flex-start;	width: calc(100% - 40px); height: 60px; padding: 0 20px;
+}
+.dash .titleContainer .title {
+	font:24px/24px 'ubuntu'; font-weight: 500; color: rgba(0,70,125,1);
+}
+.dash .titleContainer .breadcrumbs {
+	display: flex; justify-content: flex-start; align-items: center; margin: 5px 0 0 0;
+}
+.dash .titleContainer .breadcrumbs a {
+	font:10px/10px 'ubuntu'; font-weight: 500; color: rgba(0,0,0,0.5);
+}
+.dash .titleContainer .breadcrumbs a:hover {
+	font:10px/10px 'ubuntu'; font-weight: 500; color: rgba(0,70,125,1);
+}
+.dash .titleContainer .breadcrumbs span {
+	margin: 0 2px; font:10px/10px 'ubuntu'; font-weight: 500; color: rgba(0,0,0,0.5);
+}
+.dash .titleContainer .breadcrumbs div {
+	font:10px/10px 'ubuntu'; font-weight: 700; color: rgba(0,0,0,1);
+}
+
+/** TITLE BAR CONTAINER **/
+
+/** OFF CANVAS TOP NAV CONTAINER **/
+
+.dash_offcanvas {
+	width: calc(250px - 40px); padding: 20px 20px 0 20px; color: #FFF;
+}
+.dash_offcanvas .title {
+	font:20px/20px 'ubuntu'; font-weight: 400; color: #FFF; height: 20px; margin: 0 0 20px 0;
+}
+.dash_offcanvas .dash_offcanvas_content {
+	height: calc(100vh - 90px); overflow-y: scroll; padding-right: 10px;
+}
+.dash_offcanvas .dash_offcanvas_content p {
+	font:10px/14px 'ubuntu'; font-weight: 300; margin: 0 0 5px 0;
+}
+.dash_offcanvas .dash_offcanvas_content::-webkit-scrollbar {
+	width: 5px; height: 5px;
+}
+.dash_offcanvas .dash_offcanvas_content::-webkit-scrollbar-track {
+	background: rgba(0,0,0,0.0)!important;
+}
+.dash_offcanvas .dash_offcanvas_content::-webkit-scrollbar-thumb {
+	background: rgba(255,255,255,1.0)!important;
+}
+
+/** OFF CANVAS TOP NAV CONTAINER **/
+
+/** DASH CONTENT CONTAINER **/
+
+.dash-contentContainer {
+	margin: 0; z-index: 1; height: calc(100vh - 170px); margin:10px 0 0 0; width: calc(100% - 30px); overflow-y: scroll; padding: 0 10px 0 20px;
+}
+
+.dash-contentContainer > .tabnav > li > a {
+	font:11px/11px 'ubuntu'; font-weight: 400;
+}
+.dash-contentContainer > .tabnav > .uk-active > a {
+	color: rgba(0,70,125,1); border-color: rgba(0,70,125,1);
+}
+
+/** DASH CONTENT CONTAINER **/
+
+/** DASHBOARD FORMS **/
+
+.dash-rightContainer form label, .dashModal label {
+	padding: 0; display: flex; align-items: center; margin: 0 5px 0 0;
+}
+.dash-rightContainer form .uk-form-label, .dashModal .uk-form-label {
+	margin: 0 0 8px 0!important; font:12px/12px 'ubuntu'!important; font-weight: 400!important;
+}
+.dash-rightContainer form label:last-child, .dashModal label:last-child {
+	margin: 0 0 0 0;
+}
+.dash-rightContainer form label input[type=checkbox], .dash-rightContainer form label input[type=radio], .dashModal label input[type=checkbox], .dashModal label input[type=radio] {
+	border: 1px solid rgba(0,0,0,0.1); background-color: transparent; width: 22px; height: 22px; display: block; margin: 0 5px 0 0; border-radius: 50%;
+}
+.dash-rightContainer form label input[type=checkbox]:checked, .dash-rightContainer form label input[type=radio]:checked, .dashModal label input[type=checkbox]:checked, .dashModal label input[type=radio]:checked {
+	border: 1px solid  rgba(0,70,125,1); background-color:rgba(0,70,125,1);
+}
+
+.dash-rightContainer form .uk-form-label, .dashModal .uk-form-label {
+	margin: 0 0 5px 0; color: rgba(0,0,0,1); font:12px/12px 'ubuntu'; font-weight: 400;
+}
+
+.dash-rightContainer form .login_form_rangeselected, .dashModal .login_form_rangeselected {
+	font:16px/16px 'ubuntu'; font-weight: 500; margin: 0 0 10px 0; padding: 0; color: #000;
+}
+
+.dash-rightContainer form input[type=range], .dashModal input[type=range] {
+	width: 100%; height: 23px;
+}
+.dash-rightContainer form input[type=range]:focus, .dashModal input[type=range]:focus {
+  outline: none;
+}
+.dash-rightContainer form input[type=range]::-webkit-slider-runnable-track, .dashModal input[type=range]::-webkit-slider-runnable-track {
+  width: 100%; height: 1px; cursor: pointer; animation: 0.2s; background: rgba(0,0,0,0.1);
+}
+.dash-rightContainer form input[type=range]::-webkit-slider-thumb, .dashModal input[type=range]::-webkit-slider-thumb {
+  border: 0px solid #000; height: 21px; width: 21px; border-radius: 50%; background: rgba(0,70,125,1); cursor: pointer; -webkit-appearance: none; margin: -10px 0 0 0;
+}
+.dash-rightContainer form input[type=range]:focus::-webkit-slider-runnable-track, .dashModal input[type=range]:focus::-webkit-slider-runnable-track {
+  background: rgba(0,70,125,1);
+}
+.dash-rightContainer form input[type=range]::-moz-range-track, .dashModal input[type=range]::-moz-range-track {
+  width: 100%; height: 1px; cursor: pointer; animation: 0.2s; background: rgba(0,0,0,0.1);
+}
+.dash-rightContainer form input[type=range]::-moz-range-thumb, .dashModal input[type=range]::-moz-range-thumb {
+  border: 0px solid #FFF; height: 21px; width: 21px; border-radius: 50%; background: rgba(0,70,125,1); cursor: pointer; -webkit-appearance: none; margin: -10px 0 0 0;
+}
+.dash-rightContainer form input[type=range]::-ms-track, .dashModal input[type=range]::-ms-track {
+  width: 100%; height: 1px; cursor: pointer; animation: 0.2s; background: rgba(0,0,0,0.1);
+}
+.dash-rightContainer form input[type=range]::-ms-thumb, .dashModal input[type=range]::-ms-thumb {
+  border: 0px solid #FFF; height: 21px; width: 21px; border-radius: 50%; background: rgba(0,70,125,1); cursor: pointer; -webkit-appearance: none; margin: -10px 0 0 0;
+}
+
+.dash-rightContainer form input[type=text], .dash-rightContainer form textarea, .dash-rightContainer form input[type=password], .dash-rightContainer form input[type=email], .dash-rightContainer form select, .dashModal input[type=text], dashModal textarea, .dashModal input[type=password], .dashModal input[type=email], .dashModal select {
+	border: 1px solid rgba(0,0,0,0.1); color: rgba(0,70,125,1); background-color: rgba(255,255,255,0.3); font:14px/14px 'ubuntu'; font-weight: 400; margin: 0; padding: 10px;
+}
+.dash-rightContainer form input[type=text]::placeholder, .dash-rightContainer form textarea::placeholder, .dash-rightContainer form input[type=password]::placeholder, .dash-rightContainer form input[type=email]::placeholder, .dash-rightContainer form select::placeholder, .dashModal input[type=text]::placeholder, .dashModal textarea::placeholder, .dashModal input[type=password]::placeholder, .dashModal input[type=email]::placeholder, .dashModal select::placeholder {
+	color: rgba(0,70,125,0.5);
+}
+.dash-rightContainer form textarea:focus, .dash-rightContainer form select:focus, .dashModal textarea:focus, .dashModal select:focus {
+	background: rgba(255,255,255,0.3); border: 1px solid rgba(0,0,0,0.1); color: rgba(0,70,125,1);
+}
+
+.dash-rightContainer form input[type=submit], .dashModal input[type=submit]  {
+	border: 0; background-color:  rgba(0,70,125,0.8); color: rgba(255,255,255,0.8); font:16px/16px 'ubuntu'; font-weight: 500; margin: 0; padding: 15px 0; width: 120px; border-radius: 0px;
+}
+.dash-rightContainer form input[type=submit]:hover, .dash-rightContainer form input[type=submit]:focus, .dashModal input[type=submit]:hover, .dashModal form input[type=submit]:focus {
+	background-color:  rgba(0,70,125,1); color: rgba(255,255,255,1);
+}
+
+/** DASHBOARD FORMS **/
+
+/** FORM ERRORS **/
+
+.dash-rightContainer form .field_with_errors input[type=text], .dash-rightContainer form .field_with_errors textarea, .dash-rightContainer form .field_with_errors input[type=password], .dash-rightContainer form .field_with_errors input[type=email], .dash-rightContainer form .field_with_errors select, .dashModal .field_with_errors input[type=text], dashModal .field_with_errors textarea, .dashModal .field_with_errors input[type=password], .dashModal .field_with_errors input[type=email], .dashModal .field_with_errors select {
+	border: 1px solid rgba(255,0,0,1)!important; color: rgba(255,0,0,1); background-color: rgba(255,255,255,0.3); font:14px/14px 'ubuntu'; font-weight: 400; margin: 0; padding: 10px;
+}
+
+.form_errorMessage {
+	background-color: rgba(255,0,0,0.1); border: 1px solid rgba(255,0,0,0.5); padding: 10px; margin: 0 0 10px 0; color: rgba(255,0,0,1);
+}
+.form_errorMessage ul {
+	margin: 0 0 0 10px; padding: 0; list-style-type: disc;
+}
+.form_errorMessage ul li {
+	margin: 0; padding: 0;
+}
+
+/** FORM ERRORS **/
+
+/** DASH INFO CONTAINER **/
+
+.infocontainer {
+	width: 100%; margin: 0 0 10px 0;
+}
+.infocontainer:last-child {
+	margin: 0 0 0 0;
+}
+.infocontainer .lkimage {
+	width: calc(50% - 5px); height: 150px; display: flex; background-size: cover!important; justify-content: center; align-items: center; background-position: center!important;
+}
+.infocontainer .lkimage span {
+	display: none;
+}
+.infocontainer .lkimage:hover span {
+	display: flex; background-color: rgba(255,255,255,0.5); width: 100%; height: 100%; color: rgba(0,70,125,1); justify-content: center; align-items: center;
+}
+.infocontainer div:nth-child(1) {
+	margin: 0 0 8px 0!important; font:12px/12px 'ubuntu'!important; font-weight: 400!important;
+}
+.infocontainer div:nth-child(2) {
+ font:14px/14px 'ubuntu'!important; font-weight: 500!important; padding: 0 10px 5px 10px; border-bottom: 1px solid rgba(0,0,0,0.1); color: rgba(0,70,125,1);
+}
+.infocontainer div.removeviewset {
+ padding: 0; border-bottom: 0px solid rgba(0,0,0,0.1);
+}
+
+/** DASH INFO CONTAINER **/
+
+/** Mansory **/
+
+.dashMasonry > div > div {
+	background-color: rgba(0,0,0,0.1); padding: 20px; border-radius: 10px;
+}
+
+.dashMasonry .blueCard {
+	background-color: rgba(0,70,125,0.9); color: #FFF;
+}
+.dashMasonry .blueCard h1, .dashMasonry .blueCard h2, .dashMasonry .blueCard h3, .dashMasonry .blueCard h4, .dashMasonry .blueCard h5, .dashMasonry .blueCard h6 {
+	color: #FFF;
+}
+.dashMasonry .greyCard {
+	background-color: rgba(0,0,0,0.05); color: #000;
+}
+.dashMasonry .greyCard h1, .dashMasonry .greyCard h2, .dashMasonry .greyCard h3, .dashMasonry .greyCard h4, .dashMasonry .greyCard h5, .dashMasonry .greyCard h6 {
+	color: rgba(0,70,125,1);
+}
+.dashMasonry .blackCard {
+	background-color: rgba(0,0,0,0.8); color: #FFF;
+}
+.dashMasonry .blackCard h1, .dashMasonry .blackCard h2, .dashMasonry .blackCard h3, .dashMasonry .blackCard h4, .dashMasonry .blackCard h5, .dashMasonry .blackCard h6 {
+	color: #FFF;
+}
+
+.dashMasonry .cardChart .cardChartContainer {
+	height: 200px;
+}
+.dashMasonry .cardChart .cardBigChartContainer {
+	height: 300px;
+}
+.dashMasonry .cardChart .cardBiggerChartContainer {
+	height: 400px;
+}
+
+.dashMasonry .cardToDo .todoContainer {
+	display: flex; flex-direction: column;
+}
+.dashMasonry .cardToDo .todoContainer label {
+	display: flex; flex-direction: row; align-items: center; padding: 10px 0 10px 10px; font:14px/14px 'ubuntu'!important; font-weight: 400!important; border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+.dashMasonry .cardToDo .todoContainer label:last-child {
+	border-bottom: 0px solid rgba(255,255,255,0.3);
+}
+.dashMasonry .cardToDo .todoContainer label:hover {
+	background-color: rgba(255,255,255,0.1);
+}
+.dashMasonry .cardToDo .todoContainer label input[type=checkbox], .dashMasonry .cardToDo .todoContainer label input[type=radio] {
+	border: 1px solid rgba(255,255,255,0.1); background-color: transparent; width: 22px; height: 22px; display: block; margin: 0 5px 0 0; border-radius: 50%;
+}
+.dashMasonry .cardToDo .todoContainer label input[type=checkbox]:checked, .dashMasonry .cardToDo .todoContainer label input[type=radio]:checked {
+	border: 1px solid  rgba(255,255,255,1); background-color:transparent;
+}
+
+.dashMasonry .cardLinkList .listContainer {
+	display: flex; flex-direction: column;
+}
+.dashMasonry .cardLinkList .listContainer a {
+	font:12px/14px 'ubuntu'!important; font-weight: 500!important; color: rgba(0,70,125,0.5); padding: 10px 5px; border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.dashMasonry .cardLinkList .listContainer a:last-child {
+	border-bottom: 0px solid rgba(0,0,0,0.3);
+}
+.dashMasonry .cardLinkList .listContainer a:hover {
+	background-color: rgba(0,70,125,0.1); color: rgba(0,70,125,1);
+}
+
+.dashMasonry .cardList .listContainer ul {
+	list-style: none; margin: 0; padding: 0;
+}
+.dashMasonry .cardList .listContainer li {
+	font:12px/14px 'ubuntu'!important; font-weight: 400!important; padding: 10px 5px; border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+.dashMasonry .cardList .listContainer li:hover {
+	background-color: rgba(255,255,255,0.6); color: #000;
+}
+.dashMasonry .cardList .listContainer li:last-child {
+	border-bottom: 0px solid rgba(255,255,255,0.5);
+}
+
+.dashMasonry .cardList .listContainerAvatar ul {
+	list-style-type: none; margin: 0; padding: 0;
+}
+.dashMasonry .cardList .listContainerAvatar li {
+ display: flex; justify-content: flex-start; align-items: center; padding: 10px 5px 10px 10px; border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.dashMasonry .cardList .listContainerAvatar li:last-child {
+ border-bottom: 0px solid rgba(0,0,0,0.1);
+}
+.dashMasonry .cardList .listContainerAvatar li .avatar {
+	display: flex; width: 46px; height: 46px; background-size: cover!important; justify-content: center; align-items: center; background-position: center!important; margin: 0 5px 0 0; border-radius: 50%; border:2px solid rgba(0,70,125,1);
+}
+.dashMasonry .cardList .listContainerAvatar li .listItem {
+	width: calc(100% - 55px);
+}
+.dashMasonry .cardList .listContainerAvatar li .listItem div:nth-child(1) {
+	font:12px/14px 'ubuntu'!important; font-weight: 400!important;
+}
+.dashMasonry .cardList .listContainerAvatar li .listItem div:nth-child(2) {
+	font:9px/9px 'ubuntu'!important; font-weight: 400!important; margin: 2px 0 0 0!important; color: rgba(0,0,0,0.8);
+}
+.dashMasonry .cardList .listContainerAvatar li:hover {
+ background-color: rgba(0,70,125,0.1);
+}
+
+/** Mansory **/
+
+/** DASH CONTROL **/
+
+.buttonLine	{
+	display: flex; background-color: transparent; color: rgba(0,0,0,0.5); font:12px/12px 'ubuntu'; font-weight: 400; padding: 0; width: 98px; border-radius: 0px; justify-content: center; align-items: center; border: 1px solid rgba(0,0,0,0.5); height:38px;
+}
+.buttonLine:hover	{
+	border: 1px solid rgba(0,70,125,1); background-color: rgba(0,70,125,1); color: rgba(255,255,255,1);
+}
+.buttonLine:disabled	{
+	display: flex; background-color:  transparent; color: rgba(0,0,0,0.2); font:12px/12px 'ubuntu'; font-weight: 400; padding: 0; width: 98px; border-radius: 0px; justify-content: center; align-items: center; border: 1px solid rgba(0,0,0,0.2); height:38px;
+}
+button.buttonLine {
+	height:40px;
+}
+button.buttonLine:disabled {
+	height:40px;
+}
+
+.buttonSolid	{
+	display: flex; background-color:  rgba(0,70,125,0.8); color: rgba(255,255,255,0.8); font:12px/12px 'ubuntu'; font-weight: 400; padding: 0; width: 100px; border-radius: 0px; justify-content: center; align-items: center; border: 0; height:40px;
+}
+.buttonSolid:hover	{
+	background-color:  rgba(0,70,125,1); color: rgba(255,255,255,1);
+}
+.buttonSolid:disabled	{
+	display: flex; background-color:  rgba(0,0,0,0.2); color: rgba(255,255,255,0.3); font:12px/12px 'ubuntu'; font-weight: 400; padding: 0; width: 100px; border-radius: 0px; justify-content: center; align-items: center; height:40px;
+}
+.buttonSquare	{
+	display: flex; background-color:  rgba(0,70,125,0.8); color: rgba(255,255,255,0.8); font:12px/12px 'ubuntu'; font-weight: 400; padding: 0; width: 40px; height:40px; border-radius: 0px; justify-content: center; align-items: center; border:0;
+}
+.buttonSquare:hover	{
+	background-color:  rgba(0,70,125,1); color: rgba(255,255,255,1);
+}
+.buttonSquare:disabled	{
+	display: flex; background-color:  rgba(0,0,0,0.2); color: rgba(255,255,255,0.3); font:12px/12px 'ubuntu'; font-weight: 400; padding:  0; width: 40px; height:40px; border-radius: 0px; justify-content: center; align-items: center;
+}
+
+/** START OF DASHBOARD NESTED LIST SELECTOR **/
+
+.nestedlistselector	{
+	display: block; width: 100%;
+}
+.nestedlistselector ul {
+	list-style-type: none; margin: 0; padding: 0;
+}
+.nestedlistselector .selectoritems {
+	display: flex; align-items: center; justify-content: space-between; width: 100%;
+}
+.nestedlistselector .selectoritems:hover {
+	background-color: #00467d; color: #FFF;
+}
+.nestedlistselector .selectoritems > .selectoritem_label {
+	width: calc(100% - 363px); padding: 0px 10px; font:12px/12px 'ubuntu'; font-weight: 400; min-height: 24px;
+}
+.nestedlistselector .selectoritems > .selectoritem_status {
+	display: flex; margin: 0; width:90px; min-height: 24px; align-items: center; justify-content: center; border-left: 1px solid rgba(255,255,255,1); font:12px/12px 'ubuntu'; font-weight: 400;
+}
+.nestedlistselector .selectoritems > .selectoritem_status > input {
+	margin: 0!important; padding: 0!important;
+}
+.nestedlistselector .selectoritems > .selectoritem_label_a {
+	width: auto; padding: 0px 10px; font:12px/12px 'ubuntu'; font-weight: 400; min-height: 24px; display: flex; align-items: center;
+}
+.nestedlistselector .selectoritems > .selectoritem_options {
+	width: auto; padding: 0px; font:12px/12px 'ubuntu'; font-weight: 400; min-height: 24px; display: flex; align-items: center;
+}
+.nestedlistselector .selectoritems > .selectoritem_options > .selectoritem_options_i30 {
+	width: 30px; padding: 0px; font:12px/12px 'ubuntu'; font-weight: 400; min-height: 24px; display: flex; align-items: center; justify-content: center;
+}
+.nestedlistselector .selectoritems > .selectoritem_options > .selectoritem_options_i80 {
+	width: 80px; padding: 0px; font:12px/12px 'ubuntu'; font-weight: 400; min-height: 24px; display: flex; align-items: center; justify-content: center;
+}
+.nestedlistselector .selectoritems > .selectoritem_options > .selectoritem_options_i100 {
+	width: 100px; padding: 0px; font:12px/12px 'ubuntu'; font-weight: 400; min-height: 24px; display: flex; align-items: center; justify-content: center;
+}
+.nestedlistselector .selectoritems > .selectoritem_options > .selectoritem_options_i120 {
+	width: 120px; padding: 0px; font:12px/12px 'ubuntu'; font-weight: 400; min-height: 24px; display: flex; align-items: center; justify-content: center;
+}
+
+
+
+/** 1st level **/
+.nestedlistselector > ul {
+	margin: 0 0 0 0; border: 1px solid rgba(0,0,0,0.10);
+}
+.nestedlistselector > ul > li > .selectoritems {
+	background-color: #00467d; color: #fff;
+}
+
+/** 2nd Level to Infinity and Beyond **/
+.nestedlistselector > ul > li ul {
+	margin: 0 0 0 50px; border-left: 1px solid rgba(0,0,0,0.10);
+}
+.nestedlistselector > ul > li ul li {
+	border-top: 1px solid rgba(0,0,0,0.10);
+}
+.nestedlistselector > ul > li ul li:hover {
+	background-color: rgba(0,0,0,0.05);
+}
+
+
+.nestedcell {
+	display: flex; justify-content: flex-start; align-items:center; height: 100%; width: 100%;
+}
+.tabletab {
+	min-width: 20px!important; display: flex; justify-content: flex-start; align-items: center; margin: 0 0 0 0; padding: 0 0 0 0; color: rgba(0,0,0,0.4);
+}
+
+/** END OF DASHBOARD NESTED LIST SELECTOR **/
+
+.toptablefilterform {
+	display: flex; justify-content: flex-start; align-items: flex-end; flex-wrap: wrap;
+}
+.toptablefilterform .uk-margin {
+	margin: 0 10px 0 0!important; width: 40%;
+}
+
+/** DASH CONTROL **/
+
+.right			{ text-align: right !important; }
+.uk-label-draft		{ background-color: #808080; color: #fff; }
+.uk-label-normal	{ background-color: #1e87f0; color: #fff; }
+
+@media only screen and (max-width: 768px) {
+
+	.dash .dash-leftContainer {
+		display: none; width: calc(100% - 40px); padding: 0 20px;
+		background: linear-gradient(22.5deg, rgba(67, 67, 67, 0.02) 0%, rgba(67, 67, 67, 0.02) 29%,rgba(47, 47, 47, 0.02) 29%, rgba(47, 47, 47, 0.02) 37%,rgba(23, 23, 23, 0.02) 37%, rgba(23, 23, 23, 0.02) 55%,rgba(182, 182, 182, 0.02) 55%, rgba(182, 182, 182, 0.02) 69%,rgba(27, 27, 27, 0.02) 69%, rgba(27, 27, 27, 0.02) 71%,rgba(250, 250, 250, 0.02) 71%, rgba(250, 250, 250, 0.02) 100%),linear-gradient(67.5deg, rgba(117, 117, 117, 0.02) 0%, rgba(117, 117, 117, 0.02) 14%,rgba(199, 199, 199, 0.02) 14%, rgba(199, 199, 199, 0.02) 40%,rgba(33, 33, 33, 0.02) 40%, rgba(33, 33, 33, 0.02) 48%,rgba(135, 135, 135, 0.02) 48%, rgba(135, 135, 135, 0.02) 60%,rgba(148, 148, 148, 0.02) 60%, rgba(148, 148, 148, 0.02) 95%,rgba(53, 53, 53, 0.02) 95%, rgba(53, 53, 53, 0.02) 100%),linear-gradient(135deg, rgba(190, 190, 190, 0.02) 0%, rgba(190, 190, 190, 0.02) 6%,rgba(251, 251, 251, 0.02) 6%, rgba(251, 251, 251, 0.02) 18%,rgba(2, 2, 2, 0.02) 18%, rgba(2, 2, 2, 0.02) 27%,rgba(253, 253, 253, 0.02) 27%, rgba(253, 253, 253, 0.02) 49%,rgba(128, 128, 128, 0.02) 49%, rgba(128, 128, 128, 0.02) 76%,rgba(150, 150, 150, 0.02) 76%, rgba(150, 150, 150, 0.02) 100%),linear-gradient(90deg, #FFF,#FFF);
+	}
+
+	.dash_offcanvas {
+		width: calc(100% - 40px);
+	}
+
+	.dash .dash-leftContainer .dash-profileContainer {
+		border-radius: 60px;
+	}
+
+	.dash .dash-rightContainer {
+		width: calc(100% - 0px)!important; margin: 0; padding: 0px;
+	}
+	.dash-rightContainer .flexGridContainer .fixedtop {
+		position: fixed; width: calc(100% - 40px);
+	}
+	.dash-rightContainer .flexGridContainer .top1 {
+		height: 181px;
+	}
+	.dash-rightContainer .flexGridContainer .top2 {
+		height:60px; margin:181px 0 0 0;
+	}
+	.dash-contentContainer {
+		margin: 0 0 0 0; height: calc(100vh - 241px);
+	}
+	.dash .dash-leftContainer .dash_nav {
+		width: calc(100% - 0px); padding: 0 0px 0 0px;
+	}
+
+
+
+	.searchbarContainer {
+		flex-direction: column-reverse; justify-content:space-between; align-items: center; width: calc(100% - 40px); height: auto; padding: 25px 20px 10px 20px;
+	}
+	.searchbarContainer .topRightNavContainer {
+		display: flex; justify-content: space-between; width: 100%; margin: 0 0 10px 0;
+	}
+	.searchbarContainer .topRightNavContainer .hamburger {
+		margin: 0;
+	}
+	.searchbarContainer form {
+		width: calc(100% - 0px);
+	}
+	.searchbarContainer .logo {
+		height: 50px; margin: 0 0 10px 0;
+	}
+
+	.toptablefilterform .uk-margin {
+		margin: 0 0 10px 0!important; width: 100%;
+	}
+
+}
