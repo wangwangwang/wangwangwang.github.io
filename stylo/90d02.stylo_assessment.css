@@ -312,7 +312,12 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff6600",endCo
 .asses_thankyou .asses_thankyou_item02 span {
 	font: 16px/16px 'ubuntu'!important; font-weight: 500!important; color: #FFF;
 }
-
+.asses_thankyou .asses_thankyou_item02 a {
+	font: 16px/16px 'ubuntu'!important; font-weight: 400!important; color: rgba(255,255,255, 0.9);
+}
+.asses_thankyou .asses_thankyou_item02 a:hover {
+	color: #FFF;
+}
 
 @media only screen and (max-width: 768px) {
 	.cyco_assessment .languageListContainer {
