@@ -36,6 +36,10 @@ h6	{
 	font:14px/14px 'ubuntu'!important; font-weight: 500!important; margin: 0 0 10px 0;
 }
 
+.smalltext {
+	font:10px/10px 'ubuntu'!important; font-weight: 300!important; margin: 0 0 3px 0;
+}
+
 .colorCavlentBlue {
  color: rgba(0,70,125,1.0);
 }

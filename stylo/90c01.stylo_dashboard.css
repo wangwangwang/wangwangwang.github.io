@@ -18,7 +18,7 @@
 	display: flex; flex-direction: row; justify-content: flex-start; align-items: center; width: calc(100% - 15px); padding: 10px 5px 10px 10px; background-color: rgba(0,70,125,0.1); border-radius: 0px 60px 60px 0px;
 }
 .dash .dash-leftContainer .dash-profileContainer .dash_avatar {
-	display: flex; width: 38px; height: 38px; margin: 0 5px 0 0; border-radius: 50%; background-size: cover!important; justify-content: center; align-items: center; background-position: center!important; border: 2px solid rgba(0,70,125,1);
+	display: flex; width: 38px; height: 38px; margin: 0 5px 0 0; border-radius: 50%; background-size: cover!important; justify-content: center; align-items: center; background-position: center!important; border: 2px solid rgba(0,70,125,1); font:20px/20px 'ubuntu'; font-weight: 700; color: rgba(0,70,125,1);
 }
 .dash .dash-leftContainer .dash-profileContainer .logout_container {
 	display: flex; width: 40px; height: 40px; justify-content: flex-end; align-items: center;
@@ -197,6 +197,27 @@
 }
 
 /** DASH CONTENT CONTAINER **/
+
+/** TAB LOAD **/
+
+.dash-contentContainer .tabLoadNav {
+	width: 100%; display: flex; justify-content: flex-start; align-items: flex-end; padding: 0; border-bottom: 1px solid rgba(0,0,0,0.1); flex-wrap: wrap;
+}
+.dash-contentContainer .tabLoadNav a {
+	display: flex; justify-content: center; align-items: center; width: auto; height: 25px; border: 1px solid rgba(0,0,0,0.1); padding: 0 5px; margin: 0 3px 3px 0; font:12px/12px 'ubuntu'; font-weight: 400; color: rgba(0,0,0,0.5);
+}
+.dash-contentContainer .tabLoadNav a:hover, .dash-contentContainer .tabLoadNav .active {
+	color: #FFF; background-color: rgba(0,70,125,1); border: 1px solid rgba(0,70,125,1);
+}
+
+/** TAB LOAD **/
+
+.buttonContainer .uk-label {
+	color: rgba(255,255,255,0.8); padding: 5px 10px; font:12px/12px 'ubuntu'; font-weight: 500; text-transform: none; margin: 0 0 3px 0;
+}
+.buttonContainer .uk-label:hover {
+	color: rgba(255,255,255,1);
+}
 
 /** DASHBOARD FORMS **/
 

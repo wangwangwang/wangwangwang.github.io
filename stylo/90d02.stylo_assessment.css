@@ -45,6 +45,7 @@
 }
 
 
+
 .cyco_assessment h2 {
 	font:26px/30px 'ubuntu'!important; font-weight: 300!important; margin: 0 0 10px 0; text-align: center; color: #FFF!important;
 }
@@ -318,6 +319,55 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff6600",endCo
 .asses_thankyou .asses_thankyou_item02 a:hover {
 	color: #FFF;
 }
+
+/** TOP KARIR **/
+
+#topkarir {
+	display: flex; flex-direction: column; justify-content: flex-start; align-items: center; width: 100vw; height: 100vh; color: #FFF!important; background: #d91b5c;
+}
+
+#topkarir .top_container {
+	width: calc(100% - 40px); height: 150px; display: flex; justify-content: center; align-items: center; padding: 0 20px; flex-direction: column;
+}
+#topkarir .mid_container {
+	width: calc(100% - 40px); height: calc(100vh - 170px); display: block; justify-content: flex-start; align-items: flex-start; padding: 0px 20px 20px 20px; overflow-x: hidden; overflow-y: auto;
+}
+
+#topkarir .languageListContainer .languageListItem {
+	color: rgba(255,255,255,0.7);
+}
+#topkarir .languageListContainer .languageListItem:hover {
+	color: #FFF; background-color: rgba(255,255,255,0.3);
+}
+#topkarir .top_container .top_logo {
+	display: block; height: 50px;
+}
+#topkarir .top_container .sub_logo {
+	display: flex; margin: 5px 0 0 0; flex-direction: column; align-items: center;justify-content: center;
+}
+#topkarir .top_container .sub_logo span {
+	font:6px/6px 'ubuntu'; font-weight: 500; text-align: center;
+}
+#topkarir .top_container .sub_logo a img {
+	display: block; height: 32px; margin: 2px 0 0 0;
+}
+
+#topkarir ::-webkit-scrollbar-track {
+	background: rgba(255,255,255,0.1)!important;
+}
+#topkarir ::-webkit-scrollbar-thumb {
+	background: rgba(255,255,255,1)!important;
+}
+#topkarir .mid_container form input[type=submit] {
+	border: 0; background-color:  rgba(255,255,255,0.8); color: rgba(0,0,0,0.6); font:16px/16px 'ubuntu'; font-weight: 500; margin: 0; padding: 15px 0; width: 120px; border-radius: 0px;
+}
+#topkarir .mid_container form input[type=submit]:hover {
+	background-color:  rgba(255,255,255,1); color: #d91b5c;
+}
+#topkarir .mid_container .tandcform label input[type=checkbox]:checked {
+	border: 1px solid  rgba(255,255,255,1); background-color:#d91b5c;
+}
+
 
 @media only screen and (max-width: 768px) {
 	.cyco_assessment .languageListContainer {
