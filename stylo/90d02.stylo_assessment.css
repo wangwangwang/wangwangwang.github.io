@@ -97,13 +97,13 @@
 	font:12px/12px 'ubuntu'!important; font-weight: 300!important; margin: 0 0 0 0; color: rgba(255,255,255,1); display: block;
 }
 
-.cyco_assessment .mid_container form input[type=text], .cyco_assessment .mid_container form input[type=Email], .cyco_assessment .mid_container form input[type=tel], .cyco_assessment .mid_container form input[type=date] {
+.cyco_assessment .mid_container form input[type=text], .cyco_assessment .mid_container form input[type=Email], .cyco_assessment .mid_container form input[type=tel], .cyco_assessment .mid_container form input[type=date], .cyco_assessment .mid_container form input[type=password] {
 	border: 0px; border-bottom: 1px solid rgba(255,255,255,0.5); color: rgba(255,255,255,1); background-color: rgba(255,255,255,0); font:16px/16px 'ubuntu'; font-weight: 400; margin: 0 0 20px 0; padding: 0px 10px; height: 40px;
 }
-.cyco_assessment .mid_container form input[type=text]:-webkit-autofill, .cyco_assessment .mid_container form input[type=Email]:-webkit-autofill, .cyco_assessment .mid_container form input[type=tel]:-webkit-autofill, .cyco_assessment .mid_container form input[type=date]:-webkit-autofill {
+.cyco_assessment .mid_container form input[type=text]:-webkit-autofill, .cyco_assessment .mid_container form input[type=Email]:-webkit-autofill, .cyco_assessment .mid_container form input[type=tel]:-webkit-autofill, .cyco_assessment .mid_container form input[type=date]:-webkit-autofill, .cyco_assessment .mid_container form input[type=password]:-webkit-autofill {
 	border: 0px; border-bottom: 1px solid rgba(255,255,255,0.5); color: rgba(255,255,255,1); background-color: rgba(255,255,255,0); font:16px/16px 'ubuntu'; font-weight: 400; margin: 0 0 20px 0; padding: 0px 10px; height: 40px;
 }
-.cyco_assessment .mid_container form input[type=text]::placeholder, .cyco_assessment .mid_container form input[type=Email]::placeholder, .cyco_assessment .mid_container form input[type=tel]::placeholder {
+.cyco_assessment .mid_container form input[type=text]::placeholder, .cyco_assessment .mid_container form input[type=Email]::placeholder, .cyco_assessment .mid_container form input[type=tel]::placeholder, .cyco_assessment .mid_container form input[type=password]::placeholder {
 	color: rgba(255,255,255,0.3);
 }
 
