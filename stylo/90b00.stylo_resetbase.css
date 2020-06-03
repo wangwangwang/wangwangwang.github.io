@@ -39,6 +39,9 @@ h6	{
 .smalltext {
 	font:10px/10px 'ubuntu'!important; font-weight: 300!important; margin: 0 0 3px 0;
 }
+.bigtext {
+	font:14px/14px 'ubuntu'!important; font-weight: 500!important; margin: 0 0 3px 0;
+}
 
 .colorCavlentBlue {
  color: rgba(0,70,125,1.0);
@@ -128,10 +131,10 @@ fieldset {
 	justify-content: center; align-items: center;
 }
 .flexjustcenter {
-	justify-content: : center;
+	justify-content: center;
 }
 .flexalignitemcenter {
-	align-items: : : center;
+	align-items: center;
 }
 .flex_100p_container {
 	display: flex; position: absolute; width: 100vw; height: 100vh;
@@ -245,7 +248,6 @@ fieldset {
 	margin: 0 0 0 0;
 }
 
-
 @media only screen and (max-width: 768px) {
 
 	.mobShowFlex {
@@ -270,6 +272,4 @@ fieldset {
 	.flexGridContainer {
 		flex-direction: column;
 	}
-
-
 }

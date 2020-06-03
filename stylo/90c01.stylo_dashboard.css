@@ -273,10 +273,10 @@
   border: 0px solid #FFF; height: 21px; width: 21px; border-radius: 50%; background: rgba(0,70,125,1); cursor: pointer; -webkit-appearance: none; margin: -10px 0 0 0;
 }
 
-.dash-rightContainer form input[type=text], .dash-rightContainer form textarea, .dash-rightContainer form input[type=password], .dash-rightContainer form input[type=email], .dash-rightContainer form select, .dashModal input[type=text], dashModal textarea, .dashModal input[type=password], .dashModal input[type=email], .dashModal select {
+.dash-rightContainer form input[type=text], .dash-rightContainer form input[type=number], .dash-rightContainer form textarea, .dash-rightContainer form input[type=password], .dash-rightContainer form input[type=email], .dash-rightContainer form select, .dashModal input[type=text], .dashModal input[type=number], dashModal textarea, .dashModal input[type=password], .dashModal input[type=email], .dashModal select {
 	border: 1px solid rgba(0,0,0,0.1); color: rgba(0,70,125,1); background-color: rgba(255,255,255,0.3); font:14px/14px 'ubuntu'; font-weight: 400; margin: 0; padding: 10px;
 }
-.dash-rightContainer form input[type=text]::placeholder, .dash-rightContainer form textarea::placeholder, .dash-rightContainer form input[type=password]::placeholder, .dash-rightContainer form input[type=email]::placeholder, .dash-rightContainer form select::placeholder, .dashModal input[type=text]::placeholder, .dashModal textarea::placeholder, .dashModal input[type=password]::placeholder, .dashModal input[type=email]::placeholder, .dashModal select::placeholder {
+.dash-rightContainer form input[type=text]::placeholder, .dash-rightContainer form input[type=number]::placeholder, .dash-rightContainer form textarea::placeholder, .dash-rightContainer form input[type=password]::placeholder, .dash-rightContainer form input[type=email]::placeholder, .dash-rightContainer form select::placeholder, .dashModal input[type=text]::placeholder, .dashModal input[type=number]::placeholder, .dashModal textarea::placeholder, .dashModal input[type=password]::placeholder, .dashModal input[type=email]::placeholder, .dashModal select::placeholder {
 	color: rgba(0,70,125,0.5);
 }
 .dash-rightContainer form textarea:focus, .dash-rightContainer form select:focus, .dashModal textarea:focus, .dashModal select:focus {
@@ -482,6 +482,18 @@ button.buttonLine:disabled {
 .buttonSquare:disabled	{
 	display: flex; background-color:  rgba(0,0,0,0.2); color: rgba(255,255,255,0.3); font:12px/12px 'ubuntu'; font-weight: 400; padding:  0; width: 40px; height:40px; border-radius: 0px; justify-content: center; align-items: center;
 }
+.buttonSolid-danger {
+	background-color: rgba(194, 0, 0, 1)!important;
+}
+.buttonSolid-success {
+	background-color: rgba(1, 146, 49, 1)!important;
+}
+.buttonSolid-danger:hover {
+	background-color: rgba(117, 0, 0, 1)!important;
+}
+.buttonSolid-success:hover {
+	background-color: rgba(0, 90, 30, 1)!important;
+}
 
 /** START OF DASHBOARD NESTED LIST SELECTOR **/
 
@@ -565,9 +577,49 @@ button.buttonLine:disabled {
 
 /** DASH CONTROL **/
 
-.right			{ text-align: right !important; }
-.uk-label-draft		{ background-color: #808080; color: #fff; }
-.uk-label-normal	{ background-color: #1e87f0; color: #fff; }
+.right {
+	text-align: right !important;
+}
+.uk-label-draft {
+	background-color: #808080; color: #fff;
+}
+.uk-label-normal {
+	background-color: #1e87f0; color: #fff;
+}
+.uk-label-more {
+	background-color: #8e00aa; color: #fff;
+}
+
+.radioButtonContainer {
+	display: flex; flex-wrap: wrap; justify-content: flex-start;
+}
+.radioButtonContainer .upgradebutton {
+	margin: 0!important; width: calc((100% / 3) - (20px / 3)); margin: 0 10px 10px 0!important;
+}
+.radioButtonContainer .upgradebutton:nth-child(3n+3) {
+	margin: 0 0 10px 0!important;
+}
+.radioButtonContainer .purchasebutton {
+	margin: 0!important; width: calc((100% / 2) - (10px / 2)); margin: 0 10px 10px 0!important;
+}
+.radioButtonContainer .purchasebutton:nth-child(2n+2) {
+	margin: 0 0 10px 0!important;
+}
+.radioButtonContainer input {
+	display: none!important;
+}
+.radioButtonContainer .radioButtonStyle {
+	display: flex; flex-direction: column; width: calc(100% - 22px); height: 80px; padding: 10px; justify-content: center; align-items: center; font:16px/16px 'ubuntu'!important; font-weight: 400!important; margin: 0 0 5px 0; color: rgba(0,70,125,1)!important; border: 1px solid rgba(0,70,125,1); border-radius: 0px; cursor: pointer ; text-align: center;
+}
+.radioButtonContainer input:checked + .radioButtonStyle, .radioButtonStyle:hover {
+	border: 1px solid rgba(0,70,125,1); background-color: rgba(0,70,125,1); color: rgba(255,255,255,1)!important;
+}
+.radioButtonContainer .radioButtonStyle .pdfsamplelink {
+	font:10px/10px 'ubuntu'!important; font-weight: 300!important; color:rgba(255,255,255,1)!important; padding: 2px 5px; background-color: rgba(0,70,125,1); margin: 10px 0px;
+}
+.radioButtonContainer input:checked + .radioButtonStyle .pdfsamplelink, .radioButtonStyle:hover .pdfsamplelink {
+	background-color: rgba(255,255,255,1)!important; color: rgba(0,70,125,1)!important;
+}
 
 @media only screen and (max-width: 768px) {
 
