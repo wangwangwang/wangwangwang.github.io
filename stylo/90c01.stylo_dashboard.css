@@ -219,6 +219,50 @@
 	color: rgba(255,255,255,1);
 }
 
+.buttonContainer {
+	display: flex;
+}
+.buttonContainer .buttonItem {
+	display: flex; margin: 0 4px 0 0;
+}
+
+.buttonContainer .buttonItem div:nth-child(1) {
+	display: flex; background-color: rgba(0,0,0,0.5); justify-content: center; align-items: center; width: 22px; height: 22px;
+}
+.buttonContainer .buttonItem div:nth-child(1) img {
+	width: 16px;
+}
+.buttonContainer .buttonItem div:nth-child(2) {
+	display: flex; justify-content: flex-start; align-items: center; font:12px/12px 'ubuntu'; font-weight: 500; color: #fff; padding: 0px 5px;
+}
+
+.buttonContainer .buttonItem:hover div:nth-child(1) {
+	background-color: rgba(255,255,255,0.7);
+}
+.buttonContainer .buttonItem:hover div:nth-child(1) img {
+	filter: invert(100%);
+}
+.buttonContainer .buttonItem:hover div:nth-child(2) {
+	color: #000; background-color: rgba(255,255,255,0.5);
+}
+
+.bigTextIconLabel {
+	display: flex; justify-content: center; align-items: center; margin: 0 0 0 4px; width: 16px; height: 16px; border-radius: 50%;
+}
+.bigTextIconLabel.Lock {
+	background-color: rgba(0,0,0,0.5);
+}
+.bigTextIconLabel.Unlock {
+	background-color: rgba(0,150,0,1);
+}
+.bigTextIconLabel img {
+	width: 12px;
+}
+
+.iconSearch {
+	display: flex; width: 40px!important; height: 40px!important;background-image: url(https://wangwangwang.github.io/svg/icon/search-white-18dp.svg); background-size: 25px; background-repeat: no-repeat; border: none; text-indent: -999em; background-position: center;
+}
+
 /** DASHBOARD FORMS **/
 
 .dash-rightContainer form label, .dashModal label {
@@ -569,7 +613,7 @@ button.buttonLine:disabled {
 /** END OF DASHBOARD NESTED LIST SELECTOR **/
 
 .toptablefilterform {
-	display: flex; justify-content: flex-start; align-items: flex-end; flex-wrap: wrap;
+	display: flex; justify-content: center; align-items: center; flex-wrap: nowrap;
 }
 .toptablefilterform .uk-margin {
 	margin: 0 10px 0 0!important; width: 40%;

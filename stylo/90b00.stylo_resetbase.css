@@ -40,7 +40,7 @@ h6	{
 	font:10px/10px 'ubuntu'!important; font-weight: 300!important; margin: 0 0 3px 0;
 }
 .bigtext {
-	font:14px/14px 'ubuntu'!important; font-weight: 500!important; margin: 0 0 3px 0;
+	font:14px/14px 'ubuntu'!important; font-weight: 500!important; margin: 0 0 3px 0; display: flex; align-items: center;
 }
 
 .colorCavlentBlue {
