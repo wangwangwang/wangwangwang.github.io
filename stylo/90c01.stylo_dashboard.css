@@ -262,6 +262,9 @@
 .iconSearch {
 	display: flex; width: 40px!important; height: 40px!important;background-image: url(https://wangwangwang.github.io/svg/icon/search-white-18dp.svg); background-size: 25px; background-repeat: no-repeat; border: none; text-indent: -999em; background-position: center;
 }
+.iconFilter {
+	display: flex; width: 40px!important; height: 40px!important;background-image: url(https://wangwangwang.github.io/svg/icon/filter_alt-white-18dp.svg); background-size: 25px; background-repeat: no-repeat; border: none; text-indent: -999em; background-position: center;
+}
 
 /** DASHBOARD FORMS **/
 
@@ -328,7 +331,7 @@
 }
 
 .dash-rightContainer form input[type=submit], .dashModal input[type=submit]  {
-	border: 0; background-color:  rgba(0,70,125,0.8); color: rgba(255,255,255,0.8); font:16px/16px 'ubuntu'; font-weight: 500; margin: 0; padding: 15px 0; width: 120px; border-radius: 0px;
+	border: 0; background-color:  rgba(0,70,125,0.8); color: rgba(255,255,255,0.8); font:14px/14px 'ubuntu'; font-weight: 500; margin: 0; padding: 13px 15px; width: 120px; border-radius: 0px;
 }
 .dash-rightContainer form input[type=submit]:hover, .dash-rightContainer form input[type=submit]:focus, .dashModal input[type=submit]:hover, .dashModal form input[type=submit]:focus {
 	background-color:  rgba(0,70,125,1); color: rgba(255,255,255,1);
@@ -613,10 +616,14 @@ button.buttonLine:disabled {
 /** END OF DASHBOARD NESTED LIST SELECTOR **/
 
 .toptablefilterform {
-	display: flex; justify-content: center; align-items: center; flex-wrap: nowrap;
+	display: flex; justify-content: flex-start; align-items: flex-end; flex-wrap: nowrap;
 }
 .toptablefilterform .uk-margin {
-	margin: 0 10px 0 0!important; width: 40%;
+	margin: 0 10px 0 0!important; width: 100%;
+}
+
+.toptablefilterform .iconFilter {
+	min-width: 40px!important; height: 40px!important; display: block;
 }
 
 /** DASH CONTROL **/
@@ -718,7 +725,7 @@ button.buttonLine:disabled {
 	}
 
 	.toptablefilterform .uk-margin {
-		margin: 0 0 10px 0!important; width: 100%;
+		margin: 0 10px 0 0!important; width: 100%;
 	}
 
 }
