@@ -622,9 +622,6 @@ button.buttonLine:disabled {
 	margin: 0 10px 0 0!important; width: 100%;
 }
 
-.toptablefilterform .iconFilter {
-	min-width: 40px!important; height: 40px!important; display: block;
-}
 
 /** DASH CONTROL **/
 
