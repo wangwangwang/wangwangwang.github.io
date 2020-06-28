@@ -1,5 +1,6 @@
 /** Google Fonts **/
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 html {
 	font-family: "ubuntu"; font-size: 12px;
@@ -42,13 +43,11 @@ h6	{
 .bigtext {
 	font:14px/14px 'ubuntu'!important; font-weight: 500!important; margin: 0 0 3px 0; display: flex; align-items: center;
 }
+.textBold {
+	font-weight: 700!important;
+}
 
-.colorCavlentBlue {
- color: rgba(0,70,125,1.0);
-}
-.colorWhite {
-	color: #FFF!important;
-}
+
 
 .sep1				{ height: 1px; }
 .sep2				{ height: 2px; }
@@ -71,6 +70,7 @@ h6	{
 .sep1cm			{ height: 10mm; }
 .sep2cm			{ height: 20mm; }
 .sep3cm			{ height: 30mm; }
+.sep4cm			{ height: 40mm; }
 .sep5cm			{ height: 50mm; }
 .sep10cm		{ height: 100mm; }
 
@@ -86,6 +86,20 @@ h6	{
 .w300				{ width: 300px; }
 .w500				{ width: 500px; }
 
+.w30mm			{ width: 30mm; }
+.w40mm			{ width: 40mm; }
+.w50mm			{ width: 50mm; }
+.w60mm			{ width: 60mm; }
+.w70mm			{ width: 70mm; }
+
+.w15cm			{ width: 15cm; }
+.w16cm			{ width: 16cm; }
+.w17cm			{ width: 17cm; }
+
+.w100p			{ width: 100%; }
+
+
+
 .pad1cm			{ padding: 10mm 10mm 0 10mm; }
 .pad10			{ padding: 10px; }
 .pad20			{ padding: 20px; }
@@ -100,6 +114,10 @@ h6	{
 	background: rgba(0,70,125,1.0)!important;
 }
 
+.invertImage {
+	filter: invert(1)!important;
+}
+
 .mobShowFlex, .mobShowBlock {
 	display: none!important;
 }
@@ -112,6 +130,31 @@ h6	{
 
 fieldset {
 	margin: 0; padding: 0; border: 0;
+}
+
+.textLeft {
+	text-align: left;
+}
+.textRight {
+	text-align: right;
+}
+.textCenter {
+	text-align: center;
+}
+.textJustify {
+	text-align: justify;
+}
+.textBlue, .colorCavlentBlue {
+	color: rgba(0,70,125,1.0)!important;
+}
+.colorWhite {
+	color: #FFF!important;
+}
+.colorGrey {
+	color: rgba(0,0,0,0.2)!important;
+}
+.colorRed {
+	color: #b80f0a!important;
 }
 
 .column-break {
@@ -139,6 +182,10 @@ fieldset {
 .flex_100p_container {
 	display: flex; position: absolute; width: 100vw; height: 100vh;
 }
+.flex_wrapOK {
+	flex-wrap: wrap;
+}
+
 
 .background_container {
 	display: block; position: fixed; z-index: 0; width: 100vw; height: 100vh;
@@ -163,6 +210,20 @@ fieldset {
 .backcolor-greyt10 {
 	background-color: rgba(0,0,0,0.1);
 }
+
+.backcolor-grey06 {
+	background-color: rgba(0,0,0,0.06)!important;
+}
+.backcolor-grey08 {
+	background-color: rgba(0,0,0,0.08)!important;
+}
+.backcolor-white010 {
+	background-color: rgba(255,255,255,0.1)!important;
+}
+.backcolor-white050 {
+	background-color: rgba(255,255,255,0.5)!important;
+}
+
 
 .animated_backcolor_blue {
 	background: linear-gradient(227deg, rgba(0,70,125,0.1), rgba(0,70,125,0.2), rgba(0,70,125,0.3));
@@ -239,6 +300,9 @@ fieldset {
 }
 .flexGridContainer .fg3col {
 	width: calc(100% / 3);
+}
+.flexGridContainer .fg50p5mm {
+	width: calc((100% / 2) - 2.5mm);
 }
 
 .flexchildmarginright5px *	{

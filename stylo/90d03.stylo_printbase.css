@@ -4,134 +4,934 @@ body {
 	overflow:auto!important;
 }
 
-.report_page
-				{ display: block; width: 210mm!important; height: 297mm!important; background-color: #FFF!important; margin: 0mm auto 10mm auto; overflow: hidden!important; padding: 0; border: 1px solid rgba(0,0,0,0.10);  }
-.report_page:last-child
-				{ margin: 10mm auto; }
-.report_page > .report_page_cover
-				{ display: flex; width: 100%; height: 297mm; margin: 0; flex-direction: column; align-items: center; }
+.report_page {
+	display: block; width: 210mm!important; height: 297mm!important; background-color: #FFF!important; margin: 0mm auto 10mm auto; overflow: hidden!important; padding: 0; border: 0px solid rgba(0,0,0,0.10); box-shadow: 0px 0px 3px rgba(0,0,0,0.20); background-size: cover!important; background-position: center middle; background-repeat: no-repeat;
+}
+.report_page:last-child {
+	margin: 10mm auto;
+}
+
+.report_page h1 {
+	font:40pt/40pt 'Poppins'!important; font-weight: 700!important;
+}
+.report_page h2 {
+	font:35pt/35pt 'Poppins'!important; font-weight: 700!important;
+}
+.report_page h3 {
+	font:30pt/30pt 'Poppins'!important; font-weight: 700!important;
+}
+.report_page h4 {
+	font:25pt/25pt 'Poppins'!important; font-weight: 700!important;
+}
+.report_page h5 {
+	font:20pt/20pt 'Poppins'!important; font-weight: 700!important;
+}
+.report_page h6 {
+	font:16pt/16pt 'Poppins'!important; font-weight: 700!important; 
+}
+
+.report_page h1, .report_page h2, .report_page h3, .report_page h4, .report_page h5, .report_page h6 {
+	display: flex; align-items: center; margin: 0 0 3mm 0; color: rgba(0,70,125,1)!important;
+}
+
+.report_page h5 .score {
+	font:20pt/20pt 'Ubuntu'!important; font-weight: 700!important; display: flex; align-items: center; justify-content: center; width: 12mm; height: 12mm; border-radius: 0%; margin: 0 2mm 0 0;
+}
+
+.report_page .textBold {
+	font-weight: 600!important;
+}
+
+.report_page > .report_page_cover {
+	display: flex; width: 100%; height: 297mm; margin: 0; flex-direction: column; align-items: center;
+}
+
+.report_page.coverBackground {
+	background-image: radial-gradient(circle at 40% 91%, rgba(251, 251, 251,0.04) 0%, rgba(251, 251, 251,0.04) 50%,rgba(229, 229, 229,0.04) 50%, rgba(229, 229, 229,0.04) 100%),radial-gradient(circle at 66% 97%, rgba(36, 36, 36,0.04) 0%, rgba(36, 36, 36,0.04) 50%,rgba(46, 46, 46,0.04) 50%, rgba(46, 46, 46,0.04) 100%),radial-gradient(circle at 86% 7%, rgba(40, 40, 40,0.04) 0%, rgba(40, 40, 40,0.04) 50%,rgba(200, 200, 200,0.04) 50%, rgba(200, 200, 200,0.04) 100%),radial-gradient(circle at 15% 16%, rgba(99, 99, 99,0.04) 0%, rgba(99, 99, 99,0.04) 50%,rgba(45, 45, 45,0.04) 50%, rgba(45, 45, 45,0.04) 100%),radial-gradient(circle at 75% 99%, rgba(243, 243, 243,0.04) 0%, rgba(243, 243, 243,0.04) 50%,rgba(37, 37, 37,0.04) 50%, rgba(37, 37, 37,0.04) 100%),linear-gradient(90deg, rgba(34,222,237, 0.14),rgba(135,89,215, 0.1))!important;
+}
+#enterprise .report_page.coverBackground {
+	background-image: radial-gradient(circle at 99% 0%, rgba(235, 235, 235,0.03) 0%, rgba(235, 235, 235,0.03) 50%,rgba(142, 142, 142,0.03) 50%, rgba(142, 142, 142,0.03) 100%),radial-gradient(circle at 84% 89%, rgba(229, 229, 229,0.03) 0%, rgba(229, 229, 229,0.03) 50%,rgba(1, 1, 1,0.03) 50%, rgba(1, 1, 1,0.03) 100%),radial-gradient(circle at 89% 20%, rgba(219, 219, 219,0.03) 0%, rgba(219, 219, 219,0.03) 50%,rgba(38, 38, 38,0.03) 50%, rgba(38, 38, 38,0.03) 100%),radial-gradient(circle at 90% 0%, rgba(48, 48, 48,0.03) 0%, rgba(48, 48, 48,0.03) 50%,rgba(109, 109, 109,0.03) 50%, rgba(109, 109, 109,0.03) 100%),linear-gradient(45deg, rgba(34,180,26, 0.22),rgba(164,129,216, 0.27))!important;
+}
+#lite .report_page.coverBackground {
+	background-image: radial-gradient(circle at 85% 1%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 96%,transparent 96%, transparent 100%),radial-gradient(circle at 14% 15%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 1%,transparent 1%, transparent 100%),radial-gradient(circle at 60% 90%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 20%,transparent 20%, transparent 100%),radial-gradient(circle at 79% 7%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 78%,transparent 78%, transparent 100%),radial-gradient(circle at 55% 65%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 52%,transparent 52%, transparent 100%),linear-gradient(285deg, rgba(37,143,222, 0.17),rgba(244,96,230, 0.23))!important;
+}
+#exclusive .report_page.coverBackground {
+	background-image: linear-gradient(472deg, rgba(54, 54, 54, 0.05) 0%, rgba(54, 54, 54, 0.05) 33.333%,rgba(85, 85, 85, 0.05) 33.333%, rgba(85, 85, 85, 0.05) 66.666%,rgba(255, 255, 255, 0.05) 66.666%, rgba(255, 255, 255, 0.05) 99.999%),linear-gradient(519deg, rgba(81, 81, 81, 0.05) 0%, rgba(81, 81, 81, 0.05) 33.333%,rgba(238, 238, 238, 0.05) 33.333%, rgba(238, 238, 238, 0.05) 66.666%,rgba(32, 32, 32, 0.05) 66.666%, rgba(32, 32, 32, 0.05) 99.999%),linear-gradient(306deg, rgba(192, 192, 192, 0.05) 0%, rgba(192, 192, 192, 0.05) 33.333%,rgba(109, 109, 109, 0.05) 33.333%, rgba(109, 109, 109, 0.05) 66.666%,rgba(30, 30, 30, 0.05) 66.666%, rgba(30, 30, 30, 0.05) 99.999%),linear-gradient(355deg, rgba(77, 77, 77, 0.05) 0%, rgba(77, 77, 77, 0.05) 33.333%,rgba(55, 55, 55, 0.05) 33.333%, rgba(55, 55, 55, 0.05) 66.666%,rgba(145, 145, 145, 0.05) 66.666%, rgba(145, 145, 145, 0.05) 99.999%),linear-gradient(256deg, rgba(9,201,186, 0.29),rgba(18,131,221, 0.29))!important;
+}
+#exclusiveplus .report_page.coverBackground {
+	background-image: linear-gradient(472deg, rgba(54, 54, 54, 0.05) 0%, rgba(54, 54, 54, 0.05) 33.333%,rgba(85, 85, 85, 0.05) 33.333%, rgba(85, 85, 85, 0.05) 66.666%,rgba(255, 255, 255, 0.05) 66.666%, rgba(255, 255, 255, 0.05) 99.999%),linear-gradient(519deg, rgba(81, 81, 81, 0.05) 0%, rgba(81, 81, 81, 0.05) 33.333%,rgba(238, 238, 238, 0.05) 33.333%, rgba(238, 238, 238, 0.05) 66.666%,rgba(32, 32, 32, 0.05) 66.666%, rgba(32, 32, 32, 0.05) 99.999%),linear-gradient(306deg, rgba(192, 192, 192, 0.05) 0%, rgba(192, 192, 192, 0.05) 33.333%,rgba(109, 109, 109, 0.05) 33.333%, rgba(109, 109, 109, 0.05) 66.666%,rgba(30, 30, 30, 0.05) 66.666%, rgba(30, 30, 30, 0.05) 99.999%),linear-gradient(355deg, rgba(77, 77, 77, 0.05) 0%, rgba(77, 77, 77, 0.05) 33.333%,rgba(55, 55, 55, 0.05) 33.333%, rgba(55, 55, 55, 0.05) 66.666%,rgba(145, 145, 145, 0.05) 66.666%, rgba(145, 145, 145, 0.05) 99.999%),linear-gradient(256deg, rgba(201,9,144, 0.17),rgba(18,221,165, 0.29))!important;
+}
+#alpha .report_page.coverBackground {
+	background-image: linear-gradient(429deg, rgba(186, 186, 186, 0.01) 0%, rgba(186, 186, 186, 0.01) 16.667%,rgba(192, 192, 192, 0.01) 16.667%, rgba(192, 192, 192, 0.01) 33.334%,rgba(48, 48, 48, 0.01) 33.334%, rgba(48, 48, 48, 0.01) 50.001000000000005%,rgba(33, 33, 33, 0.01) 50.001%, rgba(33, 33, 33, 0.01) 66.668%,rgba(182, 182, 182, 0.01) 66.668%, rgba(182, 182, 182, 0.01) 83.33500000000001%,rgba(211, 211, 211, 0.01) 83.335%, rgba(211, 211, 211, 0.01) 100.002%),linear-gradient(432deg, rgba(48, 48, 48, 0.01) 0%, rgba(48, 48, 48, 0.01) 16.667%,rgba(178, 178, 178, 0.01) 16.667%, rgba(178, 178, 178, 0.01) 33.334%,rgba(192, 192, 192, 0.01) 33.334%, rgba(192, 192, 192, 0.01) 50.001000000000005%,rgba(237, 237, 237, 0.01) 50.001%, rgba(237, 237, 237, 0.01) 66.668%,rgba(194, 194, 194, 0.01) 66.668%, rgba(194, 194, 194, 0.01) 83.33500000000001%,rgba(227, 227, 227, 0.01) 83.335%, rgba(227, 227, 227, 0.01) 100.002%),linear-gradient(422deg, rgba(146, 146, 146, 0.03) 0%, rgba(146, 146, 146, 0.03) 25%,rgba(33, 33, 33, 0.03) 25%, rgba(33, 33, 33, 0.03) 50%,rgba(46, 46, 46, 0.03) 50%, rgba(46, 46, 46, 0.03) 75%,rgba(172, 172, 172, 0.03) 75%, rgba(172, 172, 172, 0.03) 100%),linear-gradient(322deg, rgba(3, 3, 3, 0.03) 0%, rgba(3, 3, 3, 0.03) 16.667%,rgba(28, 28, 28, 0.03) 16.667%, rgba(28, 28, 28, 0.03) 33.334%,rgba(236, 236, 236, 0.03) 33.334%, rgba(236, 236, 236, 0.03) 50.001000000000005%,rgba(3, 3, 3, 0.03) 50.001%, rgba(3, 3, 3, 0.03) 66.668%,rgba(207, 207, 207, 0.03) 66.668%, rgba(207, 207, 207, 0.03) 83.33500000000001%,rgba(183, 183, 183, 0.03) 83.335%, rgba(183, 183, 183, 0.03) 100.002%),linear-gradient(415deg, rgba(20, 20, 20, 0.02) 0%, rgba(20, 20, 20, 0.02) 20%,rgba(4, 4, 4, 0.02) 20%, rgba(4, 4, 4, 0.02) 40%,rgba(194, 194, 194, 0.02) 40%, rgba(194, 194, 194, 0.02) 60%,rgba(34, 34, 34, 0.02) 60%, rgba(34, 34, 34, 0.02) 80%,rgba(71, 71, 71, 0.02) 80%, rgba(71, 71, 71, 0.02) 100%),linear-gradient(362deg, rgba(190, 190, 190, 0.02) 0%, rgba(190, 190, 190, 0.02) 20%,rgba(95, 95, 95, 0.02) 20%, rgba(95, 95, 95, 0.02) 40%,rgba(71, 71, 71, 0.02) 40%, rgba(71, 71, 71, 0.02) 60%,rgba(7, 7, 7, 0.02) 60%, rgba(7, 7, 7, 0.02) 80%,rgba(130, 130, 130, 0.02) 80%, rgba(130, 130, 130, 0.02) 100%),linear-gradient(577deg, rgba(213, 213, 213, 0.03) 0%, rgba(213, 213, 213, 0.03) 20%,rgba(220, 220, 220, 0.03) 20%, rgba(220, 220, 220, 0.03) 40%,rgba(146, 146, 146, 0.03) 40%, rgba(146, 146, 146, 0.03) 60%,rgba(57, 57, 57, 0.03) 60%, rgba(57, 57, 57, 0.03) 80%,rgba(120, 120, 120, 0.03) 80%, rgba(120, 120, 120, 0.03) 100%),linear-gradient(374deg, rgba(225,15,180, 0.24),rgba(230,243,78, 0.3))!important;
+}
+#starter .report_page.coverBackground {
+	background-image: linear-gradient(149deg, rgba(85, 85, 85, 0.05) 0%, rgba(85, 85, 85, 0.05) 25%,rgba(11, 11, 11, 0.05) 25%, rgba(11, 11, 11, 0.05) 50%,rgba(182, 182, 182, 0.05) 50%, rgba(182, 182, 182, 0.05) 75%,rgba(28, 28, 28, 0.05) 75%, rgba(28, 28, 28, 0.05) 100%),linear-gradient(232deg, rgba(145, 145, 145, 0.05) 0%, rgba(145, 145, 145, 0.05) 25%,rgba(165, 165, 165, 0.05) 25%, rgba(165, 165, 165, 0.05) 50%,rgba(84, 84, 84, 0.05) 50%, rgba(84, 84, 84, 0.05) 75%,rgba(131, 131, 131, 0.05) 75%, rgba(131, 131, 131, 0.05) 100%),linear-gradient(321deg, rgba(254, 254, 254, 0.05) 0%, rgba(254, 254, 254, 0.05) 25%,rgba(249, 249, 249, 0.05) 25%, rgba(249, 249, 249, 0.05) 50%,rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.05) 75%,rgba(104, 104, 104, 0.05) 75%, rgba(104, 104, 104, 0.05) 100%),linear-gradient(90deg, rgba(250,0,255, 0.14),rgba(0,158,255, 0.22))!important;
+}
+#entrepreneurialreadiness .report_page.coverBackground {
+	background-image: linear-gradient(112deg, rgba(134, 134, 134, 0.05) 0%, rgba(134, 134, 134, 0.05) 33.333%,rgba(203, 203, 203, 0.05) 33.333%, rgba(203, 203, 203, 0.05) 66.666%,rgba(48, 48, 48, 0.05) 66.666%, rgba(48, 48, 48, 0.05) 99.999%),linear-gradient(397deg, rgba(90, 90, 90, 0.05) 0%, rgba(90, 90, 90, 0.05) 33.333%,rgba(23, 23, 23, 0.05) 33.333%, rgba(23, 23, 23, 0.05) 66.666%,rgba(71, 71, 71, 0.05) 66.666%, rgba(71, 71, 71, 0.05) 99.999%),linear-gradient(415deg, rgba(186, 186, 186, 0.05) 0%, rgba(186, 186, 186, 0.05) 33.333%,rgba(174, 174, 174, 0.05) 33.333%, rgba(174, 174, 174, 0.05) 66.666%,rgba(196, 196, 196, 0.05) 66.666%, rgba(196, 196, 196, 0.05) 99.999%),linear-gradient(458deg, rgba(2, 2, 2, 0.05) 0%, rgba(2, 2, 2, 0.05) 33.333%,rgba(110, 110, 110, 0.05) 33.333%, rgba(110, 110, 110, 0.05) 66.666%,rgba(207, 207, 207, 0.05) 66.666%, rgba(207, 207, 207, 0.05) 99.999%),linear-gradient(445deg, rgba(39, 39, 39, 0.05) 0%, rgba(39, 39, 39, 0.05) 33.333%,rgba(145, 145, 145, 0.05) 33.333%, rgba(145, 145, 145, 0.05) 66.666%,rgba(205, 205, 205, 0.05) 66.666%, rgba(205, 205, 205, 0.05) 99.999%),linear-gradient(192deg, rgba(227,5,98, 0.27),rgba(215,148,27, 0.22))!important;
+}
+#workreadiness .report_page.coverBackground{
+	background-image: linear-gradient(163deg, rgba(70, 70, 70, 0.05) 0%, rgba(70, 70, 70, 0.05) 89%,rgba(172, 172, 172, 0.05) 89%, rgba(172, 172, 172, 0.05) 100%),linear-gradient(118deg, rgba(166, 166, 166, 0.01) 0%, rgba(166, 166, 166, 0.01) 34%,rgba(27, 27, 27, 0.01) 34%, rgba(27, 27, 27, 0.01) 100%),linear-gradient(163deg, rgba(240, 240, 240, 0.06) 0%, rgba(240, 240, 240, 0.06) 1%,rgba(116, 116, 116, 0.06) 1%, rgba(116, 116, 116, 0.06) 100%),linear-gradient(73deg, rgba(230, 230, 230, 0.06) 0%, rgba(230, 230, 230, 0.06) 17%,rgba(73, 73, 73, 0.06) 17%, rgba(73, 73, 73, 0.06) 100%),linear-gradient(73deg, rgba(230, 230, 230, 0.03) 0%, rgba(230, 230, 230, 0.03) 17%,rgba(30, 30, 30, 0.03) 17%, rgba(30, 30, 30, 0.03) 100%),linear-gradient(118deg, rgba(147, 147, 147, 0.08) 0%, rgba(147, 147, 147, 0.08) 67%,rgba(46, 46, 46, 0.08) 67%, rgba(46, 46, 46, 0.08) 100%),linear-gradient(73deg, rgba(77, 77, 77, 0.08) 0%, rgba(77, 77, 77, 0.08) 54%,rgba(184, 184, 184, 0.08) 54%, rgba(184, 184, 184, 0.08) 100%),linear-gradient(118deg, rgba(124, 124, 124, 0.09) 0%, rgba(124, 124, 124, 0.09) 90%,rgba(105, 105, 105, 0.09) 90%, rgba(105, 105, 105, 0.09) 100%),linear-gradient(118deg, rgba(240,68,14, 0.22),rgba(21,158,232, 0.35))!important;
+}
+
+.report_page.pageBackground {
+	background-image: radial-gradient(circle at 57% 36%, hsla(263,0%,78%,0.04) 0%, hsla(263,0%,78%,0.04) 10%,transparent 10%, transparent 100%),radial-gradient(circle at 22% 61%, hsla(263,0%,78%,0.04) 0%, hsla(263,0%,78%,0.04) 36%,transparent 36%, transparent 100%),radial-gradient(circle at 68% 97%, hsla(263,0%,78%,0.04) 0%, hsla(263,0%,78%,0.04) 41%,transparent 41%, transparent 100%),radial-gradient(circle at 57% 89%, hsla(263,0%,78%,0.04) 0%, hsla(263,0%,78%,0.04) 30%,transparent 30%, transparent 100%),radial-gradient(circle at 39% 80%, hsla(263,0%,78%,0.04) 0%, hsla(263,0%,78%,0.04) 22%,transparent 22%, transparent 100%),radial-gradient(circle at 88% 71%, hsla(263,0%,78%,0.04) 0%, hsla(263,0%,78%,0.04) 30%,transparent 30%, transparent 100%),linear-gradient(0deg, rgb(255,255,255),rgb(255,255,255))!important;
+}
+
+.coverContent {
+	display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; width: calc(100% - 25mm); height: calc(100% - 20mm); padding: 10mm 10mm 10mm 15mm;
+}
+.coverContent .coverInfoContainer {
+	display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; 
+}
+.coverContent .coverInfoContainer.withBorder {
+	border: 2mm solid rgba(0,70,125,1)!important; width: 100mm; padding: 5mm;
+}
+.coverContent .coverInfoContainer.withoutBorder {
+	border: 0mm solid rgba(0,70,125,1)!important; width: auto; padding: 0mm;
+}
+.coverContent .coverInfoContainer.flexRow {
+	flex-direction: row!important; align-items: center;
+}
+
+.coverContent .coverInfoContainer .logoImage {
+	height: 20mm;
+}
+.coverContent .coverInfoContainer .collabIcon {
+	margin: 0 3mm; color: rgba(0,0,0,0.6)!important;
+}
 
 
-.report_page > .report_page_content
-				{ display: block; width: calc(100% - 40mm); height: 272mm; margin: 0; padding: 10mm 20mm 0mm 20mm; flex-direction: column; z-index: 10; }
-.report_page > .report_page_content .report_page_content_main_title
-				{ font:30pt/30pt 'Open Sans'; font-weight: 300; text-align: center; color: #00467d!important; margin: 0 0 5mm 0; text-transform: uppercase; }
-.report_page > .report_page_content .report_page_content_main_title_small
-				{ font:18pt/18pt 'Open Sans'; font-weight: 300; text-align: center; color: #00467d!important; margin: 0 0 5mm 0; text-transform: uppercase; }
-.report_page > .report_page_content .report_page_content_sub_title
-				{ font:20pt/20pt 'Open Sans'; font-weight: 300; text-align: center; color: #00467d!important; margin: 0; text-transform: uppercase; }
-.report_page > .report_page_content .report_page_content_subsub_title
-				{ font:12pt/12pt 'Work Sans'; font-weight: 400; text-align: center; color: #00467d!important; margin: 0; text-transform: uppercase; }
-.report_page > .report_page_content .report_page_combine_title
-				{ display: flex; align-content: center; justify-content: center; }
+.coverContent .coverInfoContainer .reportTitle {
+	font:50pt/50pt 'Poppins'; font-weight: 700; color: rgba(0,70,125,1)!important;
+}
+.coverContent .coverInfoContainer .reportType {
+	font:30pt/30pt 'Poppins'; font-weight: 600; color: rgba(0,0,0,1)!important;
+}
+.coverContent .coverInfoContainer .reportName {
+	font:20pt/20pt 'Poppins'; font-weight: 600; color: rgba(0,70,125,1)!important; text-transform: uppercase;
+}
+.coverContent .coverInfoContainer .reportInfo {
+	font:12pt/12pt 'Poppins'; font-weight: 400; color: rgba(0,0,0,1)!important; margin-bottom: 3mm; 
+}
+.coverContent .coverInfoContainer .reportInfo.small {
+	font:8pt/8pt 'Poppins'; font-weight: 400; color: rgba(0,0,0,0.5)!important; margin-bottom: 3mm; 
+}
+.coverContent .coverInfoContainer .reportInfo:last-child {
+	margin-bottom: 0mm;
+}
+
+.pageHeader {
+	display: flex; flex-direction: row; justify-content: space-between; align-items: center; width: calc(100% - 20mm); height: 10mm; padding: 0 5mm 0 15mm; font:6pt/6pt 'Poppins'; font-weight: 400;
+}
+.pageContent {
+	display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; width: calc(100% - 25mm); height: calc(100% - 25mm); padding: 0 10mm 0 15mm;
+}
+.pageFooter {
+	display: flex; flex-direction: row; justify-content: space-between; align-items: center; width: calc(100% - 20mm); height: 15mm; padding: 0 5mm 0 15mm; font:7pt/7pt 'Poppins'; font-weight: 600;
+}
+
+.pageFooter .pageFooterLogoContainer {
+	display: flex; flex-direction: row; align-items: center;
+}
+.pageFooter .pageFooterLogoContainer img {
+	height: 7mm;
+}
+.pageFooter .pageFooterLogoContainer .collabIcon {
+	margin: 0 1mm;
+}
+
+.pageContent.flexCenterXY {
+	justify-content: center; align-items: center;
+}
+.pageContent.flexCenterX {
+	justify-content: flex-start; align-items: center;
+}
+.pageContent p {
+	font:10pt/16pt 'Poppins'!important; font-weight: 400; color: rgba(0,0,0,1)!important;
+}
+.pageContent .supporterText {
+	font:10pt/10pt 'Poppins'!important; font-weight: 400; color: rgba(0,0,0,1)!important;
+}
+.pageContent .supporterLogoContainer {
+	display: flex; margin: 8mm 0; align-items: center; justify-content: center; flex-direction: column;
+}
+.pageContent .supporterLogoContainer img {
+	width: 50mm;
+}
+.pageContent .supporterLogoContainer .separator {
+	margin: 3mm 0; color: rgba(0,0,0,0.4)!important;
+}
+.pageContent .chartsize {
+	width: 100%;
+}
+.pageContent .smallText {
+	font:7pt/7pt 'Poppins'!important; font-weight: 500!important; color: rgba(0,0,0,1)!important; margin: 0 0 2mm 0;
+}
+.pageContent sup {
+  font:5pt/5pt 'Poppins'!important; font-weight: 500!important; opacity: 0.8!important; vertical-align: top;
+}
 
 
-.report_page > .report_page_footer
-				{ display:block; position: relative; z-index: 2; width: calc(100% - 10mm); height: 15mm; margin: 0; padding: 0mm 5mm; }
-.report_page > .report_page_footer > img
-				{ display: block; position: absolute; height: 9mm; margin: -12mm 0 0 0; }
-.report_page > .report_page_footer > div:first-child
-				{ display: flex; align-items:flex-end; justify-content: center; flex-direction: column; font:8pt/8pt 'Work Sans'; font-weight: 400; color: #FFF!important; width: 100%; text-align: right; height: 15mm; }
-.report_page > .report_page_footer > div:first-child > div
-				{ margin-bottom: 2mm; color: #FFF!important; }
-.report_page > .report_page_footer > div:first-child > div:last-child
-				{ margin-bottom: 0mm; }
+.contentListContainer {
+	display: flex; flex-direction: column; width: calc(100% - 5cm); margin: 0 0 0 5cm;
+}
+.contentListContainer a, .contentListContainer .contentListItem {
+	color: rgba(0,0,0,1)!important; display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 1px dashed rgba(0,0,0,0.1)!important; margin: 2mm 0 3mm 0; padding: 0 5mm 1mm 5mm;
+}
+.contentListContainer.compact a, .contentListContainer.compact .contentListItem {
+	color: rgba(0,0,0,1)!important; display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 1px dashed rgba(0,0,0,0.1)!important; margin: 1mm 0 2mm 0; padding: 0 5mm 1mm 5mm;
+}
 
-.report_page > .report_page_cover > .report_page_cover_mainlogo
-				{ width: 50mm; }
-.report_page > .report_page_cover > .report_page_cover_title
-				{ font:40pt/40pt 'Open Sans'; font-weight: 300; text-align: center; color: #00467d!important; }
-.report_page > .report_page_cover > .report_page_cover_profiledata
-				{ margin-bottom: 3mm; }
-.report_page > .report_page_cover > .report_page_cover_profiledata > div:nth-child(1)
-				{ font:8pt/18pt 'Work Sans'; font-weight: 400; text-align: center; color: #000!important; margin: 0; }
-.report_page > .report_page_cover > .report_page_cover_profiledata > div:nth-child(2)
-				{ font:12pt/12pt 'Work Sans'; font-weight: 400; text-align: center; color: #00467d!important; margin: 0; }
-.report_page > .report_page_cover > .report_page_cover_support
-				{ display: flex; margin: 0; }
-.report_page > .report_page_cover > .report_page_cover_support > img
-				{ display: block; width: 30mm; margin: 0 2mm; }
-.report_page > .report_page_cover > .report_page_cover_smalltext
-				{ font:8pt/10pt 'Work Sans'; font-weight: 400; text-align: center; width: 80%; color: #666!important; margin: 0; }
+.contentListContainer .contentListItem .contentListSection {
+	font:12pt/12pt 'Poppins'!important; font-weight: 400!important;
+}
+.contentListContainer .contentListItem .contentListPageNo {
+	font:18pt/18pt 'Ubuntu'!important; font-weight: 500!important; text-align: right;
+}
 
-.report_page > .report_page_content .report_page_content_sub_title
-				{ display: flex; align-items: center; justify-content: center; }
-.report_page > .report_page_content .report_page_content_sub_title span
-				{ display: flex; font:17pt/17pt 'Open Sans'; font-weight: 700; width: 12mm; height: 12mm; margin:0 2mm 0 0; align-items: center; justify-content: center; border-radius: 10mm; }
+.compareContainer {
+	display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; width: 100%;
+}
+.compareContainer .compareContainerTitle {
+	font:14pt/14pt 'Poppins'!important; font-weight: 600!important; padding: 2mm 3mm; background-color: rgba(0,0,0,0.8)!important; color: rgba(255,255,255,1)!important;
+}
+.compareContainer .compareContainerChartContainer {
+	display: flex; width: 100%; background-color: rgba(0,0,0,0.06)!important; align-items: center;
+}
+.compareContainer .compareContainerChartContainer .compareLeft, .compareContainer .compareContainerChartContainer .compareRight {
+	display: flex; flex-direction: column; justify-content: center; height: 25mm; padding: 0 3mm;
+}
+.compareContainer .compareContainerChartContainer .compareLeft .itemTitle, .compareContainer .compareContainerChartContainer .compareRight .itemTitle {
+	font:9pt/9pt 'Poppins'!important; font-weight: 600!important; margin: 0 0 1mm 0;
+}
+.compareContainer .compareContainerChartContainer .compareLeft .itemDesc, .compareContainer .compareContainerChartContainer .compareRight .itemDesc {
+	font:7pt/9pt 'Poppins'!important; font-weight: 500!important; min-height: 27pt;
+}
+.compareContainer .compareContainerChartContainer .compareChart {
+	display: flex; flex-direction: row; align-items: center; background-color: rgba(0,0,0,0.08)!important; height: 15mm;
+}
 
-.report_page > .report_page_content .report_page_content_subsub_title
-				{ display: flex; align-items: center; justify-content: center; }
-.report_page > .report_page_content .report_page_content_subsub_title span
-				{ display: flex; font:12pt/12pt 'Open Sans'; font-weight: 700; width: 8mm; height: 8mm; margin:0 2mm 0 0; align-items: center; justify-content: center; }
+.compareContainer .compareContainerChartContainer .compareChart div {
+	display: flex; height: 15mm; justify-content: center; align-items: center; font:12pt/12pt 'Ubuntu'!important; font-weight: 500!important;
+}
 
+.compareContainer .compareContainerChartContainer.widthFull .compareChart {
+	width: 70mm;
+}
+.compareContainer .compareContainerChartContainer.widthFull .compareLeft, .compareContainer .compareContainerChartContainer.widthFull .compareRight {
+	width: calc((100% - 82mm) / 2);
+}
 
-.report_page_content .column2container
-				{ column-count: 2; column-gap: 4mm; text-align: justify; }
-.report_page_content .column2container .column_break
-				{ -webkit-column-break-inside: avoid; page-break-inside: avoid; break-inside: avoid; margin-bottom: 0; }
+.compareContainer .compareContainerChartContainer.widthFull .compareChart .compareChartSeparator {
+	width: 0.6mm; height: 15mm;
+}
 
-.column2container
-				{ column-count: 2; column-gap: 10mm; text-align: justify; }
-.column2container > .column_items
-				{ margin: 0 0 6mm 0; }
-.column2container > .column_items > p
-				{ margin: 3mm 0 0 0; }
-.column_break
-				{ -webkit-column-break-inside: avoid; page-break-inside: avoid; break-inside: avoid; }
+.legendContainer {
+	display: flex; flex-direction: row; justify-content: center; align-items: flex-start; break-inside: avoid;
+}
+.legendContainer.widthFull {
+	width: 100%;
+}
+.legendContainer .legendItem {
+	display: flex; flex-direction: column; justify-content: flex-start; align-items: center; width: 16mm; margin: 0 0 0 2mm;
+}
+.legendContainer .legendItem:first-child {
+	margin: 0 0 0 0;
+}
+.legendContainer .legendItem .legendItemScore {
+	width: 100%; height: calc(8pt + 4mm); font:8pt/8pt 'Ubuntu'!important; font-weight: 500!important; display: flex; justify-content: center; align-items: center; text-align: center; margin: 0 0 1mm 0; padding: 0;
+}
+.legendContainer .legendItem .legendItemDesc {
+	width: 100%; font:6pt/8pt 'Poppins'!important; font-weight: 500!important; text-align: center; display: flex; justify-content: center; color: rgba(0,0,0,0.6)!important;
+}
 
+.pageContent .noColContainer {
+	columns: 1; column-gap: 0mm; width: 100%; break-inside: avoid;
+}
+.pageContent .split2ColContainer {
+	columns: 2; column-gap: 5mm; width: 100%;
+}
+.pageContent.compact .split2ColContainer {
+	columns: 2; column-gap: 3mm; width: 100%;
+}
+.pageContent .split3ColContainer {
+	columns: 3; column-gap: 5mm; width: 100%;
+}
+.pageContent.compact .split3ColContainer {
+	columns: 3; column-gap: 3mm; width: 100%;
+}
+.pageContent .split3ColContainer.noGap, .pageContent.compact .split3ColContainer.noGap {
+	column-gap: 0mm;
+}
+.pageContent .split4ColContainer {
+	columns: 4; column-gap: 0mm; width: 100%;
+}
+.pageContent .split5ColContainer {
+	columns: 5; column-gap: 0mm; width: 100%;
+}
+
+.sectionContainer {
+	display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; width: 100%; break-inside: avoid; margin: 0 0 5mm 0;
+}
+.pageContent.compact .sectionContainer {
+	margin: 0 0 3mm 0;
+}
+.sectionContainer.flexRowIt {
+	flex-direction: row!important;
+}
+
+.sectionContainer .sectionContainerTitle {
+	font:12pt/12pt 'Poppins'!important; font-weight: 600!important; padding: 2mm 3mm; background-color: rgba(0,0,0,0.8)!important; color: rgba(255,255,255,1)!important;
+}
+.sectionContainer .sectionContainerChartContainer {
+	display: flex; width: calc(100% - 6mm); align-items: flex-start; flex-direction: column; justify-content: flex-start; padding: 3mm;
+}
+.sectionContainer .sectionContainerChartContainer > p{
+	font:8pt/12pt 'Poppins'!important; font-weight: 500!important; margin: 0;
+}
+.sectionContainer .sectionContainerChartContainer .chartItem {
+	width: 100%;
+}
+
+.sectionContainer .sectionContainerChartContainer .chartItem.col2ChartItem {
+	columns: 2; column-gap: 5mm;
+}
+
+.sectionContainer .sectionContainerChartContainer .compareLeft, .sectionContainer .sectionContainerChartContainer .compareRight {
+	display: flex; flex-direction: column; justify-content: center; padding: 0; width: 100%;
+}
+.sectionContainer .sectionContainerChartContainer .compareLeft .itemTitle, .sectionContainer .sectionContainerChartContainer .compareRight .itemTitle {
+	font:9pt/9pt 'Poppins'!important; font-weight: 600!important; margin: 0 0 1mm 0;
+}
+.sectionContainer .sectionContainerChartContainer .compareLeft .itemDesc, .sectionContainer .sectionContainerChartContainer .compareRight .itemDesc {
+	font:7pt/9pt 'Poppins'!important; font-weight: 500!important; margin: 0;
+}
+.sectionContainer .sectionContainerChartContainer .compareChart {
+	display: flex; flex-direction: row; align-items: center; background-color: rgba(0,0,0,0.08)!important; height: 10mm; width: 100%; margin: 3mm 0;
+}
+
+.sectionContainer .sectionContainerChartContainer .compareChart div {
+	display: flex; height: 10mm; justify-content: center; align-items: center; font:11pt/11pt 'Ubuntu'!important; font-weight: 500!important;
+}
+.sectionContainer .sectionContainerChartContainer .compareChart .compareChartSeparator {
+	width: 0.6mm; height: 10mm;
+}
+
+.sectionContainer .sectionContainerChartContainer .chartItem .chartBarItem {
+	width: 100%; display: flex; align-items: center; justify-content: flex-start; break-inside: avoid;
+}
+
+.sectionContainer .sectionContainerChartContainer .chartItem .chartBarItem .chartBarItemL {
+	display: flex; width: calc(50% - 4mm); flex-direction: column; border-right: 1px solid rgba(0,0,0,0.1)!important; min-height: 15mm; justify-content: center; padding: 2mm 2mm;
+}
+.sectionContainer .sectionContainerChartContainer .chartItem .chartBarItem .chartBarItemL .chartBarItemTitle {
+	font:9pt/9pt 'Poppins'!important; font-weight: 600!important; margin: 0 0 1mm 0;
+}
+.sectionContainer .sectionContainerChartContainer .chartItem .chartBarItem .chartBarItemL .chartBarItemDesc {
+	font:7pt/9pt 'Poppins'!important; font-weight: 500!important; margin: 0;
+}
+
+.sectionContainer .sectionContainerChartContainer .chartItem .chartBarItem .chartBarItemR {
+	display: flex; width: calc(50% - 1px); background-color: rgba(0,0,0,0.08)!important; height: 10mm;
+}
+.sectionContainer .sectionContainerChartContainer .chartItem .chartBarItem .chartBarItemR div {
+	display: flex; height: 10mm; justify-content: center; align-items: center; font:11pt/11pt 'Ubuntu'!important; font-weight: 500!important;
+}
+
+.sectionContainerScore {
+	font:12pt/12pt 'Poppins'!important; font-weight: 600!important; padding: 2mm 3mm; width: calc(100% - 6mm); display: flex; align-items: center;
+}
+.sectionContainerScore .score {
+	width: 13mm; height: 13mm; margin: 0 3mm 0 0; display: flex; justify-content: center; align-items: center; font:20pt/20pt 'Ubuntu'!important; font-weight: 700!important; text-align: center;
+}
+.sectionContainerScore .score.circle {
+	border-radius: 50%;
+}
+.sectionContainerScore .scoreTitleContainer {
+	width: calc(100% - (15mm + 3mm));
+}
+.sectionContainerScore .scoreTitleContainer .scoreTitle {
+	font:12pt/12pt 'Poppins'!important; font-weight: 600!important; color: #FFFFFF!important; margin: 0 0 1mm 0;
+}
+.sectionContainerScore .scoreTitleContainer .scoreTitle.noDesc {
+	font:14pt/14pt 'Poppins'!important; font-weight: 600!important; margin: 0 0 0 0;
+}
+.sectionContainerScore .scoreTitleContainer .scoreDesc {
+	font:7pt/8pt 'Poppins'!important; font-weight: 500!important; color: #FFFFFF!important;
+}
+
+.chartMedScoreItem {
+	display: flex; break-inside: avoid; align-items: center; margin: 0 0 2mm 0;
+}
+.chartMedScoreItem .score {
+	display: flex; width: 10mm; height: 10mm; justify-content: center; align-items: center; font:17pt/17pt 'Ubuntu'!important; font-weight: 700!important; text-align: center; margin: 0 2mm 0 0; 
+}
+.chartMedScoreItem .score.circle {
+	border-radius: 50%;
+}
+.chartMedScoreItem .chartMedScoreItemR {
+	display: flex; width: calc(100% - (10mm + 2mm + 2mm)); flex-direction: column;
+}
+.chartMedScoreItem .chartMedScoreItemR .chartBarItemTitle {
+	font:9pt/9pt 'Poppins'!important; font-weight: 600!important; margin: 0 0 0.5mm 0;
+}
+.chartMedScoreItem .chartMedScoreItemR .chartBarItemDesc {
+	font:7pt/8pt 'Poppins'!important; font-weight: 500!important; margin: 0;
+}
+
+.sectionContainer .sectionContainerL {
+	display: flex; width: calc(35mm - 6mm); height: 34mm; padding: 3mm; flex-direction: column; justify-content: center; align-items: center;
+}
+.sectionContainer .sectionContainerL .sectionContainerLTitle {
+	font:9pt/9pt 'Poppins'!important; font-weight: 600!important; margin: 0 0 2mm 0; text-align: center; color: #FFFFFF!important;
+}
+.sectionContainer .sectionContainerL .score {
+	font:24pt/24pt 'Ubuntu'!important; font-weight: 600!important; margin: 0 0 2mm 0; text-align: center; width: 15mm; height: 15mm; display: flex; justify-content: center; align-items: center; border-radius: 50%;
+}
+.sectionContainer .sectionContainerL .sectionContainerLDesc {
+	font:7pt/9pt 'Poppins'!important; font-weight: 500!important; margin: 0; text-align: center; color: #FFFFFF!important;
+}
+
+.sectionContainer .sectionContainerR {
+	display: flex; flex-direction: column; justify-content: center; width: calc(100% - (35mm + 0mm)); height: 40mm; 
+}
+.sectionContainer .sectionContainerR .chartMedScoreItem {
+	margin: 0 0 0 0; height: calc(29mm - 0.5px); padding: 0 3mm;
+}
+.sectionContainer .sectionContainerR .chartMedScoreItem:last-child {
+	border-top: 1px dashed rgba(255,255,255,1)!important;
+}
+
+.lsItemFlatContainer {
+	height: 22mm;
+}
+
+.lsItemFlatContainer .chartMedScoreItem {
+	padding: 0 3mm; height: 22mm; width: calc(55mm - 6mm);
+}
+.lsItemFlatContainer .chartMedScoreItem:first-child {
+	width: calc(100% - (110mm + 6mm));
+}
+
+.lsItemFlatContainer .chartMedScoreItem:first-child .score {
+	display: flex; width: 15mm; height: 15mm; justify-content: center; align-items: center; font:24pt/24pt 'Ubuntu'!important; font-weight: 700!important; text-align: center; margin: 0 2mm 0 0; background-color: rgba(255,255,255,1)!important;
+}
+.lsItemFlatContainer .chartMedScoreItem:first-child .score.circle {
+	border-radius: 50%;
+}
+.lsItemFlatContainer .chartMedScoreItem:first-child .chartMedScoreItemR {
+	display: flex; width: calc(100% - (15mm + 2mm + 2mm)); flex-direction: column;
+}
+
+.subItem {
+	display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; width: 100%; border-bottom: 1px dashed rgba(0,0,0,0.1)!important;
+}
+.subItem .subItemTitle {
+	display: flex; justify-content: flex-start; align-items: flex-start; width: 100%; font:9pt/9pt 'Poppins'!important; font-weight: 600!important; margin: 0 0 1mm 0;
+}
+.subItem .subItemDesc {
+	display: flex; justify-content: flex-start; align-items: flex-start; width: 100%; font:7pt/9pt 'Poppins'!important; font-weight: 500!important; margin: 0 0 1mm 0; min-height: 18pt;
+}
+.subItem .subItemChart {
+	display: flex; justify-content: flex-start; align-items: center; width: 100%; background-color: rgba(0,0,0,0.1)!important; height: 10mm; margin: 0 0 3mm 0;
+}
+.subItem .subItemChart div {
+	display: flex; justify-content: center; align-items: center; width: 100%; height: 10mm; font:11pt/11pt 'Ubuntu'!important; font-weight: 700!important;
+}
+.subItem:last-child {
+	border-bottom: 0px dashed rgba(0,0,0,0.1)!important;
+}
+
+.subItem:last-child .subItemChart {
+	margin: 0 0 0 0;
+}
+
+.doughChart4Container {
+	width: 100%; display: flex; flex-direction: column; break-inside: avoid; flex-wrap: wrap;
+}
+.doughChart4Container .score {
+	display: flex; position: absolute; width: calc(46.25mm - 10mm); height: calc(46.25mm - 10mm); justify-content: center; align-items: center; font:36pt/36pt 'Ubuntu'!important; font-weight: 700!important;
+}
+.doughChart4Container .chartsize {
+	width: calc(100% - 10mm); height: calc(46.25mm - 10mm); padding: 0 5mm;
+}
+.doughChart4Container .chartTitle {
+	width: 100%; text-align: center; font:12pt/12pt 'Poppins'!important; font-weight: 600!important; display: flex; justify-content: center; align-items: center; height: 10mm;
+}
+.doughChart4Container .chartDesc {
+	width: 90%; margin: 0 auto; text-align: center; font:7pt/9pt 'Poppins'!important; font-weight: 500!important; min-height: 36pt;
+}
+
+.doughChart3Container {
+	width: 100%; display: flex; flex-direction: column; break-inside: avoid; flex-wrap: wrap;
+}
+.doughChart3Container .score {
+	display: flex; position: absolute; width: calc((185mm / 3) - 10mm); height: calc((185mm / 3) - 10mm); justify-content: center; align-items: center; font:40pt/40pt 'Ubuntu'!important; font-weight: 700!important;
+}
+.doughChart3Container .chartsize {
+	width: calc(100% - 10mm); height: calc((185mm / 3) - 10mm); padding: 0 5mm;
+}
+.doughChart3Container .chartTitle {
+	width: 100%; text-align: center; font:12pt/12pt 'Poppins'!important; font-weight: 600!important; display: flex; justify-content: center; align-items: center; height: 10mm;
+}
+.doughChart3Container .chartDesc {
+	width: 90%; margin: 0 auto; text-align: center; font:7pt/9pt 'Poppins'!important; font-weight: 500!important; min-height: 36pt;
+}
+
+.flatTabItemContainer {
+	width: 100%; margin: 0 0 3mm 0; break-inside: avoid;
+}
+.flatTabItemContainer .flatTabItemContainerTitle {
+	display: flex; justify-content: flex-start; align-items: center;
+}
+.flatTabItemContainer .flatTabItemContainerTitle .score {
+	display: flex; justify-content: center; align-items: center; font:16pt/16pt 'Ubuntu'!important; font-weight: 700!important; width: 10mm; height: 10mm;
+}
+.flatTabItemContainer .flatTabItemContainerTitle .title {
+	display: flex; justify-content: flex-start; align-items: center; height: 10mm; font:12pt/12pt 'Poppins'!important; font-weight: 500!important; padding: 0 3mm; background-color: rgba(0,0,0,0.8)!important; color: #FFFFFF!important;
+}
+.flatTabItemContainer .flatTabItemContainerDesc {
+	width: calc(100% - 6mm); padding: 3mm; font:8pt/10pt 'Poppins'!important; font-weight: 500!important; background-color: rgba(0,0,0,0.04)!important;
+}
+
+.jobListItem {
+	display: flex; align-items: center; justify-content: flex-start; break-inside: avoid; margin: 0 0 1mm 0;
+}
+.jobListItem .score {
+	display: flex; align-items: center; justify-content: center; font:11pt/11pt 'Ubuntu'!important; font-weight: 600!important; width: 7mm; height: 7mm; margin: 0 1mm 0 0;
+}
+.jobListItem .title {
+	display: flex; align-items: center; justify-content: flex-start; font:8pt/9pt 'Poppins'!important; font-weight: 500!important; width: calc(100% - 8mm);
+}
+
+.sixteenWorkfieldFullPageContainer {
+	display: flex; width: calc(100% - 6mm); flex-direction: row; justify-content: flex-start; align-items: center; break-inside: avoid; padding: 3mm; background-color:rgba(0,0,0,0.35)!important; margin: 0 0 5mm 0;
+}
+.sixteenWorkfieldFullPageContainer.active {
+	background-color:rgba(0,70,125,1)!important;
+}
+.sixteenWorkfieldFullPageContainer span {
+	display: flex; justify-content: center; align-items: center; margin: 0 3mm 0 0; color: #FFFFFF!important; width: 12mm; height: 12mm;
+}
+.sixteenWorkfieldFullPageContainer span img {
+	width: 10mm; height: 10mm;
+}
+.sixteenWorkfieldFullPageContainer div {
+	font:10pt/12pt 'Poppins'!important; font-weight: 400!important; color: #FFFFFF!important; width: calc(100% - (12mm + 3mm));
+}
+
+.sectionContainer.alphaContainer {
+	width: calc(100% - 10mm); padding: 5mm 5mm 0 5mm; background-color: rgba(0,0,0,0.03)!important; display: flex; align-items: center;
+}
+
+.mainAlphaContainer {
+	display: flex; flex-direction: row; justify-content: flex-start; align-items: center; width: 60%; break-inside: avoid;
+}
+.mainAlphaContainer.fullWidth {
+	width: 100%;
+}
+.mainAlphaContainer .score {
+	display: flex; justify-content: center; align-items: center; width: 20mm; height: 20mm; margin: 0 2mm 0 0; font:26pt/26pt 'Ubuntu'!important; font-weight: 700!important;
+}
+.mainAlphaContainer .mainAlphaR {
+	display: flex; justify-content: center; align-items: flex-start; flex-direction: column;	width: calc(100% - (20mm + 4mm));
+}
+.mainAlphaContainer .mainAlphaR .title {
+	font:12pt/12pt 'Poppins'!important; font-weight: 600!important; margin: 0 0 1mm 0;
+}
+.mainAlphaContainer .mainAlphaR .desc {
+	font:8pt/10pt 'Poppins'!important; font-weight: 500!important;
+}
+
+.subAlphaItem {
+	display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; break-inside: avoid; margin: 0 0 5mm 0;
+}
+.subAlphaItem .title {
+	font:10pt/10pt 'Poppins'!important; font-weight: 600!important; margin: 0 0 2mm 0; display: flex; align-items: center;
+}
+.subAlphaItem .title .score {
+	display: flex; justify-content: center; align-items: center; width: 10mm; height: 10mm; margin: 0 2mm 0 0; font:13pt/13pt 'Ubuntu'!important; font-weight: 700!important;
+}
+.subAlphaItem .desc {
+	font:8pt/10pt 'Poppins'!important; font-weight: 500!important; min-height: 30pt;
+}
+
+.noColContainer .subAlphaItem .desc {
+	min-height: 0;
+}
+
+.mainAlphaContainer .score.circle, .subAlphaItem .title .score.circle {
+	border-radius: 50%;
+}
+.mainAlphaContainer .score.roundedCorner, .subAlphaItem .title .score.roundedCorner {
+	border-radius: 10%;
+}
 
 /** END OF REPORTS STYLESHEETS **/
+
+/** START OF ONE PAGE SETUP **/
+
+.report_page.onePage .pageHeader {
+	height: 20mm; width: calc(100% - 0mm); padding: 0 0; background-color: rgba(255,255,255,0.4)!important; justify-content: flex-start; align-items: flex-start;
+}
+
+.report_page.onePage .pageHeader .logoContainer {
+	display: flex; flex-direction: row; justify-content: center; align-items: center; width: 30mm; height: 20mm;
+}
+.report_page.onePage .pageHeader.collabProject .logoContainer {
+	width: 50mm;
+}
+.report_page.onePage .pageHeader .logoContainer .logoItem {
+	max-width: 18mm!important; max-height: 12mm;
+}
+.report_page.onePage .pageHeader .logoContainer .separator {
+	margin: 0 1mm;
+}
+
+.report_page.onePage .pageHeader .infoContainer {
+	display: flex; flex-direction: row; justify-content: flex-start; align-items: center; width: calc(100% - (30mm + 25mm + 6mm)); height: calc(20mm - 6mm); flex-wrap: wrap; padding: 3mm; margin: 0;
+}
+.report_page.onePage .pageHeader.collabProject .infoContainer {
+	width: calc(100% - (75mm + 6mm)); 
+}
+.report_page.onePage .pageHeader .infoContainer .infoItem {
+	width: calc((100% / 3) - (6mm / 3)); margin: 0 3mm 0 0; padding: 0;
+}
+.report_page.onePage .pageHeader .infoContainer .infoItem:nth-child(3n+3) {
+	margin: 0 0 0 0;
+}
+.report_page.onePage .pageHeader .infoContainer .infoItem .label {
+	font:6pt/6pt 'Poppins'!important; font-weight: 600!important; margin: 0 0 0.5mm 0; color: rgba(0,0,0,0.50)!important;
+}
+.report_page.onePage .pageHeader .infoContainer .infoItem .info {
+	font:7pt/7pt 'Poppins'!important; font-weight: 600!important; padding: 0; width: calc(100% - 0mm); overflow: hidden; white-space: nowrap; color: rgba(0,70,125,1)!important;
+}
+
+.report_page.onePage .pageHeader .supportContainer {
+	display: flex; flex-direction: column; justify-content: center; align-items: center; width: 25mm; height: 20mm;
+}
+.report_page.onePage .pageHeader .supportContainer .logoItem {
+	max-width: 18mm!important; max-height: 6mm;
+}
+
+.report_page.onePage .pageContent {
+	height: calc(100% - 20mm); width: calc(100% - 10mm); padding: 0 5mm;
+}
+
+.report_page.onePage .sectionContainer {
+	margin: 0;
+}
+
+.report_page.onePage .sectionContainer .sectionContainerTitle {
+	font:12pt/12pt 'Poppins'!important; font-weight: 600!important; padding: 2mm 3mm; background-color: rgba(0,70,125,0.8)!important; color: rgba(255,255,255,1)!important;
+}
+.report_page.onePage .sectionContainer .sectionContainerChartContainer {
+	display: flex; flex-wrap: wrap; width: calc(100% - 6mm); align-items: flex-start; flex-direction: row; justify-content: flex-start; padding: 3mm;
+}
+.report_page.onePage .sectionContainer .sectionContainerChartContainer.flexColIt {
+	flex-direction: column;
+}
+
+.onePageCompareItem {
+	display: flex; flex-direction: column; width: calc((100% / 3) - (6mm / 3) - 6mm); margin: 3mm 3mm 0 0; padding: 3mm; background-color: rgba(0,0,0,0.05)!important;
+}
+.onePageCompareItem.fullWidth {
+	width: calc(100% - 6mm); background-color: rgba(255,255,255,0)!important; margin: 0;
+}
+.onePageCompareItem > .title {
+	font:10pt/10pt 'Poppins'!important; font-weight: 600!important; text-align: center; margin: 0 0 3mm 0; height: 20pt; display: flex; justify-content: center; align-items: center; color: rgba(0,70,125,1)!important;
+}
+.onePageCompareItem.fullWidth > .title {
+	font:10pt/10pt 'Poppins'!important; font-weight: 600!important; margin: 0 0 0.7mm 0; 
+}
+.onePageCompareItem:nth-child(3n+3) {
+	margin-right: 0;
+}
+.onePageCompareItem:nth-child(1), .onePageCompareItem:nth-child(2), .onePageCompareItem:nth-child(3) {
+	margin-top: 0;
+}
+
+.report_page.onePage .compareChart {
+	display: flex; flex-direction: row; align-items: center; background-color: rgba(0,0,0,0.08)!important; height: 5mm; width: 100%; margin: 2mm 0;
+}
+
+.report_page.onePage .compareChart div {
+	display: flex; height: 5mm; justify-content: center; align-items: center; font:11pt/11pt 'Ubuntu'!important; font-weight: 500!important;
+}
+.report_page.onePage .compareChart .compareChartSeparator {
+	width: 0.6mm; height: 5mm;
+}
+
+.report_page.onePage .onePageCompareItem .compareLeft .itemTitle, .report_page.onePage .onePageCompareItem .compareRight .itemTitle {
+	font:8pt/8pt 'Poppins'!important; font-weight: 600!important; margin: 0 0 1mm 0;
+}
+.report_page.onePage .onePageCompareItem .compareLeft .itemDesc, .report_page.onePage .onePageCompareItem .compareRight .itemDesc {
+	font:7pt/8pt 'Poppins'!important; font-weight: 400!important; margin: 0; height: 24pt!important;
+}
+
+
+.report_page.onePage .legendContainer {
+	display: flex; flex-direction: row; justify-content: center; align-items: center; break-inside: avoid; flex-wrap: wrap;
+}
+.report_page.onePage .legendContainer.widthFull {
+	width: 100%;
+}
+.report_page.onePage .legendContainer .legendItem {
+	display: flex; flex-direction: row; justify-content: center; align-items: center; width: auto; margin: 0 0 0 2mm;
+}
+.report_page.onePage .legendContainer .legendItem:first-child {
+	margin: 0 0 0 0;
+}
+.report_page.onePage .legendContainer .legendItem .legendItemScore {
+	width: 3mm!important; height: 3mm!important; display: flex; justify-content: center; align-items: center; text-align: center; margin: 0 0.5mm 0 0; padding: 0; border-radius: 50%;
+}
+.report_page.onePage .legendContainer .legendItem .legendItemDesc {
+	width: auto; font:2.2mm/2.2mm 'Poppins'!important; font-weight: 500!important; text-align: left; display: flex; justify-content: center; color: rgba(0,0,0,0.7)!important;
+}
+
+.starterBottomSection {
+	display: flex; justify-content: flex-start; align-items: flex-start; width: 100%;
+}
+.starterBottomSection .starterBottomSectionL {
+	display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; width: calc(100% - (60mm + 3mm));
+}
+.starterBottomSection .starterBottomSectionR {
+	display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; width: 60mm; margin: 0 0 0 3mm;
+}
+
+.report_page.onePage .sectionContainer .sectionContainerChartContainer > .title {
+	font:10pt/10pt 'Poppins'!important; font-weight: 600!important; text-align: center; margin: 0 0 3mm 0; display: flex; justify-content: center; align-items: center; color: rgba(0,70,125,1)!important; width: 100%;
+}
+.report_page.onePage .sectionContainer .sectionContainerChartContainer > .desc {
+	font:6pt/7pt 'Poppins'!important; font-weight: 400!important; text-align: center;
+}
+.report_page.onePage .sectionContainer .sectionContainerChartContainer > .score {
+	font:10pt/10pt 'Poppins'!important; font-weight: 500!important; text-align: center; display: flex; justify-content: center; align-items: center; width: 40mm; height: 10mm; margin: 0 auto 3mm auto;
+}
+
+.onePage .subStarterItem {
+	width: 100%; break-inside: avoid; display: flex; flex-direction: column; justify-content: flex-start; align-items: center;
+}
+.onePage .subStarterItem .title {
+	width: 100%; font:8pt/8pt 'Poppins'!important; font-weight: 600!important; margin: 0 0 1mm 0; text-align: center;
+}
+.onePage .subStarterItem .title.small {
+	width: 100%; font:6pt/6pt 'Poppins'!important; font-weight: 500!important; margin: 0 0 0 0; text-align: center;
+}
+.onePage .subStarterItem .score {
+	width: 70%; height: 10mm; margin: 1mm 0; display: flex; justify-content: center; align-items: center; font:10pt/10pt 'Poppins'!important; font-weight: 500!important; 
+}
+.onePage .subStarterItem .score.circle {
+	width: 100%; width: 10mm; height: 10mm; margin: 0 0 1mm 0; display: flex; justify-content: center; align-items: center; font:10pt/10pt 'Poppins'!important; font-weight: 500!important; border-radius: 50%;
+}
+.onePage .subStarterItem .desc {
+	width: 100%; font:7pt/8pt 'Poppins'!important; font-weight: 400!important; margin: 0; text-align: center;
+}
+
+.onePage .subStarterItem.flexRowIt {
+	width: 100%; break-inside: avoid; display: flex; flex-direction: row; justify-content: center; align-items: center; margin: 0 0 3mm 0;
+}
+.onePage .subStarterItem.flexRowIt .score {
+	display: flex; justify-content: center; align-items: center; font:10pt/10pt 'Poppins'!important; font-weight: 500!important; width: 10mm; height: 10mm; margin: 0;
+}
+.onePage .subStarterItem.flexRowIt .title {
+	display: flex; flex-direction: row; justify-content: flex-start; align-items: center; width: calc(100% - (10mm + 3mm)); margin: 0 0 0 3mm; font:10pt/10pt 'Poppins'!important; font-weight: 600!important; text-transform: uppercase;
+}
+
+.report_page.onePage .sectionContainer > .title {
+	font:10pt/10pt 'Poppins'!important; font-weight: 600!important; text-align: center; margin: 0 0 3mm 0; display: flex; justify-content: center; align-items: center; color: rgba(0,70,125,1)!important; width: 100%;
+}
+
+
+.report_page.onePage .chartMedScoreItem {
+	display: flex; break-inside: avoid; align-items: center; margin: 0 0 2mm 0;
+}
+.report_page.onePage .chartMedScoreItem .score {
+	display: flex; width: 20mm; height: 20mm; justify-content: center; align-items: center; font:10pt/10pt 'Poppins'!important; font-weight: 500!important; text-align: center; margin: 0 2mm 0 0; 
+}
+.report_page.onePage .chartMedScoreItem .score.circle {
+	border-radius: 50%;
+}
+.report_page.onePage .chartMedScoreItem .chartMedScoreItemR {
+	display: flex; width: calc(100% - (20mm + 2mm + 2mm)); flex-direction: column;
+}
+.report_page.onePage .chartMedScoreItem .chartMedScoreItemR .chartBarItemTitle {
+	font:9pt/9pt 'Poppins'!important; font-weight: 600!important; margin: 0 0 0.5mm 0;
+}
+.report_page.onePage .chartMedScoreItem .chartMedScoreItemR .chartBarItemDesc {
+	font:7pt/8pt 'Poppins'!important; font-weight: 400!important; margin: 0; min-height: 24pt;
+}
+
+.report_page.onePage .disclaimer {
+	break-inside: avoid;
+}
+.report_page.onePage .disclaimer p {
+	font:6pt/8pt 'Poppins'!important; font-weight: 400!important; color: rgba(0,0,0,0.7)!important;
+}
+.report_page.onePage .disclaimer.boxed {
+	padding: 3mm; background-color: rgba(0,0,0,0.2)!important;
+}
+.report_page.onePage .disclaimer.boxed p {
+	font:6pt/8pt 'Poppins'!important; font-weight: 400!important; color: rgba(0,0,0,0.7)!important;
+}
+
+.report_page.onePage .starterWorkfield {
+	display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; margin: 0 0 1mm 0; padding: 0;
+}
+.report_page.onePage .starterWorkfield div {
+	display: flex; justify-content: center; align-items: center; font:6pt/7pt 'Poppins'!important; font-weight: 400!important; padding: 1.5mm 2mm; width: calc(100% - 4mm); margin: 0 0 1mm 0; text-align: center; height: 14pt;
+}
+
+/** END OF ONE PAGE SETUP **/
+
+/** START OF READINESS **/
+
+.readinessMainScoreContainer {
+	display: flex; justify-content: center; align-items: center; height: 30mm; border-bottom: 1px solid rgba(255,255,255,0.1)!important; width: 100%;
+}
+.readinessMainScoreContainer .descContainer {
+	display: flex; width: 80mm; flex-direction: column;
+}
+.readinessMainScoreContainer .descContainer .title {
+	font:14pt/14pt 'Poppins'!important; font-weight: 700!important; color: rgba(0,70,125,1)!important; margin: 0 0 0.5mm 0;
+}
+.readinessMainScoreContainer .descContainer .desc {
+	font:7pt/9pt 'Poppins'!important; font-weight: 500!important;
+}
+.readinessMainScoreContainer .score {
+	display: flex; width: 40mm; height: 20mm; margin: 0 0 0 3mm; justify-content: center; align-items: center; background-color: rgba(255,255,255,0.5)!important; border-radius: 3mm; font:22pt/22pt 'Poppins'!important; font-weight: 500!important; 
+}
+
+.flex5col {
+	display: flex; flex-wrap: wrap;
+}
+
+.onePage .flex5col .subStarterItem {
+	width: calc(100% / 5); break-inside: avoid; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; margin: 2mm 0 0 0;
+}
+.onePage .flex5col .subStarterItem .title {
+	width: calc(100% - 2mm); font:8pt/8pt 'Poppins'!important; font-weight: 600!important; margin: 0 0 1mm 0; text-align: center; min-height: 16pt; display: flex; justify-content: center; align-items: center; padding: 0 1mm;
+}
+.onePage .flex5col .subStarterItem .title.small {
+	width: 100%; font:6pt/6pt 'Poppins'!important; font-weight: 500!important; margin: 0 0 0 0; text-align: center;
+}
+.onePage .flex5col .subStarterItem .score {
+	width: 100%; width: 70%; height: 10mm; margin: 1mm 0; display: flex; justify-content: center; align-items: center; font:10pt/10pt 'Poppins'!important; font-weight: 500!important; 
+}
+.onePage .flex5col .subStarterItem .score.circle {
+	width: 100%; width: 20mm; height: 20mm; margin: 1mm 0; display: flex; justify-content: center; align-items: center; font:10pt/10pt 'Poppins'!important; font-weight: 500!important; border-radius: 50%;
+}
+.onePage .flex5col .subStarterItem .desc {
+	width: calc(100% - 2mm); font:7pt/8pt 'Poppins'!important; font-weight: 400!important; margin: 0; text-align: center; height: 48pt; padding: 0 2mm;
+}
+.onePage .flex5col .subStarterItem:nth-child(1), .onePage .flex5col .subStarterItem:nth-child(2), .onePage .flex5col .subStarterItem:nth-child(3), .onePage .flex5col .subStarterItem:nth-child(4), .onePage .flex5col .subStarterItem:nth-child(5) {
+	margin: 0 0 0 0;
+}
+
+.readiness16Workfield {
+	display: flex; flex-wrap: wrap; flex-direction: row; justify-content: flex-start; align-items: flex-start; margin: 0 0 3mm 0;
+}
+.onePage .sixteenWorkfieldFullPageContainer {
+	display: flex; width: calc((100% / 4) - 6mm - (9mm / 4)); flex-direction: row; justify-content: flex-start; align-items: center; break-inside: avoid; padding: 3mm; background-color:rgba(0,0,0,0.35)!important; margin: 3mm 3mm 0 0; height: 10mm;
+}
+.onePage .sixteenWorkfieldFullPageContainer:nth-child(4n+4) {
+	margin-right: 0;
+}
+.onePage .sixteenWorkfieldFullPageContainer:nth-child(1), .onePage .sixteenWorkfieldFullPageContainer:nth-child(2), .onePage .sixteenWorkfieldFullPageContainer:nth-child(3), .onePage .sixteenWorkfieldFullPageContainer:nth-child(4) {
+	margin-top: 0;
+}
+
+.onePage .sixteenWorkfieldFullPageContainer.active {
+	background-color:rgba(0,70,125,1)!important;
+}
+.onePage .sixteenWorkfieldFullPageContainer span {
+	display: flex; justify-content: center; align-items: center; margin: 0 3mm 0 0; color: #FFFFFF!important; width: 8mm; height: 8mm;
+}
+.onePage .sixteenWorkfieldFullPageContainer span img {
+	width: 5mm; height: 5mm;
+}
+.onePage .sixteenWorkfieldFullPageContainer div {
+	font:8pt/10pt 'Poppins'!important; font-weight: 400!important; color: #FFFFFF!important; width: calc(100% - (8mm + 3mm));
+}
+
+
+/** END OF READINESS **/
+
+/** COMPACT **/
+
+.pageContent.compact h1 {
+	font:30pt/30pt 'Poppins'!important; font-weight: 700!important; display: flex; align-items: center; margin: 0 0 3mm 0;
+}
+.pageContent.compact h5 {
+	font:15pt/15pt 'Poppins'!important; font-weight: 700!important; display: flex; align-items: center; margin: 0 0 2mm 0;
+}
+.report_page .pageContent.compact h5 .score {
+	font:15pt/15pt 'Ubuntu'!important; font-weight: 700!important; width: 10mm; height: 10mm; margin: 0 2mm 0 0;
+}
+.pageContent.compact p {
+	font:8pt/12pt 'Poppins'!important; font-weight: 400; color: rgba(0,0,0,1)!important;
+}
+.pageContent.compact .sep5mm {
+	height: 3mm;
+}
+.pageContent.compact .compareContainer .compareContainerTitle {
+	font:12pt/12pt 'Poppins'!important; font-weight: 600!important; 
+}
+.pageContent.compact .compareContainer .compareContainerChartContainer .compareLeft, .pageContent.compact .compareContainer .compareContainerChartContainer .compareRight {
+	height: 20mm;
+}
+
+.pageContent.compact .sectionContainer .sectionContainerChartContainer .compareLeft .itemDesc, .pageContent.compact .sectionContainer .sectionContainerChartContainer .compareRight .itemDesc {
+	min-height: 18pt;
+}
+
+/** COMPACT **/
 
 /** START OF TICKET PRINTOUT **/
 
 .ticket_items {
-	display: flex; flex-direction: column; width: calc((100% / 4) - 4.2mm); height: 52.5mm; margin: 0 0 0 0; border: 0.1mm solid rgba(0,0,0,0.5); padding: 2mm; justify-content: center; align-items: center; align-content: center;
+	display: flex; flex-direction: column; width: calc((100% / 4) - 4.2mm); height: 52.5mm; margin: 0 0 0 0; padding: 1.5mm; justify-content: center; align-items: center; align-content: center; border-left: 0.1mm solid rgba(0,0,0,0.3); border-bottom: 0.1mm solid rgba(0,0,0,0.3);
 }
 .ticket_items .ticket_url {
-	font:9pt/9pt 'Open Sans'; font-weight: 600; margin: 0 0 1mm 0;
+	font:9pt/9pt 'Poppins'; font-weight: 600; margin: 0 0 1mm 0;
 }
 .ticket_items .ticket_text {
-	font:8pt/8pt 'Open Sans'; font-weight: 400; margin: 0 0 1mm 0;
+	font:8pt/8pt 'Poppins'; font-weight: 400; margin: 0 0 1mm 0;
 }
 .ticket_items .print_ticket_qr {
 	width: 22.5mm; margin: 0 0 1mm 0;
 }
+.ticket_items:nth-child(4n+4) {
+	border-right: 0.1mm solid rgba(0,0,0,0.3);
+}
+.ticket_items:nth-child(1), .ticket_items:nth-child(2), .ticket_items:nth-child(3), .ticket_items:nth-child(4) {
+	border-top: 0.1mm solid rgba(0,0,0,0.3);
+}
+
 /** END OF TICKET PRINTOUT **/
 
 
 @media print {
 	@page {
-		size: 210mm 297mm;
+		size: 210mm 297mm!important;
 		margin: 0mm 0mm 0mm 0mm!important;
 	}
-    body 			{ width: 100%!important; max-width: 100%!important;  padding: 0; margin: 0; -webkit-print-color-adjust: exact!important; }
-	p 				{ font: 12pt/16pt 'Work Sans'; }
-	.dash_left		{ display: none; width: 100%; height: 100%; }
-	.dash_right		{ width: calc(100% - 40px); left:0px; }
-	.heading		{ font: 20pt/20pt 'Work Sans'; position: relative; display: block; width: auto; padding: 10pt; }
-
-	.report_page_landscape
-					{ margin: 0; padding: 0; border: 0px; }
-
-	.report_page
-					{ margin: 0; padding: 0; border: 0px; }
-	.report_page:last-child
-					{ margin: 0; }
-	.report_page p
-					{ font:9pt/10pt 'Work Sans'; font-weight: 400; }
-
-	.report_nav		{ display: none!important; margin: 0!important; padding: 0!important; }
-	.content_nav 	{ display: none!important; margin: 0!important; padding: 0!important; }
-
-	.printv3_reportcontainer
-						{ display: block; width: auto; margin: 0 0 0 0; padding: 0 0 0 0; }
-	.printv3_languageselector
-						{ display: none; }
-
+  body {
+		width: 100%!important; max-width: 100%!important;  padding: 0!important; margin: 0!important;
+	}
+	.report_page {
+		margin: 0!important; padding: 0!important; border: 0px!important; overflow: hidden!important;
+	}
+	.report_page:last-child {
+		margin: 0;
+	}
+	.report_page p {
+		font:9pt/10pt 'Poppins'; font-weight: 400; 
+	}
 }
 
 @media only screen and (max-width: 768px) {
-
 	body {
 		overflow-y:hidden;
 	}
