@@ -35,7 +35,7 @@ body {
 }
 
 .report_page h5 .score {
-	font:20pt/20pt 'Ubuntu'!important; font-weight: 700!important; display: flex; align-items: center; justify-content: center; width: 12mm; height: 12mm; border-radius: 0%; margin: 0 2mm 0 0;
+	font:20pt/20pt 'Ubuntu'!important; font-weight: 700!important; display: flex; align-items: center; justify-content: center; min-width: calc(12mm - 6mm); height: auto; border-radius: 0%; margin: 0 2mm 0 0; padding: 3mm;
 }
 
 .report_page .textBold {
@@ -215,6 +215,9 @@ body {
 .compareContainer .compareContainerChartContainer .compareChart div {
 	display: flex; height: 15mm; justify-content: center; align-items: center; font:12pt/12pt 'Ubuntu'!important; font-weight: 500!important;
 }
+.compareContainer .compareContainerChartContainer .compareChart div .tiny {
+	font:10pt/10pt 'Ubuntu'!important; font-weight: 500!important; transform: rotate(-90deg);
+}
 
 .compareContainer .compareContainerChartContainer.widthFull .compareChart {
 	width: 70mm;
@@ -294,6 +297,19 @@ body {
 	width: 100%;
 }
 
+.sectionContainer .sectionContainerChartContainer .chartsize .score {
+	display: flex; position: absolute; width: calc(60mm - 10mm); height: calc(60mm - 10mm); justify-content: center; align-items: center; font:30pt/30pt 'Ubuntu'!important; font-weight: 700!important;
+}
+.sectionContainer .sectionContainerChartContainer .chartsize {
+	width: calc(60mm - 10mm); height: calc(60mm - 10mm); padding: 0 5mm; margin: 0 auto;
+}
+.sectionContainer .sectionContainerChartContainer .chartTitle {
+	width: 100%; text-align: center; font:12pt/12pt 'Poppins'!important; font-weight: 600!important; display: flex; justify-content: center; align-items: center; height: 10mm;
+}
+.sectionContainer .sectionContainerChartContainer .chartDesc {
+	width: 100%; margin: 0 auto; text-align: left; font:7pt/9pt 'Poppins'!important; font-weight: 500!important;
+}
+
 .sectionContainer .sectionContainerChartContainer .chartItem.col2ChartItem {
 	columns: 2; column-gap: 5mm;
 }
@@ -343,7 +359,7 @@ body {
 	font:12pt/12pt 'Poppins'!important; font-weight: 600!important; padding: 2mm 3mm; width: calc(100% - 6mm); display: flex; align-items: center;
 }
 .sectionContainerScore .score {
-	width: 13mm; height: 13mm; margin: 0 3mm 0 0; display: flex; justify-content: center; align-items: center; font:20pt/20pt 'Ubuntu'!important; font-weight: 700!important; text-align: center;
+	width: 13mm; height: 13mm; margin: 0 3mm 0 0; display: flex; justify-content: center; align-items: center; font:12pt/12pt 'Ubuntu'!important; font-weight: 700!important; text-align: center;
 }
 .sectionContainerScore .score.circle {
 	border-radius: 50%;
@@ -365,13 +381,13 @@ body {
 	display: flex; break-inside: avoid; align-items: center; margin: 0 0 2mm 0;
 }
 .chartMedScoreItem .score {
-	display: flex; width: 10mm; height: 10mm; justify-content: center; align-items: center; font:17pt/17pt 'Ubuntu'!important; font-weight: 700!important; text-align: center; margin: 0 2mm 0 0; 
+	display: flex; width: 13mm; height: 10mm; justify-content: center; align-items: center; font:12pt/12pt 'Ubuntu'!important; font-weight: 700!important; text-align: center; margin: 0 2mm 0 0; 
 }
 .chartMedScoreItem .score.circle {
-	border-radius: 50%;
+	border-radius: 3mm;
 }
 .chartMedScoreItem .chartMedScoreItemR {
-	display: flex; width: calc(100% - (10mm + 2mm + 2mm)); flex-direction: column;
+	display: flex; width: calc(100% - (13mm + 2mm + 2mm)); flex-direction: column;
 }
 .chartMedScoreItem .chartMedScoreItemR .chartBarItemTitle {
 	font:9pt/9pt 'Poppins'!important; font-weight: 600!important; margin: 0 0 0.5mm 0;
@@ -387,7 +403,7 @@ body {
 	font:9pt/9pt 'Poppins'!important; font-weight: 600!important; margin: 0 0 2mm 0; text-align: center; color: #FFFFFF!important;
 }
 .sectionContainer .sectionContainerL .score {
-	font:24pt/24pt 'Ubuntu'!important; font-weight: 600!important; margin: 0 0 2mm 0; text-align: center; width: 15mm; height: 15mm; display: flex; justify-content: center; align-items: center; border-radius: 50%;
+	font:14pt/14pt 'Ubuntu'!important; font-weight: 600!important; margin: 0 0 2mm 0; text-align: center; width: 15mm; height: 15mm; display: flex; justify-content: center; align-items: center; border-radius: 50%;
 }
 .sectionContainer .sectionContainerL .sectionContainerLDesc {
 	font:7pt/9pt 'Poppins'!important; font-weight: 500!important; margin: 0; text-align: center; color: #FFFFFF!important;
@@ -415,7 +431,7 @@ body {
 }
 
 .lsItemFlatContainer .chartMedScoreItem:first-child .score {
-	display: flex; width: 15mm; height: 15mm; justify-content: center; align-items: center; font:24pt/24pt 'Ubuntu'!important; font-weight: 700!important; text-align: center; margin: 0 2mm 0 0; background-color: rgba(255,255,255,1)!important;
+	display: flex; width: 15mm; height: 15mm; justify-content: center; align-items: center; font:14pt/14pt 'Ubuntu'!important; font-weight: 700!important; text-align: center; margin: 0 2mm 0 0; background-color: rgba(255,255,255,1)!important;
 }
 .lsItemFlatContainer .chartMedScoreItem:first-child .score.circle {
 	border-radius: 50%;
@@ -451,7 +467,7 @@ body {
 	width: 100%; display: flex; flex-direction: column; break-inside: avoid; flex-wrap: wrap;
 }
 .doughChart4Container .score {
-	display: flex; position: absolute; width: calc(46.25mm - 10mm); height: calc(46.25mm - 10mm); justify-content: center; align-items: center; font:36pt/36pt 'Ubuntu'!important; font-weight: 700!important;
+	display: flex; position: absolute; width: calc(46.25mm - 10mm); height: calc(46.25mm - 10mm); justify-content: center; align-items: center; font:20pt/20pt 'Ubuntu'!important; font-weight: 700!important;
 }
 .doughChart4Container .chartsize {
 	width: calc(100% - 10mm); height: calc(46.25mm - 10mm); padding: 0 5mm;
@@ -467,7 +483,7 @@ body {
 	width: 100%; display: flex; flex-direction: column; break-inside: avoid; flex-wrap: wrap;
 }
 .doughChart3Container .score {
-	display: flex; position: absolute; width: calc((185mm / 3) - 10mm); height: calc((185mm / 3) - 10mm); justify-content: center; align-items: center; font:40pt/40pt 'Ubuntu'!important; font-weight: 700!important;
+	display: flex; position: absolute; width: calc((185mm / 3) - 10mm); height: calc((185mm / 3) - 10mm); justify-content: center; align-items: center; font:30pt/30pt 'Ubuntu'!important; font-weight: 700!important;
 }
 .doughChart3Container .chartsize {
 	width: calc(100% - 10mm); height: calc((185mm / 3) - 10mm); padding: 0 5mm;
@@ -486,7 +502,7 @@ body {
 	display: flex; justify-content: flex-start; align-items: center;
 }
 .flatTabItemContainer .flatTabItemContainerTitle .score {
-	display: flex; justify-content: center; align-items: center; font:16pt/16pt 'Ubuntu'!important; font-weight: 700!important; width: 10mm; height: 10mm;
+	display: flex; justify-content: center; align-items: center; font:16pt/16pt 'Ubuntu'!important; font-weight: 700!important; min-width: calc(10mm - 4mm); height: 10mm; padding: 0 2mm;
 }
 .flatTabItemContainer .flatTabItemContainerTitle .title {
 	display: flex; justify-content: flex-start; align-items: center; height: 10mm; font:12pt/12pt 'Poppins'!important; font-weight: 500!important; padding: 0 3mm; background-color: rgba(0,0,0,0.8)!important; color: #FFFFFF!important;
@@ -499,10 +515,10 @@ body {
 	display: flex; align-items: center; justify-content: flex-start; break-inside: avoid; margin: 0 0 1mm 0;
 }
 .jobListItem .score {
-	display: flex; align-items: center; justify-content: center; font:11pt/11pt 'Ubuntu'!important; font-weight: 600!important; width: 7mm; height: 7mm; margin: 0 1mm 0 0;
+	display: flex; align-items: center; justify-content: center; font:11pt/11pt 'Ubuntu'!important; font-weight: 600!important; width: 12mm; height: 7mm; margin: 0 1mm 0 0;
 }
 .jobListItem .title {
-	display: flex; align-items: center; justify-content: flex-start; font:8pt/9pt 'Poppins'!important; font-weight: 500!important; width: calc(100% - 8mm);
+	display: flex; align-items: center; justify-content: flex-start; font:8pt/9pt 'Poppins'!important; font-weight: 500!important; width: calc(100% - 13mm);
 }
 
 .sixteenWorkfieldFullPageContainer {
@@ -867,7 +883,7 @@ body {
 	font:15pt/15pt 'Poppins'!important; font-weight: 700!important; display: flex; align-items: center; margin: 0 0 2mm 0;
 }
 .report_page .pageContent.compact h5 .score {
-	font:15pt/15pt 'Ubuntu'!important; font-weight: 700!important; width: 10mm; height: 10mm; margin: 0 2mm 0 0;
+	font:15pt/15pt 'Ubuntu'!important; font-weight: 700!important; display: flex; align-items: center; justify-content: center; min-width: calc(10mm - 4mm); height: auto; border-radius: 0%; margin: 0 2mm 0 0; padding: 2mm;
 }
 .pageContent.compact p {
 	font:8pt/12pt 'Poppins'!important; font-weight: 400; color: rgba(0,0,0,1)!important;
