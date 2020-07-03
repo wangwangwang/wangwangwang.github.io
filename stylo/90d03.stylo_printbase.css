@@ -330,6 +330,9 @@ body {
 .sectionContainer .sectionContainerChartContainer .compareChart div {
 	display: flex; height: 10mm; justify-content: center; align-items: center; font:11pt/11pt 'Ubuntu'!important; font-weight: 500!important;
 }
+.sectionContainer .sectionContainerChartContainer .compareChart .tiny {
+	font:10pt/10pt 'Ubuntu'!important; font-weight: 500!important; transform: rotate(-90deg);
+}
 .sectionContainer .sectionContainerChartContainer .compareChart .compareChartSeparator {
 	width: 0.6mm; height: 10mm;
 }
