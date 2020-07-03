@@ -355,6 +355,10 @@ body {
 	display: flex; height: 10mm; justify-content: center; align-items: center; font:11pt/11pt 'Ubuntu'!important; font-weight: 500!important;
 }
 
+.chartItem .chartBarItem .chartBarItemR div .tiny {
+	font:10pt/10pt 'Ubuntu'!important; font-weight: 500!important; transform: rotate(-90deg);
+}
+
 .sectionContainerScore {
 	font:12pt/12pt 'Poppins'!important; font-weight: 600!important; padding: 2mm 3mm; width: calc(100% - 6mm); display: flex; align-items: center;
 }
