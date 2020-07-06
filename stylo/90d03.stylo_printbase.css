@@ -555,10 +555,10 @@ body {
 	width: 100%;
 }
 .mainAlphaContainer .score {
-	display: flex; justify-content: center; align-items: center; width: 20mm; height: 20mm; margin: 0 2mm 0 0; font:26pt/26pt 'Ubuntu'!important; font-weight: 700!important;
+	display: flex; justify-content: center; align-items: center; width: 24mm; height: 24mm; margin: 0 2mm 0 0; font:22pt/22pt 'Ubuntu'!important; font-weight: 700!important;
 }
 .mainAlphaContainer .mainAlphaR {
-	display: flex; justify-content: center; align-items: flex-start; flex-direction: column;	width: calc(100% - (20mm + 4mm));
+	display: flex; justify-content: center; align-items: flex-start; flex-direction: column;	width: calc(100% - (24mm + 4mm));
 }
 .mainAlphaContainer .mainAlphaR .title {
 	font:12pt/12pt 'Poppins'!important; font-weight: 600!important; margin: 0 0 1mm 0;
@@ -574,7 +574,7 @@ body {
 	font:10pt/10pt 'Poppins'!important; font-weight: 600!important; margin: 0 0 2mm 0; display: flex; align-items: center;
 }
 .subAlphaItem .title .score {
-	display: flex; justify-content: center; align-items: center; width: 10mm; height: 10mm; margin: 0 2mm 0 0; font:13pt/13pt 'Ubuntu'!important; font-weight: 700!important;
+	display: flex; justify-content: center; align-items: center; min-width: calc(12mm - 4mm); margin: 0 2mm 0 0; font:14pt/14pt 'Ubuntu'!important; font-weight: 700!important; padding: 2mm;
 }
 .subAlphaItem .desc {
 	font:8pt/10pt 'Poppins'!important; font-weight: 500!important; min-height: 30pt;
@@ -585,7 +585,7 @@ body {
 }
 
 .mainAlphaContainer .score.circle, .subAlphaItem .title .score.circle {
-	border-radius: 50%;
+	border-radius: 1mm;
 }
 .mainAlphaContainer .score.roundedCorner, .subAlphaItem .title .score.roundedCorner {
 	border-radius: 10%;
