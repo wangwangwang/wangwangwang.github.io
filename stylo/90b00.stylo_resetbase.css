@@ -103,6 +103,8 @@ h6	{
 .pad1cm			{ padding: 10mm 10mm 0 10mm; }
 .pad10			{ padding: 10px; }
 .pad20			{ padding: 20px; }
+.pad3mm			{ padding: 3mm; }
+.pad5mm			{ padding: 5mm; }
 
 ::-webkit-scrollbar {
 	width: 10px; height: 5px;
@@ -172,6 +174,9 @@ fieldset {
 }
 .flexcenterit {
 	justify-content: center; align-items: center;
+}
+.flexSpaceBetween {
+	justify-content: space-between!important;
 }
 .flexjustcenter {
 	justify-content: center;
@@ -280,6 +285,9 @@ fieldset {
 .flexGridContainer_pad5mm {
 	display: flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-start; align-items: flex-start; width: calc(100% - 10mm); padding: 5mm 5mm 0mm 5mm;
 }
+.flexGridContainer_pad3mm {
+	display: flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-start; align-items: flex-start; width: calc(100% - 10mm); padding: 3mm 3mm 3mm 3mm;
+}
 .flexGridContainer .fg100p {
 	width: 100%;
 }
@@ -292,6 +300,9 @@ fieldset {
 .flexGridContainer .fg50p10gap {
 	width: calc((100% / 2) - 5px);
 }
+.flexGridContainer .fg50p3mmgap {
+	width: calc((100% / 2) - (3mm / 2));
+}
 .flexGridContainer .fg3rd5gap {
 	width: calc((100% / 3) - 8px);
 }
@@ -300,6 +311,9 @@ fieldset {
 }
 .flexGridContainer .fg3col {
 	width: calc(100% / 3);
+}
+.flexGridContainer .fg3col3mmgap {
+	width: calc((100% / 3) - (6mm / 3));
 }
 .flexGridContainer .fg50p5mm {
 	width: calc((100% / 2) - 2.5mm);

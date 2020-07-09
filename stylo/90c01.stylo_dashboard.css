@@ -622,6 +622,26 @@ button.buttonLine:disabled {
 	margin: 0 10px 0 0!important; width: 100%;
 }
 
+/** Pagination **/
+
+.pagination {
+	display: flex; justify-content: center; align-items: center; width: 100%;
+}
+.pagination .first a, .pagination .prev a, .pagination .page a, .pagination .next a, .pagination .last a {
+	display: flex; justify-content: center; align-items: center; font:12px/12px 'ubuntu'!important; font-weight: 400!important; width: 28px; height: 28px; background-color: rgba(0,0,0,0.1); color: rgba(0,70,125,1); margin: 0 3px 0 0;
+}
+.pagination .page.current {
+	display: flex; justify-content: center; align-items: center; font:12px/12px 'ubuntu'!important; font-weight: 400!important; width: 28px; height: 28px; background-color: rgba(0,70,125,1); color: #FFFFFF; margin: 0 3px 0 0;
+}
+.pagination .page.gap {
+	display: flex; justify-content: center; align-items: center; font:12px/12px 'ubuntu'!important; font-weight: 400!important; width: 28px; height: 28px; background-color: rgba(0,0,0,0.1); color: rgba(0,0,0,0.4); margin: 0 3px 0 0;
+}
+.pagination .last a {
+	margin: 0;
+}
+.pagination .first a:hover, .pagination .prev a:hover, .pagination .page a:hover, .pagination .next a:hover, .pagination .last a:hover {
+	background-color: rgba(0,70,125,1); color: #FFFFFF;
+}
 
 /** DASH CONTROL **/
 
