@@ -7,6 +7,9 @@ body {
 .report_page {
 	display: block; width: 210mm!important; height: 297mm!important; background-color: #FFF!important; margin: 0mm auto 10mm auto; overflow: hidden!important; padding: 0; border: 0px solid rgba(0,0,0,0.10); box-shadow: 0px 0px 3px rgba(0,0,0,0.20); background-size: cover!important; background-position: center middle; background-repeat: no-repeat;
 }
+.report_page .watermarkContainer {
+	position: absolute; z-index: 100!important; width: 210mm; height: 297mm; background-image: url(https://wangwangwang.github.io/svg/watermark.svg)!important;
+}
 .report_page:last-child {
 	margin: 10mm auto;
 }
