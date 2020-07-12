@@ -394,13 +394,13 @@ body {
 	display: flex; break-inside: avoid; align-items: center; margin: 0 0 2mm 0;
 }
 .chartMedScoreItem .score {
-	display: flex; width: 13mm; height: 10mm; justify-content: center; align-items: center; font:12pt/12pt 'Ubuntu'!important; font-weight: 700!important; text-align: center; margin: 0 2mm 0 0; 
+	display: flex; width: 17mm; height: 12mm; justify-content: center; align-items: center; font:12pt/12pt 'Ubuntu'!important; font-weight: 700!important; text-align: center; margin: 0 2mm 0 0; 
 }
 .chartMedScoreItem .score.circle {
 	border-radius: 3mm;
 }
 .chartMedScoreItem .chartMedScoreItemR {
-	display: flex; width: calc(100% - (13mm + 2mm + 2mm)); flex-direction: column;
+	display: flex; width: calc(100% - (17mm + 2mm + 0mm)); flex-direction: column;
 }
 .chartMedScoreItem .chartMedScoreItemR .chartBarItemTitle {
 	font:9pt/9pt 'Poppins'!important; font-weight: 600!important; margin: 0 0 0.5mm 0;
@@ -926,7 +926,7 @@ body {
 	display: flex; height: 5mm; justify-content: center; align-items: center; font:9pt/9pt 'Ubuntu'!important; font-weight: 500!important;
 }
 #edustarter .report_page.onePage .compareChart div .tiny {
-	font:5pt/5pt 'Ubuntu'!important; font-weight: 500!important; transform: rotate(0deg);
+	font:5pt/5pt 'Ubuntu'!important; font-weight: 400!important; transform: rotate(-90deg); color: #FFFFFF!important;
 }
 
 #edustarter .sectionContainerScore {
@@ -958,13 +958,13 @@ body {
 	margin: 0 0 0 0;
 }
 #edustarter .report_page.onePage .chartMedScoreItem .score {
-	display: flex; width: calc(15mm - 4mm); height: auto; justify-content: center; align-items: center; font:12pt/12pt 'Poppins'!important; font-weight: 700!important; text-align: center; margin: 0 2mm 0 0; padding: 3mm 2mm;
+	display: flex; width: calc(17mm - 4mm); height: auto; justify-content: center; align-items: center; font:12pt/12pt 'Poppins'!important; font-weight: 700!important; text-align: center; margin: 0 2mm 0 0; padding: 4mm 2mm;
 }
 #edustarter .report_page.onePage .chartMedScoreItem .score.circle {
 	border-radius: 3mm;
 }
 #edustarter .report_page.onePage .chartMedScoreItem .chartMedScoreItemR {
-	display: flex; width: calc(100% - (15mm + 2mm + 2mm)); flex-direction: column;
+	display: flex; width: calc(100% - (17mm + 2mm + 0mm)); flex-direction: column;
 }
 #edustarter .report_page.onePage .chartMedScoreItem .chartMedScoreItemR .chartBarItemTitle {
 	font:9pt/9pt 'Poppins'!important; font-weight: 600!important; margin: 0 0 0.5mm 0;
@@ -977,7 +977,7 @@ body {
 	display: flex; flex-direction: column; justify-content: flex-start; align-items: center;
 }
 #edustarter .chartItem .score{
-	display: flex; width: calc(14mm - 0mm); height: 14mm; justify-content: center; align-items: center; font:14pt/14pt 'Poppins'!important; font-weight: 700!important; text-align: center; margin: 0 0 2mm 0; padding: 2mm 2mm;
+	display: flex; width: calc(16mm - 0mm); height: 16mm; justify-content: center; align-items: center; font:14pt/14pt 'Poppins'!important; font-weight: 700!important; text-align: center; margin: 0 0 2mm 0; padding: 2mm 2mm;
 }
 #edustarter .chartItem .score.circle {
 	border-radius: 50%;
