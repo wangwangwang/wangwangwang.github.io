@@ -944,7 +944,7 @@ body {
 #edustarter .report_page.onePage .compareChart div {
 	display: flex; height: 5mm; justify-content: center; align-items: center; font:9pt/9pt 'Ubuntu'!important; font-weight: 500!important;
 }
-#edustarter .report_page.onePage .compareChart div .tiny {
+#edustarter .report_page.onePage .compareChart div .tiny, #edustarter .report_page.onePage .compareChart div .verySmall {
 	font:5pt/5pt 'Ubuntu'!important; font-weight: 400!important; transform: rotate(-90deg); color: #FFFFFF!important; display: none;
 }
 #edustarter .report_page.onePage .compareChart div .small {
