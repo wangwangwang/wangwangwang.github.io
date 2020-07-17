@@ -14,16 +14,10 @@ body {
 	display: block;
 }
 .reportLanguageSelector > .reportLanguageListContainer > a {
-	display: flex; align-items: center; padding: 10px; background-color: rgba(0,70,125,0.5); width: calc(100% - 10px);
+	display: flex; align-items: center; padding: 10px; background-color: rgba(0,70,125,0.5); width: calc(100% - 10px); font:8pt/8pt 'Poppins'!important; font-weight: 500!important; color: #FFF;
 }
 .reportLanguageSelector > .reportLanguageListContainer > a:hover {
-	background-color: rgba(0,70,125,1);
-}
-.reportLanguageSelector > .reportLanguageListContainer > a > div {
-	font:8pt/8pt 'Poppins'!important; font-weight: 500!important; color: #FFF;
-}
-.reportLanguageSelector > .reportLanguageListContainer > a:hover > div {
-	color: #FFF;
+	background-color: rgba(0,70,125,1); color: #FFF;
 }
 .reportLanguageSelector > .reportLanguageListContainer > a > img{
 	width: 20px; margin: 0 5px 0 0;
