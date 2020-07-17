@@ -92,6 +92,30 @@
 	display: block; position: relative; width: calc(100% - 250px); margin: 0 0 0 250px; padding: 0;
 }
 
+/** DASH LEGEND **/
+
+.dashLegend {
+	width: calc(100% - 20px); padding: 10px; background-color: rgba(0,70,125,0.5);
+}
+.dashLegend > .title {
+	font:14px/14px 'ubuntu'; font-weight: 500; color:#FFF; margin: 0 0 10px 0;
+}
+.dashLegend > .dashLegendListContainer {
+	width: 100%; display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: flex-start;
+}
+.dashLegend > .dashLegendListContainer > .dashLegendItem {
+	font:12px/12px 'ubuntu'; font-weight: 400; color:#FFF; display: flex; align-items: center; width: calc((100% / 3) - (10px / 3)); margin: 5px 5px 0 0;
+}
+.dashLegend > .dashLegendListContainer > .dashLegendItem:nth-child(3n+3) {
+	margin-right: 0px;
+}
+.dashLegend > .dashLegendListContainer > .dashLegendItem:nth-child(1), .dashLegend > .dashLegendListContainer > .dashLegendItem:nth-child(2), .dashLegend > .dashLegendListContainer > .dashLegendItem:nth-child(3) {
+	margin-top: 0px;
+}
+.dashLegend > .dashLegendListContainer > .dashLegendItem > img{
+	width: 20px; margin: 0 5px 0 0;
+}
+
 /** SEARCH BAR CONTAINER **/
 
 .searchbarContainer {
