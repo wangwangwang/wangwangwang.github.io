@@ -4,6 +4,31 @@ body {
 	overflow:auto!important;
 }
 
+.reportLanguageSelector {
+	display: block; width: 20px; height: 20px; position: fixed; z-index: 10; bottom: 10px; left: 10px; margin: 0; border-radius: 50%; background-size: cover; background-repeat: no-repeat; background-position: center; border: 2px solid #777;
+}
+.reportLanguageSelector > .reportLanguageListContainer {
+	display: none; position: absolute; margin: 0 0 20px 0px; bottom: 0; padding: 0 0 5px 0; min-width: 120px;
+}
+.reportLanguageSelector:hover > .reportLanguageListContainer {
+	display: block;
+}
+.reportLanguageSelector > .reportLanguageListContainer > a {
+	display: flex; align-items: center; padding: 10px; background-color: rgba(0,70,125,0.5); width: calc(100% - 10px);
+}
+.reportLanguageSelector > .reportLanguageListContainer > a:hover {
+	background-color: rgba(0,70,125,1);
+}
+.reportLanguageSelector > .reportLanguageListContainer > a > div {
+	font:8pt/8pt 'Poppins'!important; font-weight: 500!important; color: #FFF;
+}
+.reportLanguageSelector > .reportLanguageListContainer > a:hover > div {
+	color: #FFF;
+}
+.reportLanguageSelector > .reportLanguageListContainer > a > img{
+	width: 20px; margin: 0 5px 0 0;
+}
+
 .report_page {
 	display: block; width: 210mm!important; height: 297mm!important; background-color: #FFF!important; margin: 0mm auto 10mm auto; overflow: hidden!important; padding: 0; border: 0px solid rgba(0,0,0,0.10); box-shadow: 0px 0px 3px rgba(0,0,0,0.20); background-size: cover!important; background-position: center middle; background-repeat: no-repeat;
 }
@@ -926,7 +951,10 @@ body {
 	display: flex; height: 5mm; justify-content: center; align-items: center; font:9pt/9pt 'Ubuntu'!important; font-weight: 500!important;
 }
 #edustarter .report_page.onePage .compareChart div .tiny {
-	font:5pt/5pt 'Ubuntu'!important; font-weight: 400!important; transform: rotate(-90deg); color: #FFFFFF!important;
+	font:5pt/5pt 'Ubuntu'!important; font-weight: 400!important; transform: rotate(-90deg); color: #FFFFFF!important; display: none;
+}
+#edustarter .report_page.onePage .compareChart div .small {
+	font:5pt/5pt 'Ubuntu'!important; font-weight: 400!important; color: #FFFFFF!important; transform: rotate(0deg);
 }
 
 #edustarter .sectionContainerScore {
@@ -1076,6 +1104,9 @@ body {
 	}
 	.report_page p {
 		font:9pt/10pt 'Poppins'; font-weight: 400; 
+	}
+	.reportLanguageSelector {
+		display: none;
 	}
 }
 
