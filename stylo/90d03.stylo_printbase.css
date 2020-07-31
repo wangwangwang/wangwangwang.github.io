@@ -515,7 +515,7 @@ body {
 	width: 100%; display: flex; flex-direction: column; break-inside: avoid; flex-wrap: wrap;
 }
 .doughChart3Container .score {
-	display: flex; position: absolute; width: calc((185mm / 3) - 10mm); height: calc((185mm / 3) - 10mm); justify-content: center; align-items: center; font:30pt/30pt 'Ubuntu'!important; font-weight: 700!important;
+	display: flex; position: absolute; width: calc((185mm / 3) - 10mm); height: calc((185mm / 3) - 10mm); justify-content: center; align-items: center; font:28pt/28pt 'Ubuntu'!important; font-weight: 700!important;
 }
 .doughChart3Container .chartsize {
 	width: calc(100% - 10mm); height: calc((185mm / 3) - 10mm); padding: 0 5mm;

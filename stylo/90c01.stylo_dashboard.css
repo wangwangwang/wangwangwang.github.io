@@ -244,10 +244,10 @@
 }
 
 .buttonContainer {
-	display: flex;
+	display: flex; flex-wrap: wrap;
 }
 .buttonContainer .buttonItem {
-	display: flex; margin: 0 4px 0 0;
+	display: flex; margin: 0 4px 4px 0;
 }
 
 .buttonContainer .buttonItem div:nth-child(1) {
