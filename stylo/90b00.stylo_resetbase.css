@@ -339,15 +339,15 @@ fieldset {
 	}
 
 	.flexGridContainer .fg100p, .flexGridContainer .fg70p, .flexGridContainer .fg50p10gap, .flexGridContainer .fg3rd5gap, .flexGridContainer .fg50p, .flexGridContainer .fg30p {
-		width: 100%;
+		width: 100%!important;
 	}
 	.flexGridContainer .fg3rd5gap {
-		margin: 0 0 10px 0;
+		margin: 0 0 10px 0!important;
 	}
 	.flexGridContainer .fg3rd5gap:last-child {
-		margin: 0 0 0 0;
+		margin: 0 0 0 0!important;
 	}
 	.flexGridContainer {
-		flex-direction: column;
+		flex-direction: column!important;
 	}
 }

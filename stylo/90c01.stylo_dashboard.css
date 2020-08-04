@@ -721,52 +721,52 @@ button.buttonLine:disabled {
 	}
 
 	.dash_offcanvas {
-		width: calc(100% - 40px);
+		width: calc(100% - 40px)!important;
 	}
 
 	.dash .dash-leftContainer .dash-profileContainer {
-		border-radius: 60px;
+		border-radius: 60px!important;
 	}
 
 	.dash .dash-rightContainer {
-		width: calc(100% - 0px)!important; margin: 0; padding: 0px;
+		width: calc(100% - 0px)!important; margin: 0!important; padding: 0px!important;
 	}
 	.dash-rightContainer .flexGridContainer .fixedtop {
-		position: fixed; width: calc(100% - 40px);
+		position: fixed!important; width: calc(100% - 40px)!important;
 	}
 	.dash-rightContainer .flexGridContainer .top1 {
-		height: 181px;
+		height: 181px!important;
 	}
 	.dash-rightContainer .flexGridContainer .top2 {
-		height:60px; margin:181px 0 0 0;
+		height:60px!important; margin:181px 0 0 0!important;
 	}
 	.dash-contentContainer {
-		margin: 0 0 0 0; height: calc(100vh - 241px);
+		margin: 0 0 0 0!important; height: calc(100vh - 241px)!important;
 	}
 	.dash .dash-leftContainer .dash_nav {
-		width: calc(100% - 0px); padding: 0 0px 0 0px;
+		width: calc(100% - 0px)!important; padding: 0 0px 0 0px!important;
 	}
 
 
 
 	.searchbarContainer {
-		flex-direction: column-reverse; justify-content:space-between; align-items: center; width: calc(100% - 40px); height: auto; padding: 25px 20px 10px 20px;
+		flex-direction: column-reverse!important; justify-content:space-between!important; align-items: center!important; width: calc(100% - 40px)!important; height: auto; padding: 25px 20px 10px 20px!important;
 	}
 	.searchbarContainer .topRightNavContainer {
-		display: flex; justify-content: space-between; width: 100%; margin: 0 0 10px 0;
+		display: flex!important; justify-content: space-between!important; width: 100%!important; margin: 0 0 10px 0!important;
 	}
 	.searchbarContainer .topRightNavContainer .hamburger {
-		margin: 0;
+		margin: 0!important;
 	}
 	.searchbarContainer form {
-		width: calc(100% - 0px);
+		width: calc(100% - 0px)!important;
 	}
 	.searchbarContainer .logo {
-		height: 50px; margin: 0 0 10px 0;
+		height: 50px!important; margin: 0 0 10px 0!important;
 	}
 
 	.toptablefilterform .uk-margin {
-		margin: 0 10px 0 0!important; width: 100%;
+		margin: 0 10px 0 0!important; width: 100%!important;
 	}
 
 }
