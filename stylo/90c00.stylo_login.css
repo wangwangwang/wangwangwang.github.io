@@ -87,9 +87,9 @@
 
 @media only screen and (max-width: 768px) {
 	.login_container {
-		width: calc(100% - 60px); height: calc(100vh - 60px); padding: 30px; display: flex; flex-direction: column; align-items: center; justify-content: center;
+		width: calc(100% - 60px)!important; height: calc(100vh - 60px)!important; padding: 30px!important; display: flex!important; flex-direction: column!important; align-items: center!important; justify-content: center!important;
 	}
 	.login_container .languageContainer {
-		width: 100%;
+		width: 100%!important;
 	}
 }
