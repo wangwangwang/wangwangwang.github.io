@@ -377,7 +377,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff6600",endCo
 }
 
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	.cyco_assessment .languageListContainer {
 		width: 100%!important;
 	}
