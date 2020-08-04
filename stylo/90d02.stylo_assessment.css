@@ -318,6 +318,27 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff6600",endCo
 	color: #FFF;
 }
 
+/** FORM ERRORS **/
+
+form .field_with_errors input[type=text], form .field_with_errors textarea, form .field_with_errors input[type=password], form .field_with_errors input[type=email], form .field_with_errors select {
+	border-bottom: 1px solid rgba(255,0,0,1)!important; color: rgba(255,0,0,1)!important; background-color: rgba(255,0,0,0)!important; font:16px/16px 'ubuntu'; font-weight: 400;
+}
+.field_with_errors input::placeholder {
+	color: rgba(255,0,0,1)!important; font:16px/16px 'ubuntu'; font-weight: 400;
+}
+
+.form_errorMessage {
+	background-color: rgba(255,0,0,0.7); border: 1px solid rgba(255,0,0,0.5); padding: 10px 20px; margin: 0 0 10px 0; color: rgba(255,255,255,1); width: calc(100% - 40px);
+}
+.form_errorMessage ul {
+	margin: 0 0 0 10px; padding: 0; list-style-type: disc;
+}
+.form_errorMessage ul li {
+	margin: 0; padding: 0;
+}
+
+/** FORM ERRORS **/
+
 /** TOP KARIR **/
 
 #topkarir {
