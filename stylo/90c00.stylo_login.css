@@ -85,7 +85,7 @@
 	filter: grayscale(0); border:1px solid rgba(0,0,0,0.8);
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	.login_container {
 		width: calc(100% - 60px)!important; height: calc(100vh - 60px)!important; padding: 30px!important; display: flex!important; flex-direction: column!important; align-items: center!important; justify-content: center!important;
 	}
