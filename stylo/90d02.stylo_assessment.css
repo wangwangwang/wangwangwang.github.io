@@ -400,13 +400,19 @@ form .field_with_errors input[type=text], form .field_with_errors textarea, form
 
 @media screen and (max-width: 768px) {
 	.cyco_assessment .languageListContainer {
-		width: 100%!important;
+		width: 100%!important; min-width: 100%!important;
+	}
+	.cyco_assessment .mid_container {
+		width: calc(100% - 40px)!important; padding: 0 20px 20px 20px;
 	}
 	.cyco_assessment .mid_container form {
-		width: 100%!important;
+		width: 100%!important; min-width: 100%!important;
+	}
+	.cyco_assessment .mid_container form .formflex2 {
+		width: 100%!important; min-width: 100%!important;
 	}
 	.cyco_assessment .mid_container .termConditionContainer {
-		width: calc(100% - 20px)!important; height: 55vh!important; overflow-y: auto; padding: 0 20px 0 0!important;
+		width: calc(100% - 20px)!important; height: 55vh!important; overflow-y: auto!important; padding: 0 20px 0 0!important;
 	}
 	.cyco_assessment .mid_container form .form_item {
 		width: calc(100% - 0px)!important;
