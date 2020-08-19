@@ -6,7 +6,7 @@ html {
 	font-family: "ubuntu"; font-size: 12px;
 }
 body {
-	overflow-y:hidden; overflow-x: hidden; color: #000 !important;
+	overflow-y:auto; overflow-x: hidden; color: #000 !important;
 }
 a {
 	text-decoration: none!important;

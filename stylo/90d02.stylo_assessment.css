@@ -1,5 +1,5 @@
 .cyco_assessment {
-	display: flex; flex-direction: column; justify-content: flex-start; align-items: center; width: 100vw; height: 100vh; color: #FFF!important;
+	display: flex; flex-direction: column; justify-content: flex-start; align-items: center; width: 100%; min-height: 100vh; color: #FFF!important;
 
 	background: linear-gradient(270deg, #007bd6, #2884b3, #005f8f);
 	background-size: 600% 600%;
@@ -34,7 +34,7 @@
 	width: calc(100% - 40px); height: 100px; display: flex; justify-content: center; align-items: center; padding: 0 20px;
 }
 .cyco_assessment .mid_container {
-	width: calc(100% - 40px); height: calc(100vh - 120px); display: block; justify-content: flex-start; align-items: flex-start; padding: 0px 20px 20px 20px; overflow-x: hidden; overflow-y: auto;
+	width: calc(100% - 40px); height: auto; display: flex; justify-content: flex-start; align-items: flex-start; padding: 0px 20px 20px 20px; overflow-x: hidden; overflow-y: auto;
 }
 .cyco_assessment .bottom_container {
 	width: calc(100% - 40px); height: 0px; display: flex; justify-content: flex-start; align-items: flex-start; padding: 0 20px;
@@ -403,7 +403,7 @@ form .field_with_errors input[type=text], form .field_with_errors textarea, form
 		width: 100%!important; min-width: 100%!important;
 	}
 	.cyco_assessment .mid_container {
-		width: calc(100% - 40px)!important; padding: 0 20px 20px 20px;
+		width: calc(100% - 40px)!important; padding: 0 20px 20px 20px; margin: 0 0 100px 0;
 	}
 	.cyco_assessment .mid_container form {
 		width: 100%!important; min-width: 100%!important;
