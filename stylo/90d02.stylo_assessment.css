@@ -342,14 +342,14 @@ form .field_with_errors input[type=text], form .field_with_errors textarea, form
 /** TOP KARIR **/
 
 #topkarir {
-	display: flex; flex-direction: column; justify-content: flex-start; align-items: center; width: 100vw; height: 100vh; color: #FFF!important; background: #d91b5c;
+	display: flex; flex-direction: column; justify-content: flex-start; align-items: center; width: 100%; min-height: 100vh; color: #FFF!important; background: #d91b5c;
 }
 
 #topkarir .top_container {
 	width: calc(100% - 40px); height: 150px; display: flex; justify-content: center; align-items: center; padding: 0 20px; flex-direction: column;
 }
 #topkarir .mid_container {
-	width: calc(100% - 40px); height: calc(100vh - 170px); display: block; justify-content: flex-start; align-items: flex-start; padding: 0px 20px 20px 20px; overflow-x: hidden; overflow-y: auto;
+	width: calc(100% - 40px); height: auto; display: block; justify-content: flex-start; align-items: flex-start; padding: 0px 20px 20px 20px; overflow-x: hidden; overflow-y: auto;
 }
 
 #topkarir .languageListContainer .languageListItem {
