@@ -631,12 +631,11 @@ button.buttonLine:disabled {
 
 
 .nestedcell {
-	display: flex; justify-content: flex-start; align-items:center; height: 100%; width: 100%;
+	display: flex; justify-content: flex-start; align-items:stretch; height: 100%; width: 100%;
 }
 .tabletab {
-	min-width: 20px!important; display: flex; justify-content: flex-start; align-items: center; margin: 0 0 0 0; padding: 0 0 0 0; color: rgba(0,0,0,0.4);
+	min-width: 10px!important; min-height: 100%!important; margin: 0 10px 0 0; padding: 0 0 0 0; border-right: 1px solid rgba(0,0,0,0.1)!important; display: block; position: relative;
 }
-
 /** END OF DASHBOARD NESTED LIST SELECTOR **/
 
 .toptablefilterform {

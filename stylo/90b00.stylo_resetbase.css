@@ -159,6 +159,12 @@ fieldset {
 	color: #b80f0a!important;
 }
 
+/**
+.uk-text-muted > a {
+	background-color: rgba(0,70,125,1.0)!important; padding: 5px; color: #FFF; font:10px/10px 'ubuntu'!important; border-radius: 5px;
+}
+**/
+
 .column-break {
 	-webkit-column-break-inside: avoid; page-break-inside: avoid; break-inside: avoid;
 }
