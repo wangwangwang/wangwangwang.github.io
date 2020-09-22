@@ -49,7 +49,7 @@ body {
 	font:20pt/20pt 'Poppins'!important; font-weight: 700!important;
 }
 .report_page h6 {
-	font:16pt/16pt 'Poppins'!important; font-weight: 700!important; 
+	font:16pt/16pt 'Poppins'!important; font-weight: 700!important;
 }
 
 .report_page h1, .report_page h2, .report_page h3, .report_page h4, .report_page h5, .report_page h6 {
@@ -103,6 +103,10 @@ body {
 	background-image: radial-gradient(circle at 57% 36%, hsla(263,0%,78%,0.04) 0%, hsla(263,0%,78%,0.04) 10%,transparent 10%, transparent 100%),radial-gradient(circle at 22% 61%, hsla(263,0%,78%,0.04) 0%, hsla(263,0%,78%,0.04) 36%,transparent 36%, transparent 100%),radial-gradient(circle at 68% 97%, hsla(263,0%,78%,0.04) 0%, hsla(263,0%,78%,0.04) 41%,transparent 41%, transparent 100%),radial-gradient(circle at 57% 89%, hsla(263,0%,78%,0.04) 0%, hsla(263,0%,78%,0.04) 30%,transparent 30%, transparent 100%),radial-gradient(circle at 39% 80%, hsla(263,0%,78%,0.04) 0%, hsla(263,0%,78%,0.04) 22%,transparent 22%, transparent 100%),radial-gradient(circle at 88% 71%, hsla(263,0%,78%,0.04) 0%, hsla(263,0%,78%,0.04) 30%,transparent 30%, transparent 100%),linear-gradient(0deg, rgb(255,255,255),rgb(255,255,255))!important;
 }
 
+#workstyle .report_page.coverBackground{
+	background-image: radial-gradient(circle at 68% 88%, rgba(10,10,10, 0) 0%, rgba(10,10,10, 0) 68%,transparent 68%, transparent 100%),radial-gradient(circle at 64% 21%, rgba(10,10,10, 0) 0%, rgba(10,10,10, 0) 45%,transparent 45%, transparent 100%),radial-gradient(circle at 18% 4%, rgba(10,10,10, 0) 0%, rgba(10,10,10, 0) 26%,transparent 26%, transparent 100%),radial-gradient(circle at 17% 69%, rgba(10,10,10, 0) 0%, rgba(10,10,10, 0) 15%,transparent 15%, transparent 100%),radial-gradient(circle at 84% 26%, rgba(10,10,10, 0) 0%, rgba(10,10,10, 0) 45%,transparent 45%, transparent 100%),linear-gradient(45deg, rgba(181,73,30, 0.11),rgba(114,187,180, 0.42))!important;
+}
+
 .coverContent {
 	display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; width: calc(100% - 25mm); height: calc(100% - 20mm); padding: 10mm 10mm 10mm 15mm;
 }
@@ -131,7 +135,7 @@ body {
 	font:50pt/50pt 'Poppins'; font-weight: 700; color: rgba(0,70,125,1)!important;
 }
 .coverContent .coverInfoContainer .reportType {
-	font:30pt/30pt 'Poppins'; font-weight: 600; color: rgba(0,0,0,1)!important;
+	font:30pt/30pt 'Poppins'; font-weight: 600; color: rgba(0,0,0,1)!important; text-transform: uppercase;
 }
 .coverContent .coverInfoContainer .reportName {
 	font:20pt/20pt 'Poppins'; font-weight: 600; color: rgba(0,70,125,1)!important; text-transform: uppercase;
@@ -537,7 +541,7 @@ body {
 	display: flex; justify-content: center; align-items: center; font:16pt/16pt 'Ubuntu'!important; font-weight: 700!important; min-width: calc(10mm - 4mm); height: 10mm; padding: 0 2mm;
 }
 .flatTabItemContainer .flatTabItemContainerTitle .title {
-	display: flex; justify-content: flex-start; align-items: center; height: 10mm; font:12pt/12pt 'Poppins'!important; font-weight: 500!important; padding: 0 3mm; background-color: rgba(0,0,0,0.8)!important; color: #FFFFFF!important;
+	display: flex; justify-content: flex-start; align-items: center; height: 10mm; font:12pt/12pt 'Poppins'!important; font-weight: 500!important; padding: 0 3mm; background-color: rgba(0,0,0,0.8)!important; color: #FFFFFF!important; text-transform: uppercase!important;
 }
 .flatTabItemContainer .flatTabItemContainerDesc {
 	width: calc(100% - 6mm); padding: 3mm; font:8pt/10pt 'Poppins'!important; font-weight: 500!important; background-color: rgba(0,0,0,0.04)!important;
@@ -1031,17 +1035,23 @@ body {
 .pageContent.compact h1 {
 	font:30pt/30pt 'Poppins'!important; font-weight: 700!important; display: flex; align-items: center; margin: 0 0 3mm 0;
 }
+.pageContent.compact h2 {
+	font:20pt/20pt 'Poppins'!important; font-weight: 700!important; display: flex; align-items: center; margin: 0mm 0 3mm 0!important; text-transform: uppercase;
+}
 .pageContent.compact h5 {
 	font:15pt/15pt 'Poppins'!important; font-weight: 700!important; display: flex; align-items: center; margin: 0 0 2mm 0;
+}
+.pageContent.compact h6 {
+	font:13pt/13pt 'Poppins'!important; font-weight: 700!important; display: flex; align-items: center; margin: 0 0 2mm 0; color: #000!important; text-transform: uppercase;
 }
 .report_page .pageContent.compact h5 .score {
 	font:15pt/15pt 'Ubuntu'!important; font-weight: 700!important; display: flex; align-items: center; justify-content: center; min-width: calc(10mm - 4mm); height: auto; border-radius: 0%; margin: 0 2mm 0 0; padding: 2mm;
 }
-.pageContent.compact p {
-	font:8pt/12pt 'Poppins'!important; font-weight: 400; color: rgba(0,0,0,1)!important;
+.pageContent.compact > p {
+	font:8pt/12pt 'Poppins'!important; font-weight: 400!important; color: rgba(0,0,0,1)!important; margin: 0 0 0 0!important;
 }
 .pageContent.compact .sep5mm {
-	height: 3mm;
+	height: 3mm!important;
 }
 .pageContent.compact .compareContainer .compareContainerTitle {
 	font:12pt/12pt 'Poppins'!important; font-weight: 600!important; 
@@ -1055,6 +1065,33 @@ body {
 }
 
 /** COMPACT **/
+
+/** STYLE REPORT **/
+
+.styleReportTextItem {
+	display: flex; break-inside: avoid; align-items: center; margin: 0 0 3mm 0;
+}
+.styleReportTextItem.disable {
+	opacity: 0.5!important;
+}
+.styleReportTextItem .score {
+	display: flex; height: 22mm; width: 25mm; font:11pt/11pt 'Poppins'!important; font-weight: 700!important; align-items: center; justify-content: center; text-align: center; margin: 0 2mm 0 0; text-transform: uppercase;
+}
+.styleReportTextItem .score.scoreJumbo {
+	font:28pt/28pt 'Poppins'!important; font-weight: 500!important;
+}
+.styleReportTextItem .styleReportTextItemR {
+	display: flex; flex-direction: column; width: calc(100% - 27mm);
+}
+.styleReportTextItem .styleReportTextItemR .styleReportTextItemTitle {
+	font:10pt/10pt 'Poppins'!important; font-weight: 600!important; margin: 0 0 1mm 0;
+}
+.styleReportTextItem .styleReportTextItemR .styleReportTextItemDesc {
+	font:7pt/8pt 'Poppins'!important; font-weight: 400!important; margin: 0; min-height: auto;
+}
+
+
+/** STYLE REPORT **/
 
 
 
