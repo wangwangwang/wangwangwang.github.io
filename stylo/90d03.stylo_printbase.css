@@ -769,10 +769,16 @@ body {
 }
 
 .report_page.onePage .sectionContainer .sectionContainerChartContainer > .title {
-	font:10pt/10pt 'Poppins'!important; font-weight: 600!important; text-align: center; margin: 0 0 3mm 0; display: flex; justify-content: center; align-items: center; color: rgba(0,70,125,1)!important; width: 100%;
+	font:10pt/10pt 'Poppins'!important; font-weight: 600!important; text-align: center; margin: 0 0 3mm 0; display: flex; justify-content: center; align-items: center; color: rgba(0,70,125,1)!important; width: 100%; text-transform: uppercase;
+}
+.report_page.onePage .sectionContainer .sectionContainerChartContainer > .subtitle {
+	font:10pt/10pt 'Poppins'!important; font-weight: 600!important; text-align: center; margin: 0 0 2mm 0; display: flex; justify-content: center; align-items: center; color: rgba(0,0,0,1)!important; width: 100%;
 }
 .report_page.onePage .sectionContainer .sectionContainerChartContainer > .desc {
 	font:6pt/7pt 'Poppins'!important; font-weight: 400!important; text-align: center;
+}
+.report_page.onePage .sectionContainer .sectionContainerChartContainer > .titleDesc {
+	font:7pt/8pt 'Poppins'!important; font-weight: 400!important; text-align: center; margin: 0 0 2mm 0;
 }
 .report_page.onePage .sectionContainer .sectionContainerChartContainer > .score {
 	font:10pt/10pt 'Poppins'!important; font-weight: 500!important; text-align: center; display: flex; justify-content: center; align-items: center; width: 40mm; height: 10mm; margin: 0 auto 3mm auto;
@@ -791,7 +797,7 @@ body {
 	width: 70%; height: 10mm; margin: 1mm 0; display: flex; justify-content: center; align-items: center; font:10pt/10pt 'Poppins'!important; font-weight: 500!important; 
 }
 .onePage .subStarterItem .score.circle {
-	width: 100%; width: 10mm; height: 10mm; margin: 0 0 1mm 0; display: flex; justify-content: center; align-items: center; font:10pt/10pt 'Poppins'!important; font-weight: 500!important; border-radius: 50%;
+	width: 100%; width: 10mm; height: 10mm; margin: 0 0 1mm 0; display: flex; justify-content: center; align-items: center; font:12pt/12pt 'Poppins'!important; font-weight: 500!important; border-radius: 50%;
 }
 .onePage .subStarterItem .desc {
 	width: 100%; font:7pt/8pt 'Poppins'!important; font-weight: 400!important; margin: 0; text-align: center;
@@ -820,6 +826,9 @@ body {
 }
 .report_page.onePage .chartMedScoreItem .score.circle {
 	border-radius: 50%;
+}
+.report_page.onePage .chartMedScoreItem .score.round {
+	border-radius: 3mm;
 }
 .report_page.onePage .chartMedScoreItem .chartMedScoreItemR {
 	display: flex; width: calc(100% - (20mm + 2mm + 2mm)); flex-direction: column;
@@ -891,7 +900,7 @@ body {
 	width: 100%; width: 20mm; height: 20mm; margin: 1mm 0; display: flex; justify-content: center; align-items: center; font:10pt/10pt 'Poppins'!important; font-weight: 500!important; border-radius: 50%;
 }
 .onePage .flex5col .subStarterItem .desc {
-	width: calc(100% - 2mm); font:7pt/8pt 'Poppins'!important; font-weight: 400!important; margin: 0; text-align: center; height: 48pt; padding: 0 2mm;
+	width: calc(100% - 2mm); font:7pt/8pt 'Poppins'!important; font-weight: 400!important; margin: 0; text-align: center; min-height: 48pt; padding: 0 2mm;
 }
 .onePage .flex5col .subStarterItem:nth-child(1), .onePage .flex5col .subStarterItem:nth-child(2), .onePage .flex5col .subStarterItem:nth-child(3), .onePage .flex5col .subStarterItem:nth-child(4), .onePage .flex5col .subStarterItem:nth-child(5) {
 	margin: 0 0 0 0;
@@ -1051,7 +1060,10 @@ body {
 	font:8pt/12pt 'Poppins'!important; font-weight: 400!important; color: rgba(0,0,0,1)!important; margin: 0 0 0 0!important;
 }
 .pageContent.compact .sep5mm {
-	height: 3mm!important;
+	height: 3mm; display: block;
+}
+.pageContent.compact .sep5mm::after {
+	content: '.'; visibility: hidden;
 }
 .pageContent.compact .compareContainer .compareContainerTitle {
 	font:12pt/12pt 'Poppins'!important; font-weight: 600!important; 
@@ -1066,7 +1078,7 @@ body {
 
 /** COMPACT **/
 
-/** STYLE REPORT **/
+/** STYLE REPORT
 
 .styleReportTextItem {
 	display: flex; break-inside: avoid; align-items: center; margin: 0 0 3mm 0;
@@ -1091,7 +1103,7 @@ body {
 }
 
 
-/** STYLE REPORT **/
+STYLE REPORT **/
 
 
 
