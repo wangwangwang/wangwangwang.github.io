@@ -771,14 +771,17 @@ body {
 .report_page.onePage .sectionContainer .sectionContainerChartContainer > .title {
 	font:10pt/10pt 'Poppins'!important; font-weight: 600!important; text-align: center; margin: 0 0 3mm 0; display: flex; justify-content: center; align-items: center; color: rgba(0,70,125,1)!important; width: 100%; text-transform: uppercase;
 }
+.report_page.onePage .sectionContainer .sectionContainerChartContainer > .title.noMarginBlueBig {
+	margin: 0 0 0 0; color: #FFFFFF!important; font:11pt/11pt 'Poppins'!important; font-weight: 500!important;
+}
 .report_page.onePage .sectionContainer .sectionContainerChartContainer > .subtitle {
-	font:10pt/10pt 'Poppins'!important; font-weight: 600!important; text-align: center; margin: 0 0 2mm 0; display: flex; justify-content: center; align-items: center; color: rgba(0,0,0,1)!important; width: 100%;
+	font:10pt/10pt 'Poppins'!important; font-weight: 600!important; text-align: center; margin: 0 0 2mm 0; display: flex; justify-content: center; align-items: center; color: rgba(0,0,0,1)!important; width: 100%; text-transform: uppercase;
 }
 .report_page.onePage .sectionContainer .sectionContainerChartContainer > .desc {
 	font:6pt/7pt 'Poppins'!important; font-weight: 400!important; text-align: center;
 }
 .report_page.onePage .sectionContainer .sectionContainerChartContainer > .titleDesc {
-	font:7pt/8pt 'Poppins'!important; font-weight: 400!important; text-align: center; margin: 0 0 2mm 0;
+	font:8pt/9pt 'Poppins'!important; font-weight: 400!important; text-align: center; margin: 0 0 2mm 0;
 }
 .report_page.onePage .sectionContainer .sectionContainerChartContainer > .score {
 	font:10pt/10pt 'Poppins'!important; font-weight: 500!important; text-align: center; display: flex; justify-content: center; align-items: center; width: 40mm; height: 10mm; margin: 0 auto 3mm auto;
@@ -819,13 +822,26 @@ body {
 
 
 .report_page.onePage .chartMedScoreItem {
-	display: flex; break-inside: avoid; align-items: center; margin: 0 0 2mm 0;
+	display: flex; break-inside: avoid; align-items: center; margin: 2mm 0 0 0;
+}
+.report_page.onePage .chartMedScoreItem:nth-child(1) {
+	display: flex; break-inside: avoid; align-items: center; margin: 0 0 0 0;
+}
+.report_page.onePage .flexit .chartMedScoreItem {
+	display: flex; break-inside: avoid; align-items: center; margin: 2mm 0 0 0; width: calc((100% /2) - 1mm);
+}
+
+.report_page.onePage .flexit .chartMedScoreItem:nth-child(1), .report_page.onePage .flexit .chartMedScoreItem:nth-child(2) {
+	margin: 0 0 0 0;
 }
 .report_page.onePage .chartMedScoreItem .score {
 	display: flex; width: 20mm; height: 20mm; justify-content: center; align-items: center; font:10pt/10pt 'Poppins'!important; font-weight: 500!important; text-align: center; margin: 0 2mm 0 0; 
 }
 .report_page.onePage .chartMedScoreItem .score.circle {
 	border-radius: 50%;
+}
+.report_page.onePage .chartMedScoreItem .score.bigText {
+	font:30pt/30pt 'Poppins'!important; font-weight: 500!important; text-shadow: 2px 1px 0px rgba(0,0,0,0.1)!important;
 }
 .report_page.onePage .chartMedScoreItem .score.round {
 	border-radius: 3mm;
@@ -837,7 +853,29 @@ body {
 	font:9pt/9pt 'Poppins'!important; font-weight: 600!important; margin: 0 0 0.5mm 0;
 }
 .report_page.onePage .chartMedScoreItem .chartMedScoreItemR .chartBarItemDesc {
-	font:7pt/8pt 'Poppins'!important; font-weight: 400!important; margin: 0; min-height: 24pt;
+	font:7pt/8pt 'Poppins'!important; font-weight: 400!important; margin: 0;
+}
+
+.report_page.onePage .chartMedScoreItem2 {
+	display: flex; break-inside: avoid; align-items: center ; margin: 2mm 0 0 0; flex-direction: column; width: calc((100% /2) - 1mm);
+}
+.report_page.onePage .chartMedScoreItem2:nth-child(1), .report_page.onePage .chartMedScoreItem2:nth-child(2) {
+	margin: 0 0 0 0;
+}
+.report_page.onePage .chartMedScoreItem2 .score {
+	display: flex; width: 100%; height: 10mm; justify-content: center; align-items: center; font:10pt/10pt 'Poppins'!important; font-weight: 500!important; text-align: center; margin: 0 0 2mm 0; 
+}
+.report_page.onePage .chartMedScoreItem2 .score.circle {
+	border-radius: 50%;
+}
+.report_page.onePage .chartMedScoreItem2 .score.round {
+	border-radius: 3mm;
+}
+.report_page.onePage .chartMedScoreItem2 .chartBarItemTitle {
+	font:9pt/11pt 'Poppins'!important; font-weight: 600!important; margin: 0 0 2mm 0; text-align: center; display: flex; justify-content: center; align-items: center; height: 22pt;
+}
+.report_page.onePage .chartMedScoreItem2 .chartBarItemDesc {
+	font:7pt/8pt 'Poppins'!important; font-weight: 400!important; margin: 0; min-height: 24pt; text-align: center;
 }
 
 .report_page.onePage .disclaimer {
