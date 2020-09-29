@@ -822,7 +822,7 @@ body {
 
 
 .report_page.onePage .chartMedScoreItem {
-	display: flex; break-inside: avoid; align-items: center; margin: 2mm 0 0 0;
+	display: flex; break-inside: avoid; align-items: center; margin: 2mm 0 0 0; width: 100%;
 }
 .report_page.onePage .chartMedScoreItem:nth-child(1) {
 	display: flex; break-inside: avoid; align-items: center; margin: 0 0 0 0;
@@ -850,10 +850,10 @@ body {
 	display: flex; width: calc(100% - (20mm + 2mm + 2mm)); flex-direction: column;
 }
 .report_page.onePage .chartMedScoreItem .chartMedScoreItemR .chartBarItemTitle {
-	font:9pt/9pt 'Poppins'!important; font-weight: 600!important; margin: 0 0 0.5mm 0;
+	font:9pt/9pt 'Poppins'!important; font-weight: 600!important; margin: 0 0 0.5mm 0; width: 100%;
 }
 .report_page.onePage .chartMedScoreItem .chartMedScoreItemR .chartBarItemDesc {
-	font:7pt/8pt 'Poppins'!important; font-weight: 400!important; margin: 0;
+	font:7pt/8pt 'Poppins'!important; font-weight: 400!important; margin: 0; width: 100%;
 }
 
 .report_page.onePage .chartMedScoreItem2 {
@@ -1100,8 +1100,8 @@ body {
 .pageContent.compact .sep5mm {
 	height: 3mm; display: block;
 }
-.pageContent.compact .sep5mm::after {
-	content: '.'; visibility: hidden;
+.pageContent.compact .sep5mm::before {
+	content: '.'!important; visibility: hidden!important;
 }
 .pageContent.compact .compareContainer .compareContainerTitle {
 	font:12pt/12pt 'Poppins'!important; font-weight: 600!important; 
