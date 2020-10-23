@@ -119,10 +119,10 @@
 /** SEARCH BAR CONTAINER **/
 
 .searchbarContainer {
-	display: flex; justify-content:space-between; align-items: center; width: calc(100% - 40px); height: 100px; padding: 0 20px;
+	display: flex; justify-content:center; align-items: center; width: calc(100% - 40px); height: 100px; padding: 0 20px; flex-direction: column-reverse;
 }
 .searchbarContainer .topRightNavContainer {
-	display: flex; justify-content: flex-start; align-items: center; width: auto; height: auto;
+	display: flex; justify-content: flex-start; align-items: center; width: auto; height: auto; width: 100%;
 }
 .searchbarContainer .topRightNavContainer div {
 	display: flex;
@@ -133,9 +133,30 @@
 .searchbarContainer .topRightNavContainer a:hover {
 	background-color: rgba(0,70,125,1); color: rgba(255,255,255,1); border-radius: 50%;
 }
+.searchbarContainer .creditBalanceContainer {
+	display: flex; width: calc(100% - 25px); background-color: rgba(0,70,125,0.8); height: 16px; padding: 10px 10px 10px 15px; justify-content: space-between; align-items: center; border-radius: 18px; margin: 0 0 0 0px;
+}
+.searchbarContainer .creditBalanceContainer:hover {
+	background-color: rgba(0,70,125,1);
+}
+.searchbarContainer .creditBalanceContainer > div:nth-child(1) {
+	font:13px/13px 'ubuntu'; font-weight: 500; color: #FFF;
+}
+.searchbarContainer .creditBalanceContainer > div:nth-child(2) {
+	font:16px/16px 'ubuntu'; font-weight: 700; color: #FFF; display: flex; align-items: flex-end; height: 16px;
+}
+.searchbarContainer .creditBalanceContainer > div:nth-child(2) > span {
+	font:12px/12px 'ubuntu'; font-weight: 500; color: #FFF;
+}
+.searchbarContainer .creditBalanceContainer > div:nth-child(2) > .add {
+	font:10px/10px 'ubuntu'; font-weight: 400; color: #FFF; width: 16px; height: 16px; display: flex; justify-content: center; align-items: center; background-color: rgba(255,255,255,0.8); color: rgba(0,70,125,1); border-radius: 50%; margin: 0 0 0 5px;
+}
+.searchbarContainer .creditBalanceContainer > div:nth-child(2) > .add:hover {
+	background-color: rgba(255,255,255,1);
+}
 
 .searchbarContainer form {
-	width: calc(100% - 80px);
+	width: calc(100% - 0px); margin-top: 10px;
 }
 .searchbarContainer form .form_item {
 	width: 100%; display: flex; flex-direction: row; justify-content: flex-start; align-items: center;
@@ -712,9 +733,243 @@ button.buttonLine:disabled {
 	background-color: rgba(255,255,255,1)!important; color: rgba(0,70,125,1)!important;
 }
 
+/** CREDITS **/
+
+.overlayBottomBoxContainer {
+	display: flex; position: fixed; width: calc(100% - (250px + 40px)); height: 80px; background-color: rgba(0,70,125,1); bottom: 10px; padding: 0; border-radius: 0px; color: #FFF; justify-content: flex-start; align-items: center;
+}
+.withOverlayBottomBoxGap {
+	margin-bottom: 100px;
+}
+.overlayBottomBoxContainer > .leftContainer {
+	display: flex; flex-direction: column; width: calc(100% - 100px); padding: 0 0 0 20px;
+}
+.overlayBottomBoxContainer > .leftContainer .selectedTicketTitle {
+	display: flex; font:16px/16px 'ubuntu'!important; font-weight: 500!important; justify-content: center; align-items: center; height: 16px; margin: 0 0 5px 0; text-transform: uppercase;
+}
+.overlayBottomBoxContainer > .leftContainer > .overlayCalc {
+	display: flex; align-items: center;
+}
+.overlayBottomBoxContainer > .leftContainer > .overlayCalc > span {
+	margin: 0 10px; font:16px/16px 'ubuntu'!important; font-weight: 500!important;
+}
+.overlayBottomBoxContainer > .leftContainer > .overlayCalc > .ticketCost {
+	font:16px/16px 'ubuntu'!important; font-weight: 500!important; min-width: 55px;
+}
+.overlayBottomBoxContainer > .leftContainer > .overlayCalc > .totalPrice {
+	font:16px/16px 'ubuntu'!important; font-weight: 500!important; min-width: 30px;
+}
+.overlayBottomBoxContainer > .leftContainer > .overlayCalc > input[type=number] {
+	width: 50px; border: 0px; text-align: center; font:16px/16px 'ubuntu'!important; font-weight: 700!important; color: rgba(0,70,125,1); -webkit-appearance: textfield; -moz-appearance: textfield; appearance: textfield; background-color: rgba(255,255,255,0.95); border-radius: 0px; padding: 5px;
+}
+.overlayBottomBoxContainer > .leftContainer > .overlayCalc > input[type=number]::placeholder {
+	font:16px/16px 'ubuntu'!important; font-weight: 400!important;
+}
+.overlayBottomBoxContainer > .leftContainer > .overlayCalc > input[type=number]::-webkit-inner-spin-button, 
+.overlayBottomBoxContainer > .leftContainer > .overlayCalc > input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+}
+
+.overlayBottomBoxContainer > .rightContainer {
+	display: flex; flex-direction: column; width: 80px; height: 80px;
+}
+.overlayBottomBoxContainer > .rightContainer > input[type=submit] {
+	font:20px/20px 'ubuntu'!important; font-weight: 700!important; background-color: rgba(255,255,255,0.8); color: rgba(0,70,125,1); border-radius: 0 0; width: 80px; height: 80px; border: 0; cursor: pointer;
+}
+.overlayBottomBoxContainer > .rightContainer > input[type=submit]:hover {
+	background-color: rgba(255,255,255,1); color: rgba(0,70,125,1);
+}
+
+.dashBoxContainer {
+	display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; width: 100%;
+}
+.dashBoxContainer .dashBoxItems {
+	display: flex; width: calc(20% - (40px / 5)); margin: 10px 0 0 0; height: 150px; justify-content: center; align-items: center; color: #FFF; border-radius: 10px; font:40px/40px 'ubuntu'!important; font-weight: 700!important;
+}
+.dashBoxContainer .dashBoxItems:nth-child(1), .dashBoxContainer .dashBoxItems:nth-child(2), .dashBoxContainer .dashBoxItems:nth-child(3), .dashBoxContainer .dashBoxItems:nth-child(4), .dashBoxContainer .dashBoxItems:nth-child(5) {
+	margin: 0 0 0 0;
+}
+
+.dash-contentContainer .purchaseCreditContainer {
+	display: flex; width: calc(100% - 40px); padding: 20px; background-color: rgba(0,70,125,1); justify-content: flex-start; align-items: flex-start; flex-wrap: wrap; flex-direction: column; border-radius: 10px;
+}
+.dash-contentContainer .purchaseCreditContainer > .leftContainer {
+	display: flex; width: 100%; flex-direction: column; align-items: center;
+}
+.dash-contentContainer .purchaseCreditContainer > .leftContainer input[type=text] {
+	width: calc(100% - 20px); border: 0px; text-align: center; font:20px/20px 'ubuntu'!important; font-weight: 400!important; color: rgba(0,70,125,1); -webkit-appearance: textfield; -moz-appearance: textfield; appearance: textfield; background-color: rgba(255,255,255,0.95); border-radius: 10px;
+}
+.dash-contentContainer .purchaseCreditContainer > .leftContainer input[type=number] {
+	width: calc(50% - 20px); border: 0px; text-align: center; font:40px/40px 'ubuntu'!important; font-weight: 700!important; color: rgba(0,70,125,1); -webkit-appearance: textfield; -moz-appearance: textfield; appearance: textfield; background-color: rgba(255,255,255,0.95); border-radius: 10px 0 0 10px;
+}
+.dash-contentContainer .purchaseCreditContainer > .leftContainer input[type=number]::-webkit-inner-spin-button, 
+.dash-contentContainer .purchaseCreditContainer > .leftContainer input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+}
+.dash-contentContainer .purchaseCreditContainer > .leftContainer > .purchaseCreditAmount {
+	display: flex; width:100%; justify-content: center; align-items: center;
+}
+.dash-contentContainer .purchaseCreditContainer > .leftContainer > .purchaseCreditAmount > .curr {
+	display: flex; width:66px; height: 66px; justify-content: center; align-items: center; font:30px/30px 'ubuntu'!important; font-weight: 500!important; background-color: rgba(255,255,255,0.8); color: rgba(0,70,125,1); border-radius: 0 10px 10px 0;
+}
+.dash-contentContainer .purchaseCreditContainer > .leftContainer > .purchaseConfirmationNotes {
+	display: flex; width:100%; justify-content: center; align-items: center;
+}
+.dash-contentContainer .purchaseCreditContainer > .leftContainer > .title {
+	font:20px/20px 'ubuntu'!important; font-weight: 500!important; margin: 0 0 10px 0; color:#FFF; text-align: center;
+}
+.dash-contentContainer .purchaseCreditContainer > .leftContainer > .desc {
+	font:14px/16px 'ubuntu'!important; font-weight: 400!important; margin: 0 0 10px 0; color:#FFF; text-align: center;
+}
+.dash-contentContainer .purchaseCreditContainer > .leftContainer > .desc2 {
+	font:10px/12px 'ubuntu'!important; font-weight: 300!important; margin: 0 0 10px 0; color:rgba(255,255,255,0.7); text-align: center;
+}
+.dash-contentContainer .purchaseCreditContainer > .leftContainer > .desc3 {
+	font:30px/30px 'ubuntu'!important; font-weight: 500!important; margin: 0 0 10px 0; color:rgba(255,255,255,1); text-align: center;
+}
+.dash-contentContainer .purchaseCreditContainer > .leftContainer > .totalPrice {
+	display: flex; width:100%; justify-content: center; align-items: flex-start;
+}
+.dash-contentContainer .purchaseCreditContainer > .leftContainer > .totalPrice > .curr {
+	font:40px/40px 'ubuntu'!important; font-weight: 500!important; color: #FFF; margin: 0 0 0 0;
+}
+.dash-contentContainer .purchaseCreditContainer > .leftContainer > .totalPrice > .amount {
+	font:40px/40px 'ubuntu'!important; font-weight: 500!important; color: #FFF;
+}
+.dash-contentContainer .purchaseCreditContainer > .leftContainer input[type=submit], .dash-contentContainer .contentContainer > input[type=submit] {
+	font:20px/20px 'ubuntu'!important; font-weight: 700!important; background-color: rgba(255,255,255,0.8); color: rgba(0,70,125,1); border-radius: 10px; width: auto; min-width: 150px;
+}
+.dash-contentContainer .purchaseCreditContainer > .leftContainer input[type=submit]:hover, .dash-contentContainer .contentContainer > input[type=submit]:hover {
+	background-color: rgba(255,255,255,1); color: rgba(0,70,125,1);
+}
+
+
+.notesContainer {
+	display: block; width: calc(100% - 40px); padding: 20px; border-radius: 10px;
+}
+.notesContainer ul {
+	margin: 0px;
+}
+
+.paymentMethodRadioContainer {
+	display: flex; flex-wrap: wrap; justify-content: space-between; width: 100%;
+}
+.paymentMethodRadioContainer .paymentMethodRadioItem {
+	width: calc((100% / 2) - (10px / 2)); margin: 10px 0 0 0!important; padding: 0;
+}
+.paymentMethodRadioContainer .paymentMethodRadioItem:nth-child(1), .paymentMethodRadioContainer .paymentMethodRadioItem:nth-child(2) {
+	margin: 0 0 0 0!important;
+}
+.paymentMethodRadioContainer input {
+	display: none!important;
+}
+.paymentMethodRadioContainer .paymentMethodRadioStyle {
+	display: flex; flex-direction: column; width: calc(100% - 20px); height: 100px; padding: 10px; justify-content: center; align-items: center; font:16px/16px 'ubuntu'; font-weight: 500; color: rgba(0,70,125,1); border-radius: 10px; cursor: pointer ; text-align: center; background-color: rgba(255,255,255,1); opacity: 0.5;
+}
+.paymentMethodRadioContainer .paymentMethodRadioStyle img {
+	max-width: 80%; max-height: 50%;
+}
+.paymentMethodRadioContainer input:checked + .paymentMethodRadioStyle, .paymentMethodRadioContainer .paymentMethodRadioStyle:hover {
+	background-color: rgba(255,255,255,1)!important; color: rgba(0,70,125,1)!important; opacity: 1;
+}
+
+.dash-contentContainer .contentContainer {
+	display: flex; width: calc(100% - 40px); padding: 20px; justify-content: flex-start; align-items: flex-start; flex-wrap: wrap; flex-direction: column; border-radius: 10px;
+}
+.dash-contentContainer .contentContainer.center {
+	align-items: center;
+}
+.dash-contentContainer .contentContainer > .title{
+	font:20px/20px 'ubuntu'!important; font-weight: 500!important; text-align: center;
+}
+.dash-contentContainer .contentContainer > .desc {
+	font:14px/16px 'ubuntu'!important; font-weight: 400!important; margin: 0 0 10px 0; color:#FFF; text-align: center;
+}
+.dash-contentContainer .contentContainer > .desc2 {
+	font:10px/12px 'ubuntu'!important; font-weight: 300!important; margin: 0 0 10px 0; color:rgba(255,255,255,0.7); text-align: center;
+}
+.dash-contentContainer .contentContainer > .desc3 {
+	font:30px/30px 'ubuntu'!important; font-weight: 500!important; margin: 0 0 10px 0; color:rgba(255,255,255,1); text-align: center;
+}
+.dash-contentContainer .contentContainer > .desc4 {
+	font:40px/40px 'ubuntu'!important; font-weight: 700!important; margin: 0 0 10px 0; color:rgba(255,255,255,1); text-align: center;
+}
+
+.ticketSelectorRadioContainer {
+	display: flex; flex-wrap: wrap; justify-content: space-between; width: 100%;
+}
+.ticketSelectorRadioContainer .ticketSelectorRadioItem {
+	width: calc((100% / 3) - (20px / 3)); margin: 10px 0 0 0!important; padding: 0;
+}
+.ticketSelectorRadioContainer .ticketSelectorRadioItem:nth-child(1), .ticketSelectorRadioContainer .ticketSelectorRadioItem:nth-child(2), .ticketSelectorRadioContainer .ticketSelectorRadioItem:nth-child(3) {
+	margin: 0 0 0 0!important;
+}
+.ticketSelectorRadioContainer input {
+	display: none!important;
+}
+.ticketSelectorRadioContainer .ticketSelectorRadioStyle {
+	display: flex; flex-direction: column; width: calc(100% - 20px); height: 120px; padding: 10px; justify-content: center; align-items: center; color: #FFF; border-radius: 10px; cursor: crosshair ; text-align: center; opacity: 0.6;
+}
+.ticketSelectorRadioContainer .ticketSelectorRadioStyle img {
+	max-width: 80%; max-height: 50%;
+}
+.ticketSelectorRadioContainer input:checked + .ticketSelectorRadioStyle, .ticketSelectorRadioContainer .ticketSelectorRadioStyle:hover {
+	opacity: 1;
+}
+.ticketSelectorRadioContainer .ticketSelectorRadioStyle .title {
+	font:16px/18px 'ubuntu'; font-weight: 500; color: #FFF; min-height: 36px; display: flex; justify-content: center; align-items: center;
+}
+.ticketSelectorRadioContainer .ticketSelectorRadioStyle .cost {
+	font:16px/16px 'ubuntu'; font-weight: 500; color: #FFF; margin-top: 5px;
+}
+.ticketSelectorRadioContainer .ticketSelectorRadioStyle .ticketSelectorDetail {
+	display: flex; margin: 15px 0 0 0;
+}
+.ticketSelectorRadioContainer .ticketSelectorRadioStyle .detailReportButton {
+	font:16px/16px 'ubuntu'; font-weight: 400; color: rgba(255,255,255,0.8); margin: 0 5px; cursor: pointer;
+}
+.ticketSelectorRadioContainer .ticketSelectorRadioStyle .detailReportButton:hover {
+	color: rgba(255,255,255,1);
+}
+
+
+
 @media screen and (max-width: 768px) {
 
+	.dash-contentContainer .flexGridContainer .fg50p10gap {
+		margin-top: 10px;
+	}
+	.dash-contentContainer .flexGridContainer .fg50p10gap:nth-child(1) {
+		margin-top: 0px;
+	}
 	
+	.ticketSelectorRadioContainer .ticketSelectorRadioItem {
+		width: calc((100% / 2) - (10px / 2)); margin: 10px 0 0 0!important; padding: 0;
+	}
+
+	.ticketSelectorRadioContainer .ticketSelectorRadioItem:nth-child(1), .ticketSelectorRadioContainer .ticketSelectorRadioItem:nth-child(2) {
+		margin: 0 0 0 0!important;
+	}
+	.ticketSelectorRadioContainer .ticketSelectorRadioItem:nth-child(3) {
+		margin: 10px 0 0 0!important;
+	}
+		
+	.dashBoxContainer {
+		width: 100%;
+	}
+	.dashBoxContainer .dashBoxItems {
+		display: flex; width: calc(50% - (10px / 2));
+	}
+	.dashBoxContainer .dashBoxItems:nth-child(3), .dashBoxContainer .dashBoxItems:nth-child(4), .dashBoxContainer .dashBoxItems:nth-child(5) {
+		margin: 10px 0 0 0;
+	}
+	.dashBoxContainer .dashBoxItems:nth-child(1), .dashBoxContainer .dashBoxItems:nth-child(2) {
+		margin: 0 0 0 0;
+	}
+	
+	.searchbarContainer .creditBalanceContainer {
+		width: calc(100% - 30px); margin: 0 0 0 10px;
+	}
 
 	.dash .dash-leftContainer {
 		display: none; width: calc(100% - 40px); padding: 0 20px;
@@ -760,7 +1015,7 @@ button.buttonLine:disabled {
 		margin: 0!important;
 	}
 	.searchbarContainer form {
-		width: calc(100% - 0px)!important;
+		width: calc(100% - 0px)!important; margin: 0;
 	}
 	.searchbarContainer .logo {
 		height: 50px!important; margin: 0 0 10px 0!important;
@@ -768,6 +1023,13 @@ button.buttonLine:disabled {
 
 	.toptablefilterform .uk-margin {
 		margin: 0 10px 0 0!important; width: 100%!important;
+	}
+
+	.overlayBottomBoxContainer {
+		display: flex; position: fixed; width: calc(100% - 40px); height: 80px; background-color: rgba(0,70,125,1); bottom: 10px; padding: 0px; border-radius: 0px; color: #FFF; justify-content: center; align-items: center;
+	}
+	.overlayBottomBoxContainer > div:nth-child(2) {
+		font:20px/20px 'ubuntu'!important; font-weight: 700!important;
 	}
 
 }
