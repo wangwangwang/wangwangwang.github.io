@@ -65,6 +65,9 @@ body {
 .report_page h1 .score.left {
 	font:20pt/20pt 'Poppins'!important; font-weight: 700!important; display: flex; align-items: center; justify-content: center; min-width: calc(12mm - 6mm); height: 19mm; border-radius: 0%; margin: 0 2mm 0 0; padding: 3mm; text-align: center;
 }
+.report_page h2 .score.left {
+	font:20pt/20pt 'Poppins'!important; font-weight: 700!important; display: flex; align-items: center; justify-content: center; min-width: calc(12mm - 6mm); height: 19mm; border-radius: 0%; margin: 0 2mm 0 0; padding: 3mm; text-align: center;
+}
 .report_page h1 .score.big {
 	font:36pt/36pt 'Poppins'!important; font-weight: 700!important; padding: 5mm;
 }
