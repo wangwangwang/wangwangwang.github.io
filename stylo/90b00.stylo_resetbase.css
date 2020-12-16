@@ -60,6 +60,7 @@ h6	{
 .sep30			{ height: 30px; }
 .sep40			{ height: 40px; }
 .sep50			{ height: 50px; }
+.sep70			{ height: 70px; }
 .sep100			{ height: 100px; }
 
 .sep1mm			{ height: 1mm; }
@@ -213,13 +214,16 @@ fieldset {
 	background-color: #00467d!important; color: #FFF!important;
 }
 .backcolor-greyt1 {
-	background-color: rgba(0,0,0,0.02);
+	background-color: rgba(0,0,0,0.02)!important;
 }
 .backcolor-greyt5 {
-	background-color: rgba(0,0,0,0.05);
+	background-color: rgba(0,0,0,0.05)!important;
 }
 .backcolor-greyt10 {
-	background-color: rgba(0,0,0,0.1);
+	background-color: rgba(0,0,0,0.1)!important;
+}
+.backcolor-greyt20 {
+	background-color: rgba(0,0,0,0.2)!important;
 }
 
 .backcolor-grey06 {
@@ -308,6 +312,9 @@ fieldset {
 }
 .flexGridContainer .fg50p3mmgap {
 	width: calc((100% / 2) - (3mm / 2));
+}
+.flexGridContainer .fg50p5mmgap {
+	width: calc((100% / 2) - (5mm / 2));
 }
 .flexGridContainer .fg3rd5gap {
 	width: calc((100% / 3) - 8px);
