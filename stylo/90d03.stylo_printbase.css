@@ -1291,28 +1291,28 @@ STYLE REPORT **/
 /** **/
 
 
-.split3ItemChartContainer .chartBarItem {
+.splitItemChartContainer .chartBarItem {
 	width: 100%; height: 20mm; background-color: rgba(0,0,0,0.1)!important;
 }
-.split3ItemChartContainer .chartBarItem > div {
+.splitItemChartContainer .chartBarItem > div {
 	height: 20mm; font:20pt/20pt 'Poppins'!important; font-weight: 700!important; display: flex; align-items: center; justify-content: center;
 }
-.split3ItemChartContainer .chartBarItem.thin {
+.splitItemChartContainer .chartBarItem.thin {
 	height: 13mm;
 }
-.split3ItemChartContainer .chartBarItem.thin > div {
+.splitItemChartContainer .chartBarItem.thin > div {
 	height: 13mm;
 }
-.split3ItemChartContainer .chartBarItem.textBar {
+.splitItemChartContainer .chartBarItem.textBar {
 	width: 100%; height: 30mm; background-color: rgba(0,0,0,0.1)!important;
 }
-.split3ItemChartContainer .chartBarItem.textBar > div {
+.splitItemChartContainer .chartBarItem.textBar > div {
 	height: calc(30mm - 6mm); font:20pt/20pt 'Poppins'!important; font-weight: 700!important; display: flex; align-items: center; justify-content: flex-start; padding: 3mm; width: calc(100% - 6mm); text-transform: uppercase;
 }
-.split3ItemChartContainer .chartBarItem.textBarThin {
+.splitItemChartContainer .chartBarItem.textBarThin {
 	width: 100%; height: 13mm; background-color: rgba(0,0,0,0.1)!important;
 }
-.split3ItemChartContainer .chartBarItem.textBarThin > div {
+.splitItemChartContainer .chartBarItem.textBarThin > div {
 	height: calc(13mm - 0mm); font:14pt/14pt 'Poppins'!important; font-weight: 700!important; display: flex; align-items: center; justify-content: flex-start; padding: 0 3mm; width: calc(100% - 6mm); text-transform: uppercase;
 }
 
@@ -1392,322 +1392,172 @@ STYLE REPORT **/
 }
 
 
-.custom001 .split3ItemChartContainer {
-	display: flex; flex-direction: column; break-inside: avoid; width: calc((100% /3) - 0mm - (6mm / 3)); flex-wrap: wrap; margin-top: 3mm; 
-}
-.custom001 .split3ItemChartContainer:nth-child(1), .custom001 .split3ItemChartContainer:nth-child(2), .custom001 .split3ItemChartContainer:nth-child(3) {
-	margin-top: 0mm;
-}
-.custom001 .split3ItemChartContainer .title {
-	font:13pt/15pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 2mm 0; text-transform: uppercase; height: 32pt; display: flex; align-items: flex-end; color: #00467d!important; width: 95%;
-}
-.custom001 .split3ItemChartContainer .score {
-	font:20pt/20pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; padding: 0 3mm; height: 26mm; display: flex; align-items: center;
-}
-.custom001 .split3ItemChartContainer .score.bigText {
-	font:30pt/30pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; padding: 0 0; height: 26mm; width: 26mm; display: flex; align-items: center; border-radius: 50%; justify-content: center;
-}
-.custom001 .split3ItemChartContainer .desc {
-	font:8pt/10pt 'Poppins'!important; font-weight: 500!important; margin: 2mm 0 0 0; width: 80%; height: 40pt;
-}
-.custom001 .split3ItemChartContainer.center {
-	text-align: center; align-items: center;
-}
-.custom001 .split3ItemChartContainer.center .title {
-	text-align: center; justify-content: center;
-}
-
-.custom002 {
-	justify-content: flex-start;
-}
-
-.custom002 .split3ItemChartContainer {
-	display: flex; flex-direction: column; break-inside: avoid; width: calc((100% /3) - 0mm - (6mm / 3)); flex-wrap: wrap; margin-top: 3mm; margin-right: 3mm;
-}
-.custom002 .split3ItemChartContainer:nth-child(3n+3) {
-	margin-right: 0mm;
-}
-.custom002 .split3ItemChartContainer:nth-child(1), .custom002 .split3ItemChartContainer:nth-child(2), .custom002 .split3ItemChartContainer:nth-child(3) {
-	margin-top: 0mm;
-}
-.custom002 .split3ItemChartContainer .title {
-	font:12pt/12pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 2mm 0; text-transform: uppercase; height: 12pt; display: flex; align-items: flex-end; color: #00467d!important; width: 95%;
-}
-.custom002 .split3ItemChartContainer .score {
-	font:20pt/20pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; padding: 0 0 0 2mm; height: 24mm; display: flex; align-items: center;
-}
-.custom002 .split3ItemChartContainer .score.circle {
-	font:18pt/18pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; padding: 0 0 0 0; width: 32mm; height: 32mm; display: flex; align-items: center; justify-content: center; border-radius: 50%; text-align: center;
-}
-.custom002 .split3ItemChartContainer .desc {
-	font:8pt/10pt 'Poppins'!important; font-weight: 500!important; margin: 2mm 0 0 0; width: 80%; min-height: 40pt;
-}
-
-.custom003 {
-	justify-content: flex-start;
-}
-.custom003 .split3ItemChartContainer {
-	display: flex; flex-direction: column; break-inside: avoid; width: calc((100% /2) - 0mm - (3mm / 2)); flex-wrap: wrap; margin-top: 5mm; margin-right: 3mm;
-}
-.custom003 .split3ItemChartContainer:nth-child(2n+2) {
-	margin-right: 0mm;
-}
-.custom003 .split3ItemChartContainer:nth-child(1), .custom003 .split3ItemChartContainer:nth-child(2) {
-	margin-top: 0mm;
-}
-.custom003 .split3ItemChartContainer .title {
-	font:14pt/14pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 2mm 0; text-transform: uppercase; height: 14pt; display: flex; align-items: flex-end; color: #00467d!important; width: 95%;
-}
-.custom003 .split3ItemChartContainer .score {
-	font:18pt/18pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; padding: 0 0 0 2mm; height: 24mm; display: flex; align-items: center; 
-}
-.custom003 .split3ItemChartContainer .score.short {
-	height: 15mm;
-}
-.custom003 .split3ItemChartContainer .score.circle {
-	font:20pt/20pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; padding: 0 0 0 0; width: 32mm; height: 32mm; display: flex; align-items: center; justify-content: center; border-radius: 50%; text-align: center;
-}
-.custom003 .split3ItemChartContainer .desc {
-	font:8pt/10pt 'Poppins'!important; font-weight: 500!important; margin: 2mm 0 0 0; width: 80%; min-height: 30pt;
-}
-
-.custom004 .customPeminatanItem {
-	display: flex; align-items: center; justify-content: center; width: calc((100% / 2) - 6mm - (3mm / 2)); padding: 0 3mm;
+.flexSplit1 .customPeminatanItem {
+	display: flex; align-items: center; justify-content: center; width: calc((100% / 1) - 6mm); padding: 0 3mm;
 	height: 20mm; margin-top: 3mm; text-align: center; font:12pt/14pt 'Poppins'!important; font-weight: 500!important; text-transform: uppercase;
 }
-.custom004 .customPeminatanItem:nth-child(1), .custom004 .customPeminatanItem:nth-child(2) {
+.flexSplit1 .customPeminatanItem:nth-child(1), .flexSplit1 .customPeminatanItem:nth-child(2) {
 	margin-top: 0mm;
 }
-.custom004 .customPeminatanItem.flexColIt {
+.flexSplit1 .customPeminatanItem.smol {
+	display: flex; align-items: center; justify-content: center; width: calc((100% / 1) - 6mm); padding: 0 3mm;
+	height: 9mm; margin-top: 2mm; text-align: center; font:10pt/10pt 'Poppins'!important; font-weight: 500!important; text-transform: uppercase;
+}
+
+.flexSplit1 .splitItemChartContainer {
+	display: flex; flex-direction: column; break-inside: avoid; width: 100%; flex-wrap: wrap; margin-top: 5mm;
+}
+.flexSplit1 .splitItemChartContainer:nth-child(1) {
+	margin-top: 0mm;
+}
+.flexSplit1 .splitItemChartContainer .title {
+	font:14pt/14pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 2mm 0; text-transform: uppercase; height: 14pt; display: flex; align-items: flex-end; color: #00467d!important; width: 100%;
+}
+.flexSplit1 .splitItemChartContainer .score {
+	font:18pt/18pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; padding: 0 0 0 2mm; height: 24mm; display: flex; align-items: center; 
+}
+.flexSplit1 .splitItemChartContainer .score.short {
+	height: 15mm;
+}
+.flexSplit1 .splitItemChartContainer .score.circle {
+	font:20pt/20pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; padding: 0 0 0 0; width: 32mm; height: 32mm; display: flex; align-items: center; justify-content: center; border-radius: 50%; text-align: center;
+}
+.flexSplit1 .splitItemChartContainer .desc {
+	font:8pt/10pt 'Poppins'!important; font-weight: 500!important; margin: 2mm 0 0 0; width: 100%;
+}
+
+
+.flexSplit2 {
+	justify-content: space-between;
+}
+.flexSplit2 .splitItemChartContainer {
+	display: flex; flex-direction: column; break-inside: avoid; width: calc((100% /2) - 0mm - (3mm / 2)); flex-wrap: wrap; margin-top: 3mm; margin-right: 3mm; justify-content: flex-start; align-items: center;
+}
+.flexSplit2 .splitItemChartContainer:nth-child(2n+2) {
+	margin-right: 0mm;
+}
+.flexSplit2 .splitItemChartContainer:nth-child(1), .flexSplit2 .splitItemChartContainer:nth-child(2) {
+	margin-top: 0mm;
+}
+.flexSplit2 .splitItemChartContainer .title {
+	font:12pt/12pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 2mm 0; text-transform: uppercase; height: 24pt; display: flex; align-items: center; justify-content: center; color: #00467d!important; width: 100%; text-align: center;
+}
+.flexSplit2 .splitItemChartContainer .title.colorCoded {
+	font:8pt/8pt 'Poppins'!important; font-weight: 500!important; margin: 0 0 0 0; text-transform: uppercase; height: 16pt; display: flex; align-items: center; justify-content: center; color: #00467d!important; width: calc(100% - 6mm); text-align: center; padding: 2mm 3mm;
+}
+.flexSplit2 .splitItemChartContainer .score {
+	font:24pt/24pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; padding: 0; width: 24mm; height: 24mm; display: flex; align-items: center; justify-content: center; text-align: center;
+}
+.flexSplit2 .splitItemChartContainer .score.thin {
+	font:24pt/24pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; padding: 0; width: 24mm; height: 14mm; display: flex; align-items: center; justify-content: center; text-align: center;
+}
+.flexSplit2 .splitItemChartContainer .score.circle {
+	font:24pt/24pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; padding: 0 0 0 0; width: 24mm; height: 24mm; display: flex; align-items: center; justify-content: center; border-radius: 50%; text-align: center;
+}
+.flexSplit2 .splitItemChartContainer .score.text {
+	font:14pt/14pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; padding: 0 0 0 0; width: 100%; height: 20mm; display: flex; align-items: center; justify-content: center; border-radius: 0%; text-align: center;
+}
+.flexSplit2 .splitItemChartContainer .desc {
+	font:8pt/10pt 'Poppins'!important; font-weight: 500!important; margin: 2mm 0 0 0; width: 100%; min-height: 40pt; text-align: center;
+}
+
+
+.flexSplit2 .customPeminatanItem {
+	display: flex; align-items: center; justify-content: center; width: calc((100% / 2) - 6mm - (3mm / 2)); padding: 0 3mm;
+	min-height: 20mm; margin-top: 3mm; text-align: center; font:12pt/14pt 'Poppins'!important; font-weight: 500!important; text-transform: uppercase;
+}
+.flexSplit2 .customPeminatanItem:nth-child(1), .flexSplit2 .customPeminatanItem:nth-child(2), .flexSplit2 .customPeminatanItem:nth-child(3) {
+	margin-top: 0mm;
+}
+.flexSplit2 .customPeminatanItem.flexColIt {
 	flex-direction: column!important; justify-content: flex-start; height: auto;
 }
-.custom004 .customPeminatanItem.smol {
-	display: flex; align-items: center; justify-content: center; width: calc((100% / 2) - 6mm - (3mm / 2)); padding: 0 3mm;
-	height: 12mm; margin-top: 3mm; text-align: center; font:12pt/14pt 'Poppins'!important; font-weight: 500!important; text-transform: uppercase;
-}
-.custom004 .customPeminatanItem.flexColIt  > .title {
+.flexSplit2 .customPeminatanItem.flexColIt  > .title {
 	display: flex; align-items: center; justify-content: center; width: 100%; padding: 0 3mm;
 	height: 20mm; text-align: center; font:12pt/14pt 'Poppins'!important; font-weight: 500!important; text-transform: uppercase;
 }
-.custom004 .customPeminatanItem.flexColIt  > .desc {
+.flexSplit2 .customPeminatanItem.flexColIt  > .desc {
 	display: flex; align-items: center; justify-content: center; width: 100%;
 	margin-top: 3mm; text-align: center; font:8pt/10pt 'Poppins'!important; font-weight: 400!important; text-transform: none;
 }
 
-.custom004 .customPeminatanItemNumero {
-	display: flex; align-items: center; justify-content: flex-start; width: calc((100% / 2) - 0mm - (3mm / 2)); padding: 0;
-	text-align: center; 
-}
-.custom004 .customPeminatanItemNumero .score {
-	font:18pt/18pt 'Poppins'!important; font-weight: 700!important; margin: 0 3mm 0 0; text-transform: uppercase; padding: 0 0 0 0; height: 20mm; width: 20mm; display: flex; align-items: center; justify-content: center;
-}
-.custom004 .customPeminatanItemNumero .desc {
-	font:12pt/14pt 'Poppins'!important; font-weight: 500!important; text-transform: uppercase; text-align: left; width: calc(100% - 23mm);
-}
 
-.custom004 .split3ItemChartContainer {
-	display: flex; flex-direction: column; break-inside: avoid; width: 100%; flex-wrap: wrap; margin-top: 5mm;
+.flexSplit3 .splitItemChartContainer {
+	display: flex; flex-direction: column; break-inside: avoid; width: calc((100% /3) - 0mm - (6mm / 3)); flex-wrap: wrap; margin-top: 3mm; 
 }
-.custom004 .split3ItemChartContainer:nth-child(1) {
+.flexSplit3 .splitItemChartContainer:nth-child(1), .flexSplit3 .splitItemChartContainer:nth-child(2), .flexSplit3 .splitItemChartContainer:nth-child(3) {
 	margin-top: 0mm;
 }
-.custom004 .split3ItemChartContainer .title {
-	font:14pt/14pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 2mm 0; text-transform: uppercase; height: 14pt; display: flex; align-items: flex-end; color: #00467d!important; width: 100%;
+.flexSplit3 .splitItemChartContainer .title {
+	font:13pt/15pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 2mm 0; text-transform: uppercase; height: 32pt; display: flex; align-items: flex-end; color: #00467d!important; width: 95%;
 }
-.custom004 .split3ItemChartContainer .score {
-	font:18pt/18pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; padding: 0 0 0 2mm; height: 24mm; display: flex; align-items: center; 
+.flexSplit3 .splitItemChartContainer .score {
+	font:20pt/20pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; padding: 0 3mm; height: 26mm; display: flex; align-items: center;
 }
-.custom004 .split3ItemChartContainer .score.short {
-	height: 15mm;
+.flexSplit3 .splitItemChartContainer .score.bigText {
+	font:30pt/30pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; padding: 0 0; height: 26mm; width: 26mm; display: flex; align-items: center; border-radius: 50%; justify-content: center;
 }
-.custom004 .split3ItemChartContainer .score.circle {
-	font:20pt/20pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; padding: 0 0 0 0; width: 32mm; height: 32mm; display: flex; align-items: center; justify-content: center; border-radius: 50%; text-align: center;
+.flexSplit3 .splitItemChartContainer .desc {
+	font:8pt/10pt 'Poppins'!important; font-weight: 500!important; margin: 2mm 0 0 0; width: 80%; height: 40pt;
 }
-.custom004 .split3ItemChartContainer .desc {
-	font:8pt/10pt 'Poppins'!important; font-weight: 500!important; margin: 2mm 0 0 0; width: 100%;
+.flexSplit3 .splitItemChartContainer.center {
+	text-align: center; align-items: center;
+}
+.flexSplit3 .splitItemChartContainer.center .title {
+	text-align: center; justify-content: center;
 }
 
-.custom005 .customPeminatanItem {
+.flexSplit3 .customPeminatanItem {
 	display: flex; align-items: center; justify-content: center; width: calc((100% / 3) - 6mm - (6mm / 3)); padding: 0 3mm;
 	height: 20mm; margin-top: 3mm; text-align: center; font:12pt/14pt 'Poppins'!important; font-weight: 500!important; text-transform: uppercase;
 }
-.custom005 .customPeminatanItem:nth-child(1), .custom005 .customPeminatanItem:nth-child(2), .custom005 .customPeminatanItem:nth-child(3) {
+.flexSplit3 .customPeminatanItem:nth-child(1), .flexSplit3 .customPeminatanItem:nth-child(2), .flexSplit3 .customPeminatanItem:nth-child(3) {
 	margin-top: 0mm;
 }
 
-.custom005 .customPeminatanItemNumero {
-	display: flex; align-items: center; justify-content: flex-start; width: calc((100% / 3) - 0mm - (6mm / 3)); padding: 0; margin-top: 3mm;
-}
-.custom005 .customPeminatanItemNumero .score {
-	font:18pt/18pt 'Poppins'!important; font-weight: 700!important; margin: 0 3mm 0 0; text-transform: uppercase; padding: 0 0 0 0; height: 20mm; width: 20mm; display: flex; align-items: center; justify-content: center;
-}
-.custom005 .customPeminatanItemNumero .desc {
-	font:12pt/14pt 'Poppins'!important; font-weight: 500!important; text-transform: uppercase; text-align: left; width: calc(100% - 23mm);
-}
-.custom005 .customPeminatanItemNumero:nth-child(1), .custom005 .customPeminatanItemNumero:nth-child(2), .custom005 .customPeminatanItemNumero:nth-child(3) {
-	margin-top: 0mm;
-}
-
-.custom006 {
+.flexSplit5 {
 	justify-content: flex-start;
 }
 
-.custom006 .split3ItemChartContainer {
+.flexSplit5 .splitItemChartContainer {
 	display: flex; flex-direction: column; break-inside: avoid; width: calc((100% /5) - 0mm - (12mm / 5)); flex-wrap: wrap; margin-top: 0mm; margin-left: 3mm; justify-content: flex-start; align-items: center;
 }
-.custom006 .split3ItemChartContainer:nth-child(1) {
+.flexSplit5 .splitItemChartContainer:nth-child(1) {
 	margin-left: 0mm;
 }
-.custom006 .split3ItemChartContainer .title {
+.flexSplit5 .splitItemChartContainer .title {
 	font:12pt/12pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 2mm 0; text-transform: uppercase; height: 24pt; display: flex; align-items: center; justify-content: center; color: #00467d!important; width: 100%; text-align: center;
 }
-.custom006 .split3ItemChartContainer .title.colorCoded {
+.flexSplit5 .splitItemChartContainer .title.colorCoded {
 	font:8pt/8pt 'Poppins'!important; font-weight: 500!important; margin: 0 0 0 0; text-transform: uppercase; height: 16pt; display: flex; align-items: center; justify-content: center; color: #00467d!important; width: calc(100% - 6mm); text-align: center; padding: 2mm 3mm;
 }
-.custom006 .split3ItemChartContainer .score {
+.flexSplit5 .splitItemChartContainer .score {
 	font:20pt/20pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; padding: 0; width: 24mm; height: 24mm; display: flex; align-items: center; justify-content: center; text-align: center;
 }
-.custom006 .split3ItemChartContainer .score.circle {
+.flexSplit5 .splitItemChartContainer .score.circle {
 	font:18pt/18pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; padding: 0 0 0 0; width: 24mm; height: 24mm; display: flex; align-items: center; justify-content: center; border-radius: 50%; text-align: center;
 }
-.custom006 .split3ItemChartContainer .score.text {
+.flexSplit5 .splitItemChartContainer .score.text {
 	font:14pt/14pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; padding: 0 0 0 0; width: 100%; height: 18mm; display: flex; align-items: center; justify-content: center; border-radius: 0%; text-align: center;
 }
-.custom006 .split3ItemChartContainer .desc {
+.flexSplit5 .splitItemChartContainer .desc {
 	font:8pt/10pt 'Poppins'!important; font-weight: 500!important; margin: 2mm 0 0 0; width: 100%; min-height: 40pt; text-align: center;
 }
+
+.flexSplit5 .customPeminatanItem {
+	display: flex; align-items: center; justify-content: center; width: calc(100% - 6mm); padding: 0 3mm;	height: 9mm; margin-top: 3mm; text-align: center; font:10pt/10pt 'Poppins'!important; font-weight: 500!important; text-transform: uppercase;
+}
+.flexSplit5 .customPeminatanItem:first-child {
+	margin-top: 0mm;
+}
+
+
 
 .flexGridContainer > .fg50p3mmgap.boxIt {
 	background-color: rgba(0,0,0,0.08)!important; padding: 3mm; width: calc((100% / 2) - 6mm - 2px - (3mm / 2)); border: 1px solid rgba(0,0,0,0.1)!important;
 }
 
-.custom006 .customPeminatanItem {
-	display: flex; align-items: center; justify-content: center; width: calc(100% - 6mm); padding: 0 3mm;	height: 9mm; margin-top: 3mm; text-align: center; font:10pt/10pt 'Poppins'!important; font-weight: 500!important; text-transform: uppercase;
-}
-.custom006 .customPeminatanItem:first-child {
-	margin-top: 0mm;
-}
 
-.custom007 {
-	justify-content: flex-start;
-}
-.custom007 .split3ItemChartContainer {
-	display: flex; flex-direction: column; break-inside: avoid; width: calc((100% /2) - 0mm - (3mm / 2)); flex-wrap: wrap; margin-top: 3mm; margin-right: 3mm; justify-content: flex-start; align-items: center;
-}
-.custom007 .split3ItemChartContainer:nth-child(2n+2) {
-	margin-right: 0mm;
-}
-.custom007 .split3ItemChartContainer:nth-child(1), .custom007 .split3ItemChartContainer:nth-child(2) {
-	margin-top: 0mm;
-}
-.custom007 .split3ItemChartContainer .title {
-	font:12pt/12pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 2mm 0; text-transform: uppercase; height: 24pt; display: flex; align-items: center; justify-content: center; color: #00467d!important; width: 100%; text-align: center;
-}
-.custom007 .split3ItemChartContainer .score {
-	font:14pt/14pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; padding: 0 0 0 0; width: 100%; height: 10mm; display: flex; align-items: center; justify-content: center; text-align: center;
-}
-.custom007 .split3ItemChartContainer .desc {
-	font:8pt/10pt 'Poppins'!important; font-weight: 500!important; margin: 2mm 0 0 0; width: 100%; min-height: 20pt; text-align: center;
-}
-
-
-.custom008 {
-	justify-content: flex-start;
-}
-.custom008 .split3ItemChartContainer {
-	display: flex; flex-direction: column; break-inside: avoid; width: calc((100% /2) - 0mm - (3mm / 2)); flex-wrap: wrap; margin-top: 3mm; margin-right: 3mm; justify-content: flex-start; align-items: center;
-}
-.custom008 .split3ItemChartContainer:nth-child(2n+2) {
-	margin-right: 0mm;
-}
-.custom008 .split3ItemChartContainer:nth-child(1), .custom008 .split3ItemChartContainer:nth-child(2) {
-	margin-top: 0mm;
-}
-.custom008 .split3ItemChartContainer .title {
-	font:12pt/12pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 2mm 0; text-transform: uppercase; height: 24pt; display: flex; align-items: center; justify-content: center; color: #00467d!important; width: 100%; text-align: center;
-}
-.custom008 .split3ItemChartContainer .title.colorCoded {
-	font:8pt/8pt 'Poppins'!important; font-weight: 500!important; margin: 0 0 0 0; text-transform: uppercase; height: 16pt; display: flex; align-items: center; justify-content: center; color: #00467d!important; width: calc(100% - 6mm); text-align: center; padding: 2mm 3mm;
-}
-.custom008 .split3ItemChartContainer .score {
-	font:24pt/24pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; padding: 0; width: 24mm; height: 24mm; display: flex; align-items: center; justify-content: center; text-align: center;
-}
-.custom008 .split3ItemChartContainer .score.thin {
-	font:24pt/24pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; padding: 0; width: 24mm; height: 14mm; display: flex; align-items: center; justify-content: center; text-align: center;
-}
-.custom008 .split3ItemChartContainer .score.circle {
-	font:24pt/24pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; padding: 0 0 0 0; width: 24mm; height: 24mm; display: flex; align-items: center; justify-content: center; border-radius: 50%; text-align: center;
-}
-.custom008 .split3ItemChartContainer .score.text {
-	font:14pt/14pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; padding: 0 0 0 0; width: 100%; height: 20mm; display: flex; align-items: center; justify-content: center; border-radius: 0%; text-align: center;
-}
-.custom008 .split3ItemChartContainer .desc {
-	font:8pt/10pt 'Poppins'!important; font-weight: 500!important; margin: 2mm 0 0 0; width: 100%; min-height: 40pt; text-align: center;
-}
-
-
-.custom009 {
-	justify-content: flex-start;
-}
-
-.custom009 .split3ItemChartContainer {
-	display: flex; flex-direction: column; break-inside: avoid; width: calc((100% /4) - 0mm - (9mm / 4)); flex-wrap: wrap; margin-top: 3mm; margin-right: 3mm; justify-content: flex-start; align-items: center;
-}
-.custom009 .split3ItemChartContainer:nth-child(1), .custom009 .split3ItemChartContainer:nth-child(2), .custom009 .split3ItemChartContainer:nth-child(3), .custom009 .split3ItemChartContainer:nth-child(4) {
-	margin-top: 0mm;
-}
-.custom009 .split3ItemChartContainer:nth-child(4n+4) {
-	margin-right: 0;
-}
-.custom009 .split3ItemChartContainer .title {
-	font:12pt/12pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 2mm 0; text-transform: uppercase; height: 24pt; display: flex; align-items: center; justify-content: center; color: #00467d!important; width: 100%; text-align: center;
-}
-.custom009 .split3ItemChartContainer .title.colorCoded {
-	font:8pt/8pt 'Poppins'!important; font-weight: 500!important; margin: 0 0 0 0; text-transform: uppercase; height: 16pt; display: flex; align-items: center; justify-content: center; color: #00467d!important; width: calc(100% - 6mm); text-align: center; padding: 2mm 3mm;
-}
-.custom009 .split3ItemChartContainer .score {
-	font:20pt/20pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; padding: 0; width: 24mm; height: 24mm; display: flex; align-items: center; justify-content: center; text-align: center;
-}
-.custom009 .split3ItemChartContainer .score.circle {
-	font:18pt/18pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; padding: 0 0 0 0; width: 24mm; height: 24mm; display: flex; align-items: center; justify-content: center; border-radius: 50%; text-align: center;
-}
-.custom009 .split3ItemChartContainer .score.text {
-	font:14pt/14pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; padding: 0 0 0 0; width: 100%; height: 15mm; display: flex; align-items: center; justify-content: center; border-radius: 0%; text-align: center;
-}
-.custom009 .split3ItemChartContainer .desc {
-	font:8pt/10pt 'Poppins'!important; font-weight: 500!important; margin: 2mm 0 0 0; width: 100%; min-height: 40pt; text-align: center;
-}
-
-.custom010 {
-	justify-content: flex-start;
-}
-.custom010 .split3ItemChartContainer {
-	display: flex; flex-direction: column; break-inside: avoid; width: calc((100% /2) - 0mm - (3mm / 2)); flex-wrap: wrap; margin-top: 3mm; margin-right: 3mm; padding: 0; background-color: rgba(0,70,125,1.0)!important;
-}
-.custom010 .split3ItemChartContainer:nth-child(2n+2) {
-	margin-right: 0mm;
-}
-.custom010 .split3ItemChartContainer:nth-child(1), .custom010 .split3ItemChartContainer:nth-child(2) {
-	margin-top: 0mm;
-}
-.custom010 .split3ItemChartContainer .title {
-	font:12pt/12pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; height: 24pt; display: flex; align-items: center; color: #FFFFFF!important; width: calc(100% - 6mm); padding: 3mm; background-color: rgba(0,0,0,0.2)!important;
-}
-.custom010 .split3ItemChartContainer > div:nth-child(2) {
-	padding: 3mm; background-color: rgba(255,255,255,0.7)!important;
-}
-.custom010 .split3ItemChartContainer .score {
-	font:18pt/18pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; padding: 0 0 0 2mm; height: 24mm; display: flex; align-items: center; 
-}
-.custom010 .split3ItemChartContainer .score.short {
-	height: 15mm;
-}
-.custom010 .split3ItemChartContainer .score.circle {
-	font:20pt/20pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; padding: 0 0 0 0; width: 32mm; height: 32mm; display: flex; align-items: center; justify-content: center; border-radius: 50%; text-align: center;
-}
-.custom010 .split3ItemChartContainer .desc {
-	font:8pt/10pt 'Poppins'!important; font-weight: 500!important; margin: 2mm 0 0 0; width: 100%; min-height: 20pt;
-}
 
 /** START OF TICKET PRINTOUT **/
 
