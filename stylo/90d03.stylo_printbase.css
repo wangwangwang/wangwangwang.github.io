@@ -29,6 +29,12 @@ body {
 .report_page .watermarkContainer {
 	position: absolute; z-index: 100!important; width: 210mm; height: 297mm; background-image: url(https://wangwangwang.github.io/svg/watermark.svg)!important;
 }
+.report_page .watermarkContainer2 {
+	position: absolute; z-index: 100!important; width: 210mm; height: 297mm; display: flex; flex-wrap: wrap; opacity: 0.3;
+}
+.report_page .watermarkContainer2 > div {
+	display: flex; justify-content: center; align-items: center; width: calc(100% / 3); height: calc(297mm / 5);
+}
 .report_page:last-child {
 	margin: 10mm auto;
 }
@@ -68,11 +74,14 @@ body {
 .report_page h2 .score.left {
 	font:20pt/20pt 'Poppins'!important; font-weight: 700!important; display: flex; align-items: center; justify-content: center; min-width: calc(12mm - 6mm); height: 19mm; border-radius: 0%; margin: 0 2mm 0 0; padding: 3mm; text-align: center;
 }
+.report_page h3 .score.left {
+	font:20pt/20pt 'Poppins'!important; font-weight: 700!important; display: flex; align-items: center; justify-content: center; height: 14mm; width: 35mm; border-radius: 0%; margin: 0 2mm 0 0; padding: 3mm; text-align: center;
+}
 .report_page h1 .score.big {
 	font:36pt/36pt 'Poppins'!important; font-weight: 700!important; padding: 5mm;
 }
 .report_page h5 .score {
-	font:20pt/20pt 'Ubuntu'!important; font-weight: 700!important; display: flex; align-items: center; justify-content: center; min-width: calc(12mm - 6mm); height: auto; border-radius: 0%; margin: 0 2mm 0 0; padding: 3mm;
+	font:20pt/20pt 'Poppins'!important; font-weight: 700!important; display: flex; align-items: center; justify-content: center; min-width: calc(12mm - 6mm); height: auto; border-radius: 0%; margin: 0 2mm 0 0; padding: 3mm;
 }
 
 .report_page .textBold {
@@ -295,6 +304,9 @@ body {
 .legendContainer .legendItem .legendItemDesc {
 	width: 100%; font:6pt/8pt 'Poppins'!important; font-weight: 500!important; text-align: center; display: flex; justify-content: center; color: rgba(0,0,0,0.6)!important;
 }
+.legendContainer.thin .legendItem .legendItemScore {
+	width: 100%; height: calc(0pt + 2mm); font:8pt/8pt 'Ubuntu'!important; font-weight: 500!important; display: flex; justify-content: center; align-items: center; text-align: center; margin: 0 0 1mm 0; padding: 0;
+}
 
 .pageContent .noColContainer {
 	columns: 1; column-gap: 0mm; width: 100%; break-inside: avoid;
@@ -320,6 +332,8 @@ body {
 .pageContent .split5ColContainer {
 	columns: 5; column-gap: 0mm; width: 100%;
 }
+
+
 
 .sectionContainer {
 	display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; width: 100%; break-inside: avoid; margin: 0 0 5mm 0;
@@ -1465,6 +1479,29 @@ STYLE REPORT **/
 }
 
 
+.flexSplit2 .splitItemChartContainer2 {
+	display: flex; flex-direction: row; break-inside: avoid; width: calc((100% /2) - 0mm - (2mm / 2)); flex-wrap: wrap; margin-top: 2mm; margin-right: 2mm; justify-content: flex-start; align-items: center;
+}
+.flexSplit2 .splitItemChartContainer2:nth-child(2n+2) {
+	margin-right: 0mm;
+}
+.flexSplit2 .splitItemChartContainer2:nth-child(1), .flexSplit2 .splitItemChartContainer2:nth-child(2) {
+	margin-top: 0mm;
+}
+.flexSplit2 .splitItemChartContainer2 .score {
+	display: flex; width: 15mm; height: 15mm; margin: 0 2mm 0 0; justify-content: center; align-items: center; font:8pt/8pt 'Poppins'!important; font-weight: 700!important; text-transform: uppercase; text-align: center;
+}
+.flexSplit2 .splitItemChartContainer2 .desc {
+	display: flex; height: 100%; width: calc(100% - 17mm);  flex-direction: column;
+}
+.flexSplit2 .splitItemChartContainer2 .desc .desctitle {
+	font:10pt/10pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; display: flex; align-items: flex-start; justify-content: flex-start; color: #00467d!important; width: 100%; text-align: left;
+}
+.flexSplit2 .splitItemChartContainer2 .desc .descContent {
+	font:7pt/8pt 'Poppins'!important; font-weight: 500!important; margin: 1mm 0 0 0; width: 100%; text-align: left;
+}
+
+
 .flexSplit2 .customPeminatanItem {
 	display: flex; align-items: center; justify-content: center; width: calc((100% / 2) - 6mm - (3mm / 2)); padding: 0 3mm;
 	min-height: 20mm; margin-top: 3mm; text-align: center; font:12pt/14pt 'Poppins'!important; font-weight: 500!important; text-transform: uppercase;
@@ -1655,7 +1692,21 @@ STYLE REPORT **/
 	font: 7pt/7pt 'Poppins'!important; font-weight: 500!important; background-color: rgba(255,255,255,0.7)!important; justify-content: flex-start; align-items: center; display: flex; height: 6mm; width: calc(100% - 18mm); color: #000000!important; padding: 0 0 0 2mm;
 }
 
-
+.subSectionContainer {
+	display: flex; width: 100%; flex-direction: column;
+}
+.subSectionContainer .subSectionTitleContainer {
+	display: flex; width: 100%; flex-direction: row; background-color: #000!important;
+}
+.subSectionContainer .subSectionTitleContainer .subSectionTitle {
+	display: flex; width: 114mm; justify-content: flex-start; align-items: center; font:13pt/13pt 'Poppins'!important; font-weight: 700!important; text-transform: uppercase; color: #FFFFFF!important; padding: 3mm;
+}
+.subSectionContainer .subSectionTitleContainer .subSectionScore {
+	display: flex; width: calc(100% - 120mm); justify-content: center; align-items: center; font:13pt/13pt 'Poppins'!important; font-weight: 700!important; text-transform: uppercase;
+}
+.subSectionContainer .subSectionContentContainer {
+	display: flex; flex-direction: column; width: calc(100% - 6mm); padding: 3mm; background-color: rgba(0,0,0,0.1)!important;
+}
 
 @media print {
 	@page {
