@@ -295,22 +295,22 @@
 	display: flex; width: auto; margin: 5px 5px 0 0;
 }
 .buttonContainer .buttonItem2 > .title {
-	display: flex; width: calc(100% - 40px); font:12px/12px 'ubuntu'; font-weight: 500; color: #FFF; height: 24px; align-items: center; justify-content: flex-start;
+	display: flex; font:10px/10px 'ubuntu'; font-weight: 500; color: #FFF; min-height: calc(24px - 10px); align-items: center; justify-content: flex-start; padding: 5px 0; height: auto;
 }
-.buttonContainer .buttonItem2 > .title > span {
-	display: flex; justify-content: center; align-items: center; width: 24px; height: 24px; background-color: rgba(0,0,0,0.5); margin: 0 5px 0 0;
+.buttonContainer .buttonItem2 > .statusIcon {
+	display: flex; justify-content: center; align-items: center; min-width: 24px; height: 100%; background-color: rgba(0,0,0,0.5); margin: 0 5px 0 0;
 }
-.buttonContainer .buttonItem2 > .title > span > img {
+.buttonContainer .buttonItem2 > .statusIcon > img {
 	height: 14px;
 }
 .buttonContainer .buttonItem2 > .linkContainer {
-	display: flex; margin: 0 0 0 5px;
+	display: flex; margin: 0 0 0 5px; height: 100%;
 }
 .buttonContainer .buttonItem2 > .linkContainer > a {
-	display: flex; justify-content: center; align-items: center; width: 24px; height: 24px; color: #FFF; background-color: rgba(0,0,0,0.3); border-left: 1px solid rgba(255,255,255,0.5);
+	display: flex; justify-content: center; align-items: center; width: 24px; height: 100%; color: #FFF; background-color: rgba(0,0,0,0.3); border-left: 1px solid rgba(255,255,255,0.5);
 }
 .buttonContainer .buttonItem2 > .linkContainer > a:hover {
-	display: flex; justify-content: center; align-items: center; width: 24px; height: 24px; color: #000; background-color: rgba(255,255,255,0.7);
+	display: flex; justify-content: center; align-items: center; width: 24px; height: 100%; color: #000; background-color: rgba(255,255,255,0.7);
 }
 
 .bigTextIconLabel {
