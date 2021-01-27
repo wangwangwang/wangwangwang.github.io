@@ -291,6 +291,28 @@
 	color: #000; background-color: rgba(255,255,255,0.5);
 }
 
+.buttonContainer .buttonItem2 {
+	display: flex; width: auto; margin: 5px 5px 0 0;
+}
+.buttonContainer .buttonItem2 > .title {
+	display: flex; width: calc(100% - 40px); font:12px/12px 'ubuntu'; font-weight: 500; color: #FFF; height: 24px; align-items: center; justify-content: flex-start;
+}
+.buttonContainer .buttonItem2 > .title > span {
+	display: flex; justify-content: center; align-items: center; width: 24px; height: 24px; background-color: rgba(0,0,0,0.5); margin: 0 5px 0 0;
+}
+.buttonContainer .buttonItem2 > .title > span > img {
+	height: 14px;
+}
+.buttonContainer .buttonItem2 > .linkContainer {
+	display: flex; margin: 0 0 0 5px;
+}
+.buttonContainer .buttonItem2 > .linkContainer > a {
+	display: flex; justify-content: center; align-items: center; width: 24px; height: 24px; color: #FFF; background-color: rgba(0,0,0,0.3); border-left: 1px solid rgba(255,255,255,0.5);
+}
+.buttonContainer .buttonItem2 > .linkContainer > a:hover {
+	display: flex; justify-content: center; align-items: center; width: 24px; height: 24px; color: #000; background-color: rgba(255,255,255,0.7);
+}
+
 .bigTextIconLabel {
 	display: flex; justify-content: center; align-items: center; margin: 0 0 0 4px; width: 16px; height: 16px; border-radius: 50%;
 }
