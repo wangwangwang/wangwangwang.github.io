@@ -1443,6 +1443,24 @@ STYLE REPORT **/
 	font:8pt/10pt 'Poppins'!important; font-weight: 500!important; margin: 2mm 0 0 0; width: 100%;
 }
 
+.flexSplit1 .splitItemChartContainer2 {
+	display: flex; flex-direction: row; break-inside: avoid; width: 100%; flex-wrap: wrap; margin-top: 2mm; margin-right: 2mm; justify-content: flex-start; align-items: center;
+}
+.flexSplit1 .splitItemChartContainer2:nth-child(1) {
+	margin-top: 0mm;
+}
+.flexSplit1 .splitItemChartContainer2 .score {
+	display: flex; width: 15mm; height: 15mm; margin: 0 2mm 0 0; justify-content: center; align-items: center; font:8pt/8pt 'Poppins'!important; font-weight: 700!important; text-transform: uppercase; text-align: center;
+}
+.flexSplit1 .splitItemChartContainer2 .desc {
+	display: flex; height: 100%; width: calc(100% - 17mm);  flex-direction: column;
+}
+.flexSplit1 .splitItemChartContainer2 .desc .desctitle {
+	font:10pt/10pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; display: flex; align-items: flex-start; justify-content: flex-start; color: #00467d!important; width: 100%; text-align: left;
+}
+.flexSplit1 .splitItemChartContainer2 .desc .descContent {
+	font:7pt/8pt 'Poppins'!important; font-weight: 500!important; margin: 1mm 0 0 0; width: 100%; text-align: left;
+}
 
 .flexSplit2 {
 	justify-content: space-between;
@@ -1693,20 +1711,31 @@ STYLE REPORT **/
 }
 
 .subSectionContainer {
-	display: flex; width: 100%; flex-direction: column;
+	display: flex; width: 100%; flex-direction: column; break-inside: avoid;
 }
-.subSectionContainer .subSectionTitleContainer {
+.subSectionContainer > .subSectionTitleContainer {
 	display: flex; width: 100%; flex-direction: row; background-color: #000!important;
 }
-.subSectionContainer .subSectionTitleContainer .subSectionTitle {
-	display: flex; width: 114mm; justify-content: flex-start; align-items: center; font:13pt/13pt 'Poppins'!important; font-weight: 700!important; text-transform: uppercase; color: #FFFFFF!important; padding: 3mm;
+.subSectionContainer > .subSectionTitleContainer > .subSectionTitle {
+	display: flex; width: calc(100% - 50mm); justify-content: flex-start; align-items: center; font:13pt/13pt 'Poppins'!important; font-weight: 700!important; text-transform: uppercase; color: #FFFFFF!important; padding: 3mm;
 }
-.subSectionContainer .subSectionTitleContainer .subSectionScore {
-	display: flex; width: calc(100% - 120mm); justify-content: center; align-items: center; font:13pt/13pt 'Poppins'!important; font-weight: 700!important; text-transform: uppercase;
+.subSectionContainer > .subSectionTitleContainer > .subSectionScore {
+	display: flex; width: 50mm; justify-content: center; align-items: center; font:13pt/13pt 'Poppins'!important; font-weight: 700!important; text-transform: uppercase; text-align: center;
 }
-.subSectionContainer .subSectionContentContainer {
+.subSectionContainer > .subSectionContentContainer {
 	display: flex; flex-direction: column; width: calc(100% - 6mm); padding: 3mm; background-color: rgba(0,0,0,0.1)!important;
 }
+.subSectionContainer > .subSectionContentContainer > .desc {
+	font: 7pt/8pt 'Poppins'!important; font-weight: 500!important;
+}
+
+.split2ColContainer > .subSectionContainer > .subSectionTitleContainer > .subSectionTitle {
+	width: calc(100% - 30mm); min-height: 26pt;
+}
+.split2ColContainer > .subSectionContainer > .subSectionTitleContainer > .subSectionScore {
+	width: 30mm; 
+}
+
 
 @media print {
 	@page {
