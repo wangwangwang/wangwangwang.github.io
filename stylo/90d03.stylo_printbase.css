@@ -77,11 +77,21 @@ body {
 .report_page h3 .score.left {
 	font:20pt/20pt 'Poppins'!important; font-weight: 700!important; display: flex; align-items: center; justify-content: center; height: 14mm; width: 35mm; border-radius: 0%; margin: 0 2mm 0 0; padding: 3mm; text-align: center;
 }
+.report_page h4 .score.left {
+	font:26pt/26pt 'Poppins'!important; font-weight: 700!important; display: flex; align-items: center; justify-content: center; height: 14mm; width: 35mm; border-radius: 0%; margin: 0 2mm 0 0; padding: 3mm; text-align: center;
+}
 .report_page h1 .score.big {
 	font:36pt/36pt 'Poppins'!important; font-weight: 700!important; padding: 5mm;
 }
 .report_page h5 .score {
 	font:20pt/20pt 'Poppins'!important; font-weight: 700!important; display: flex; align-items: center; justify-content: center; min-width: calc(12mm - 6mm); height: auto; border-radius: 0%; margin: 0 2mm 0 0; padding: 3mm;
+}
+
+.sectionMainTitle {
+	font:35pt/35pt 'Poppins'!important; font-weight: 700!important; display: flex; color: rgba(0,70,125,1)!important; text-transform: uppercase; margin: 0 0 10mm 0; align-items: center;
+}
+.sectionMainTitle .score {
+	font:35pt/35pt 'Poppins'!important; font-weight: 700!important; display: flex; align-items: center; justify-content: center; height: 100%; border-radius: 0%; margin: 0 2mm 0 0; padding: 2mm 5mm;
 }
 
 .report_page .textBold {
@@ -1461,6 +1471,9 @@ STYLE REPORT **/
 .flexSplit1 .splitItemChartContainer2 .desc .descContent {
 	font:7pt/8pt 'Poppins'!important; font-weight: 500!important; margin: 1mm 0 0 0; width: 100%; text-align: left;
 }
+.flexSplit1.numeroResult .splitItemChartContainer2 .score {
+	font:11pt/11pt 'Poppins'!important; font-weight: 700!important; text-transform: uppercase; text-align: center;
+}
 
 .flexSplit2 {
 	justify-content: space-between;
@@ -1517,6 +1530,9 @@ STYLE REPORT **/
 }
 .flexSplit2 .splitItemChartContainer2 .desc .descContent {
 	font:7pt/8pt 'Poppins'!important; font-weight: 500!important; margin: 1mm 0 0 0; width: 100%; text-align: left;
+}
+.flexSplit2.numeroResult .splitItemChartContainer2 .score {
+	font:11pt/11pt 'Poppins'!important; font-weight: 700!important; text-transform: uppercase; text-align: center;
 }
 
 
@@ -1727,6 +1743,10 @@ STYLE REPORT **/
 }
 .subSectionContainer > .subSectionContentContainer > .desc {
 	font: 7pt/8pt 'Poppins'!important; font-weight: 500!important;
+}
+
+.subSectionContainer.numeroResult > .subSectionTitleContainer > .subSectionScore {
+	display: flex; width: 50mm; justify-content: center; align-items: center; font:18pt/18pt 'Poppins'!important; font-weight: 700!important; text-transform: uppercase; text-align: center;
 }
 
 .split2ColContainer > .subSectionContainer > .subSectionTitleContainer > .subSectionTitle {
