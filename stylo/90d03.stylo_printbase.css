@@ -250,10 +250,17 @@ body {
 }
 
 .contentListContainer .contentListItem .contentListSection {
-	font:12pt/12pt 'Poppins'!important; font-weight: 400!important;
+	font:12pt/12pt 'Poppins'!important; font-weight: 500!important;
 }
 .contentListContainer .contentListItem .contentListPageNo {
 	font:18pt/18pt 'Ubuntu'!important; font-weight: 500!important; text-align: right;
+}
+
+.contentListContainer a.subContentListItem, .contentListContainer .contentListItem.subContentListItem {
+	color: rgba(0,0,0,1)!important; display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 1px dashed rgba(0,0,0,0.1)!important; margin: 2mm 0 3mm 5mm; padding: 0 5mm 1mm 5mm; 
+}
+.contentListContainer .contentListItem.subContentListItem .contentListSection {
+	font:10pt/10pt 'Poppins'!important; font-weight: 400!important;
 }
 
 .compareContainer {
