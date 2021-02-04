@@ -954,6 +954,21 @@ button.buttonLine:disabled {
 	color: rgba(255,255,255,1);
 }
 
+.tableIconButton {
+	display: flex; width: 16px; height: 16px; align-items: center; justify-content: center; color: #FFF; padding: 2px;
+}
+.tableIconButton:hover {
+	color: #FFF;
+}
+.tableIconButton.toggleOn {
+	background-color: rgba(0,150,0,1);
+}
+.tableIconButton.toggleOff {
+	background-color: rgba(117, 0, 0, 1);
+}
+.tableIconButton.toggleInactive {
+	background-color: rgba(0,0,0,0.3);
+}
 
 
 @media screen and (max-width: 768px) {
