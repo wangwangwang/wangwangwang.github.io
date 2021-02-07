@@ -970,6 +970,19 @@ button.buttonLine:disabled {
 	background-color: rgba(0,0,0,0.3);
 }
 
+.tableSwitcherContainer > form {
+	display: flex; justify-content: flex-start; align-items: center;
+}
+.tableSwitcherContainer > form > .tableSwitcherButton {
+	width: 20px; height: 20px; padding: 2px; margin: 0; background-color: rgba(0,0,0,0.2); color: #FFF;
+}
+.tableSwitcherContainer > form > .tableSwitcherButton-red {
+	background-color: #e61717!important; color: #FFF;
+}
+.tableSwitcherContainer > form > .tableSwitcherButton-green {
+	background-color: #32b030!important; color: #FFF;
+}
+
 
 @media screen and (max-width: 768px) {
 
