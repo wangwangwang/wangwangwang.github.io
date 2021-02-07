@@ -974,7 +974,7 @@ button.buttonLine:disabled {
 	display: flex; justify-content: flex-start; align-items: center;
 }
 .tableSwitcherContainer > form > .tableSwitcherButton {
-	width: 20px; height: 20px; padding: 2px; margin: 0; background-color: rgba(0,0,0,0.2); color: #FFF;
+	width: 20px; height: 20px; padding: 2px; margin: 0; background-color: rgba(0,0,0,0.2); color: #FFF; display: flex; justify-content: center; align-items: center; border: 0;
 }
 .tableSwitcherContainer > form > .tableSwitcherButton-red {
 	background-color: #e61717!important; color: #FFF;
