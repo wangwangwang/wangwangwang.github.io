@@ -319,6 +319,9 @@ fieldset {
 .flexGridContainer .fg3rd5gap {
 	width: calc((100% / 3) - 8px);
 }
+.flexGridContainer .fg50p5mmgapPad {
+	width: calc((100% / 2) - 6mm - (3mm / 2)); padding: 3mm;
+}
 .flexGridContainer .fg30p {
 	width: 30%;
 }

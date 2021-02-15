@@ -609,17 +609,29 @@ body {
 .sixteenWorkfieldFullPageContainer {
 	display: flex; width: calc(100% - 6mm); flex-direction: row; justify-content: flex-start; align-items: center; break-inside: avoid; padding: 3mm; background-color:rgba(0,0,0,0.35)!important; margin: 0 0 5mm 0;
 }
+.sixteenWorkfieldFullPageContainer.smol {
+	display: flex; width: calc(100% - 6mm); flex-direction: row; justify-content: flex-start; align-items: center; break-inside: avoid; padding: 2mm 3mm; background-color:rgba(0,0,0,0.35)!important; margin: 0 0 2mm 0;
+}
 .sixteenWorkfieldFullPageContainer.active {
 	background-color:rgba(0,70,125,1)!important;
 }
 .sixteenWorkfieldFullPageContainer span {
 	display: flex; justify-content: center; align-items: center; margin: 0 3mm 0 0; color: #FFFFFF!important; width: 12mm; height: 12mm;
 }
+.sixteenWorkfieldFullPageContainer.smol span {
+	display: flex; justify-content: center; align-items: center; margin: 0 3mm 0 0; color: #FFFFFF!important; width: 8mm; height: 8mm;
+}
 .sixteenWorkfieldFullPageContainer span img {
 	width: 10mm; height: 10mm;
 }
+.sixteenWorkfieldFullPageContainer.smol span img {
+	width: 6mm; height: 6mm;
+}
 .sixteenWorkfieldFullPageContainer div {
 	font:10pt/12pt 'Poppins'!important; font-weight: 400!important; color: #FFFFFF!important; width: calc(100% - (12mm + 3mm));
+}
+.sixteenWorkfieldFullPageContainer.smol div {
+	font:9pt/10pt 'Poppins'!important; font-weight: 400!important; color: #FFFFFF!important; width: calc(100% - (8mm + 3mm));
 }
 
 .sectionContainer.alphaContainer {
