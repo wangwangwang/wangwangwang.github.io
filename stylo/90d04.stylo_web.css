@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap');
+
+/** START OF WEB STYLESHEETS **/
+
+#cavlentweb h1	{
+	font:40px/50px 'Playfair Display'!important; font-weight: 700!important;
+}
+#cavlentweb h2	{
+	font:32px/42px 'Playfair Display'!important; font-weight: 700!important; 
+}
+#cavlentweb h3	{
+	font:28px/38px 'Playfair Display'!important; font-weight: 600!important; 
+}
+#cavlentweb h4	{
+	font:24px/34px 'Playfair Display'!important; font-weight: 600!important; 
+}
+#cavlentweb h5	{
+	font:20px/30px 'Playfair Display'!important; font-weight: 500!important; 
+}
+#cavlentweb h6	{
+	font:18px/28px 'Playfair Display'!important; font-weight: 500!important; 
+}
+#cavlentweb h1, #cavlentweb h2, #cavlentweb h3, #cavlentweb h4, #cavlentweb h5, #cavlentweb h6	{
+	margin: 0!important;
+}
+
+#cavlentweb p {
+	font:14px/18px 'Poppins'!important; font-weight: 300!important; margin: 5px 0 0 0!important;
+}
+#cavlentweb p:first-child {
+	margin: 0!important;
+}
+
+.topFixed {
+	display: flex; z-index: 999; position: fixed; width: 100%; height: 80px; justify-content: center; background-color: rgba(255, 255, 255, 1);
+}
+.topFixed > .topFixedL {
+	display: flex; width: 80px; padding: 0 0 0 0px; align-items: center;
+}
+.topFixed > .topFixedC > .logo {
+	height: 50px; 
+}
+
+.topFixed > .topFixedC {
+	display: flex; width: calc(100% - 160px); max-width: calc(1000px - 160px); align-items: center; justify-content: center;
+}
+
+.topFixed > .topFixedR {
+	display: flex; width: 80px; justify-content: center; align-items: center;
+}
+
+.topFixed > .topFixedR > a.navigationButton {
+	display: flex; width: 34px; height: 34px; justify-content: center; align-items: center; background-color: rgba(0, 0, 0, 0.8); color: #FFF; border-radius: 50%;
+}
+.topFixed > .topFixedR > a.navigationButton:hover {
+	background-color: rgba(0,70,125,1.0);
+}
+
+#navigation > button.uk-offcanvas-close {
+	color: rgba(0, 0, 0, 0.8);
+}
+#navigation > button.uk-offcanvas-close:hover {
+	color: rgba(0,70,125,1.0);
+}
+
+
+#navigation.uk-offcanvas.uk-open {
+	background-color: #FFF; width: 100%;
+}
+#navigation > .nav {
+	width: calc(100% - 20%); height: auto; display: flex; flex-direction: column; z-index: 999; margin: 0 0 0; padding: 0 10%; align-items: center; text-align: center;
+}
+
+#navigation > .nav > a {
+	font:30px/30px 'Playfair Display'!important; font-weight: 700!important; margin: 20px 0 0 0; color: rgba(0, 0, 0, 0.8);
+}
+#navigation > .nav > a:first-child {
+	margin: 0 0 0 0;
+}
+#navigation > .nav > a.active, #navigation > .nav > a:hover {
+	color: rgba(0,70,125,1.0);
+}
+
+#navigation > .offcanvas-logoContainer {
+	display: flex; width: 100%; height: 80px; margin: 0 0 50px 0; justify-content: center; align-items: center;
+}
+#navigation > .offcanvas-logoContainer > .logo {
+	height: 50px;
+}
+
+#navigation > .sosialMediaContainer {
+	width: calc(100% - 20%); height: auto; display: flex; flex-direction: row; z-index: 999; margin: 50px 0 0 0; padding: 0 10%; align-items: center; text-align: center; justify-content: center;
+}
+#navigation > .sosialMediaContainer > a {
+	width: 50px; height: 50px; border-radius: 50%; display: flex; justify-content: center; align-items: center; background-color: rgba(0, 0, 0, 0.8); color: #FFF; margin: 0 5px;
+}
+#navigation > .sosialMediaContainer > a.active, #navigation > .sosialMediaContainer > a:hover {
+	background-color: rgba(0,70,125,1.0)!important;
+}
+
+.landingTop {
+	display: flex; width: 100%; min-height: 100vh; justify-content: flex-end; background-position: center; background-size: cover; align-items: center; flex-direction: column;
+}
+.landingTop > .landingTopContentContainer {
+	display: flex; flex-direction: column; width: calc(100% - 20% - 40px); max-width: 1000px; height: auto; color: #000; padding: 0; margin: 0 0 20px 0; }
+.landingTop > .landingTopContentContainer > .title {
+	font:40px/40px 'Playfair Display'!important; font-weight: 700!important; margin: 0!important; color: rgba(0,70,125,1.0)!important;
+}
+.landingTop > .landingTopContentContainer > .desc {
+	font:12px/16px 'Poppins'!important; font-weight: 400!important; margin: 10px 0 0 0!important;
+}
+
+.landingTop > .feedsContainer {
+	display: flex; flex-direction: row; width: calc(100% - 20% - 40px); max-width: 1000px; height: auto; color: #000; padding: 0px; margin: 0 0 20px 0; justify-content: space-between; 
+}
+.landingTop > .feedsContainer > .feedItem {
+	display: flex; width: calc((100% / 3) - 0px - (40px / 3)); background-position: center; background-size: cover; color: #FFF; padding: 0px; justify-content: flex-end; align-items: flex-start; height: 140px; flex-direction: column;
+}
+.landingTop > .feedsContainer > .feedItem > .feedItemFilter{
+	display: flex; width: calc(100% - 20px); height: 100%; flex-direction: column; justify-content: flex-end; align-items: flex-start; padding: 10px; background-color: rgba(0, 0, 0, 0.5);
+}
+.landingTop > .feedsContainer > .feedItem .postTime {
+	font:8px/8px 'Poppins'!important; font-weight: 300!important; margin: 5px 0 0 0!important;
+}
+.landingTop > .feedsContainer > .feedItem .title {
+	font:20px/20px 'Playfair Display'!important; font-weight: 600!important; margin: 0!important; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.landingTop > .feedsContainer > .feedItem .desc {
+	font:10px/12px 'Poppins'!important; font-weight: 300!important; margin: 5px 0 0 0!important; display: none;
+}
+.landingTop > .feedsContainer > .feedItem .tagContainer {
+	display: flex; margin: 5px 0 0 0;
+}
+.landingTop > .feedsContainer > .feedItem .tagContainer > .tagItem {
+	font:9px/9px 'Poppins'!important; font-weight: 500!important; padding: 0 5px; display: flex; justify-content: center; align-items: center; height: 15px;
+}
+
+.landingTop > .feedsContainer > .feedItem:hover > .feedItemFilter{
+	background-color: rgba(0, 0, 0, 0.8);
+}
+.landingTop > .feedsContainer > .feedItem:hover .desc {
+	display: flex;
+}
+
+.landingTop > .feedsMore {
+	display: flex; width: calc(100% - 20% - 40px); max-width: 1000px; height: auto; color: #FFF; padding: 0px; margin: 0 0 20px 0; background-color: #000!important; justify-content: center; align-items: center; font:12px/12px 'Poppins'!important; font-weight: 400!important; padding: 10px 0; border: 0;
+}
+.landingTop > .feedsMore:hover {
+	background-color: rgba(0,70,125,1.0)!important;
+}
+
+.sectionContainer {
+	display: flex; width: 100%; flex-direction: column; align-items: center; justify-content: flex-start;
+}
+
+.sectionContainer > .sectionContent {
+	display: flex; flex-direction: column; width: calc(100% - 20% - 40px); max-width: 1000px; height: auto; padding: 100px 0; margin: 0 0 0 0; justify-content: flex-start; align-items: flex-start;
+}
+.sectionContainer > .sectionContent > .title {
+	font:30px/30px 'Playfair Display'!important; font-weight: 700!important; margin: 0 0 10px 0!important;
+}
+.sectionContainer > .sectionContent > .desc {
+	font:12px/16px 'Poppins'!important; font-weight: 400!important; margin: 10px 0 0 0!important;
+}
+
+.sectionContainer > .sectionContent.reverseLayout {
+	justify-content: flex-start; align-items: flex-end;
+}
+.sectionContainer > .sectionContent.reverseLayout > .title {
+	text-align: right;
+}
+.sectionContainer > .sectionContent.reverseLayout > .desc {
+	text-align: right;
+}
+
+.sectionContainer > .sectionContent.centerLayout {
+	justify-content: flex-start; align-items: center;
+}
+.sectionContainer > .sectionContent.centerLayout > .title {
+	text-align: center;
+}
+.sectionContainer > .sectionContent.centerLayout > .desc {
+	text-align: center;
+}
+
+.sectionContainer.backGroundGrey05 {
+	background-color: rgba(0,0,0,0.5)!important; color: #FFF!important;
+}
+.sectionContainer.backGroundGrey02 {
+	background-color: rgba(0,0,0,0.2)!important; color: #000!important;
+}
+.sectionContainer.backGroundCavlentBlue {
+	background-color: rgba(0,70,125,1.0)!important; color: #FFF!important;
+}
+
+
+.partnersList {
+	display:flex; width: 100%; justify-content: center; align-items: center; flex-wrap: wrap;
+}
+.partnersList > .partnersItem {
+	display:flex; width: calc((100% / 6) - 40px - (100px / 6)); margin: 20px 20px 0 0; padding: 20px; opacity: 0.6; background-color: #FFF; height: 50px; justify-content: center; align-items: center;
+}
+.partnersList > .partnersItem:hover {
+	opacity: 1;
+}
+.partnersList > .partnersItem:nth-child(6n+6) {
+	margin: 20px 0 0 0;
+}
+
+/** END OF WEB STYLESHEETS **/
+
+@media screen and (max-width: 768px) {
+	
+	.landingTop {
+		justify-content: flex-end;
+	}
+	.landingTop > .landingTopContentContainer {
+		width: calc(100% - 40px); margin: 0 0 20px 0;
+	}
+	.landingTop > .landingTopContentContainer > .title {
+		font:30px/30px 'Playfair Display'!important; font-weight: 700!important; margin: 0!important;
+	}
+
+	.landingTop > .feedsContainer {
+		flex-direction: column; width: calc(100% - 40px); margin: 0 0 10px 0; justify-content: flex-start; 
+	}
+	.landingTop > .feedsContainer > .feedItem {
+		display: flex; width: calc(100% - 0px); margin: 10px 0 0 0; height: 120px;
+	}
+	.landingTop > .feedsContainer > .feedItem:first-child {
+		margin: 0 0 0 0;
+	}
+	.landingTop > .feedsMore {
+		width: calc(100% - 40px); margin: 0 0 20px 0;
+	}
+	
+	.landingTop > .feedsContainer > .feedItem .desc {
+		display: flex;
+	}
+	.landingTop > .feedsContainer > .feedItem .tagContainer {
+		display: flex;
+	}
+
+	.landingTop > .feedsContainer > .feedItem > .feedItemFilter{
+		background-color: rgba(0, 0, 0, 0.7);
+	}
+	
+	.topFixed > .topFixedR > .nav {
+		display: none;		
+	}
+	
+	.sectionContainer > .sectionContent {
+		width: calc(100% - 40px);
+	}
+	
+	.partnersList > .partnersItem {
+		width: calc((100% / 3) - 40px - (40px / 3));
+	}
+	.partnersList > .partnersItem:nth-child(5n+5) {
+		margin: 20px 20px 0 0;
+	}	
+	.partnersList > .partnersItem:nth-child(3n+3) {
+		margin: 20px 0 0 0!important;
+	}
+
+}
