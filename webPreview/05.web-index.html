@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>CAVLENT</title>
-	<link rel="stylesheet" href="css\90.stylo_web.css" />
+	<link rel="stylesheet" href="css\90.set_web.css" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 
@@ -52,7 +52,7 @@
 			<div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repellendus repudiandae ipsum consectetur optio eum exercitationem adipisci aut inventore libero dolores, vel esse doloribus odit, tempora maxime? Ipsum, cumque sit.</div>
 		</div>
 		<div class="feedsContainer">
-			<a href="#" class="feedItem" style="background-image: url(https://wangwangwang.github.io/img/01.jpeg);">
+			<a href="#feedItem01" uk-toggle class="feedItem" style="background-image: url(https://wangwangwang.github.io/img/01.jpeg);">
 				<div class="feedItemFilter">
 					<div class="title">Title Title Title 01</div>
 					<div class="postTime">XX XXX XX - XX:XX - posted by John Doe</div>
@@ -62,7 +62,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="#" class="feedItem" style="background-image: url(https://wangwangwang.github.io/img/02.jpg);">
+			<a href="#feedItem02" uk-toggle class="feedItem" style="background-image: url(https://wangwangwang.github.io/img/02.jpg);">
 				<div class="feedItemFilter">
 					<div class="title">Title Title Title 02</div>
 					<div class="postTime">XX XXX XX - XX:XX - published by John Doe</div>
@@ -72,7 +72,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="#" class="feedItem" style="background-image: url(https://wangwangwang.github.io/img/03.jpg);">
+			<a href="#feedItem03" uk-toggle class="feedItem" style="background-image: url(https://wangwangwang.github.io/img/03.jpg);">
 				<div class="feedItemFilter">
 					<div class="title">Title Title Title 03</div>
 					<div class="postTime">XX XXX XX - XX:XX - posted by John Doe</div>
@@ -82,19 +82,110 @@
 					</div>
 				</div>
 			</a>
+
+			<div class="feedItemModalContainer" id="feedItem01" uk-modal>
+				<div class="uk-modal-dialog">
+					<button class="uk-modal-close-default" type="button" uk-close></button>
+					<div class="feedItemHeader" style="background-image: url(https://wangwangwang.github.io/img/01.jpeg);">
+						<div class="feedItemFilter">
+							<div class="title">Title Title Title 01</div>
+							<div class="postTime">XX XXX XX - XX:XX - posted by John Doe</div>
+							<div class="tagContainer">
+								<div class="tagItem" style="background-color: royalblue; color: #FFF;">News</div>
+							</div>
+						</div>
+					</div>
+					<div class="feedItemContent" uk-overflow-auto>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim explicabo eum commodi iste quia nihil quo expedita labore repellat ratione consectetur, inventore asperiores ipsum, corporis nisi blanditiis, architecto ipsam. Unde!</p>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit saepe laboriosam aut error numquam at doloribus, quibusdam laborum provident natus asperiores neque voluptates iste rerum impedit accusamus aperiam tenetur odio.</p>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi nisi totam in maiores voluptatum similique eaque, asperiores magni laudantium unde officia nam hic, consequuntur provident ad quibusdam sapiente, nulla modi.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, omnis? Odio quaerat perferendis, maxime necessitatibus magnam molestiae officiis, saepe at quasi assumenda, sed magni quo excepturi quisquam expedita exercitationem aliquid!</p>
+						<img src="https://wangwangwang.github.io/img/01.jpeg" alt="">
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur labore velit excepturi architecto corrupti iure voluptate sapiente, rem eos libero repellat nisi sed nobis distinctio dignissimos totam, possimus voluptates ipsum?</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis architecto, quae accusantium non praesentium temporibus fugit error cupiditate, ratione saepe tenetur incidunt, animi qui exercitationem eveniet? Incidunt, exercitationem soluta! Fugit.</p>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim explicabo eum commodi iste quia nihil quo expedita labore repellat ratione consectetur, inventore asperiores ipsum, corporis nisi blanditiis, architecto ipsam. Unde!</p>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit saepe laboriosam aut error numquam at doloribus, quibusdam laborum provident natus asperiores neque voluptates iste rerum impedit accusamus aperiam tenetur odio.</p>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi nisi totam in maiores voluptatum similique eaque, asperiores magni laudantium unde officia nam hic, consequuntur provident ad quibusdam sapiente, nulla modi.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, omnis? Odio quaerat perferendis, maxime necessitatibus magnam molestiae officiis, saepe at quasi assumenda, sed magni quo excepturi quisquam expedita exercitationem aliquid!</p>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur labore velit excepturi architecto corrupti iure voluptate sapiente, rem eos libero repellat nisi sed nobis distinctio dignissimos totam, possimus voluptates ipsum?</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis architecto, quae accusantium non praesentium temporibus fugit error cupiditate, ratione saepe tenetur incidunt, animi qui exercitationem eveniet? Incidunt, exercitationem soluta! Fugit.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="feedItemModalContainer" id="feedItem02" uk-modal>
+				<div class="uk-modal-dialog">
+					<button class="uk-modal-close-default" type="button" uk-close></button>
+					<div class="feedItemHeader" style="background-image: url(https://wangwangwang.github.io/img/02.jpg);">
+						<div class="feedItemFilter">
+							<div class="title">Title Title Title 02</div>
+							<div class="postTime">XX XXX XX - XX:XX - published by John Doe</div>
+							<div class="tagContainer">
+								<div class="tagItem" style="background-color: tomato; color: #FFF;">Article</div>
+							</div>
+						</div>
+					</div>
+					<div class="feedItemContent" uk-overflow-auto>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim explicabo eum commodi iste quia nihil quo expedita labore repellat ratione consectetur, inventore asperiores ipsum, corporis nisi blanditiis, architecto ipsam. Unde!</p>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit saepe laboriosam aut error numquam at doloribus, quibusdam laborum provident natus asperiores neque voluptates iste rerum impedit accusamus aperiam tenetur odio.</p>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi nisi totam in maiores voluptatum similique eaque, asperiores magni laudantium unde officia nam hic, consequuntur provident ad quibusdam sapiente, nulla modi.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, omnis? Odio quaerat perferendis, maxime necessitatibus magnam molestiae officiis, saepe at quasi assumenda, sed magni quo excepturi quisquam expedita exercitationem aliquid!</p>
+						<img src="https://wangwangwang.github.io/img/02.jpg" alt="">
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur labore velit excepturi architecto corrupti iure voluptate sapiente, rem eos libero repellat nisi sed nobis distinctio dignissimos totam, possimus voluptates ipsum?</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis architecto, quae accusantium non praesentium temporibus fugit error cupiditate, ratione saepe tenetur incidunt, animi qui exercitationem eveniet? Incidunt, exercitationem soluta! Fugit.</p>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim explicabo eum commodi iste quia nihil quo expedita labore repellat ratione consectetur, inventore asperiores ipsum, corporis nisi blanditiis, architecto ipsam. Unde!</p>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit saepe laboriosam aut error numquam at doloribus, quibusdam laborum provident natus asperiores neque voluptates iste rerum impedit accusamus aperiam tenetur odio.</p>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi nisi totam in maiores voluptatum similique eaque, asperiores magni laudantium unde officia nam hic, consequuntur provident ad quibusdam sapiente, nulla modi.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, omnis? Odio quaerat perferendis, maxime necessitatibus magnam molestiae officiis, saepe at quasi assumenda, sed magni quo excepturi quisquam expedita exercitationem aliquid!</p>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur labore velit excepturi architecto corrupti iure voluptate sapiente, rem eos libero repellat nisi sed nobis distinctio dignissimos totam, possimus voluptates ipsum?</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis architecto, quae accusantium non praesentium temporibus fugit error cupiditate, ratione saepe tenetur incidunt, animi qui exercitationem eveniet? Incidunt, exercitationem soluta! Fugit.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="feedItemModalContainer" id="feedItem03" uk-modal>
+				<div class="uk-modal-dialog">
+					<button class="uk-modal-close-default" type="button" uk-close></button>
+					<div class="feedItemHeader" style="background-image: url(https://wangwangwang.github.io/img/03.jpg);">
+						<div class="feedItemFilter">
+							<div class="title">Title Title Title 03</div>
+							<div class="postTime">XX XXX XX - XX:XX - posted by John Doe</div>
+							<div class="tagContainer">
+								<div class="tagItem" style="background-color: royalblue; color: #FFF;">News</div>
+							</div>
+						</div>
+					</div>
+					<div class="feedItemContent" uk-overflow-auto>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim explicabo eum commodi iste quia nihil quo expedita labore repellat ratione consectetur, inventore asperiores ipsum, corporis nisi blanditiis, architecto ipsam. Unde!</p>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit saepe laboriosam aut error numquam at doloribus, quibusdam laborum provident natus asperiores neque voluptates iste rerum impedit accusamus aperiam tenetur odio.</p>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi nisi totam in maiores voluptatum similique eaque, asperiores magni laudantium unde officia nam hic, consequuntur provident ad quibusdam sapiente, nulla modi.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, omnis? Odio quaerat perferendis, maxime necessitatibus magnam molestiae officiis, saepe at quasi assumenda, sed magni quo excepturi quisquam expedita exercitationem aliquid!</p>
+						<img src="https://wangwangwang.github.io/img/03.jpg" alt="">
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur labore velit excepturi architecto corrupti iure voluptate sapiente, rem eos libero repellat nisi sed nobis distinctio dignissimos totam, possimus voluptates ipsum?</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis architecto, quae accusantium non praesentium temporibus fugit error cupiditate, ratione saepe tenetur incidunt, animi qui exercitationem eveniet? Incidunt, exercitationem soluta! Fugit.</p>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim explicabo eum commodi iste quia nihil quo expedita labore repellat ratione consectetur, inventore asperiores ipsum, corporis nisi blanditiis, architecto ipsam. Unde!</p>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit saepe laboriosam aut error numquam at doloribus, quibusdam laborum provident natus asperiores neque voluptates iste rerum impedit accusamus aperiam tenetur odio.</p>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi nisi totam in maiores voluptatum similique eaque, asperiores magni laudantium unde officia nam hic, consequuntur provident ad quibusdam sapiente, nulla modi.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, omnis? Odio quaerat perferendis, maxime necessitatibus magnam molestiae officiis, saepe at quasi assumenda, sed magni quo excepturi quisquam expedita exercitationem aliquid!</p>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur labore velit excepturi architecto corrupti iure voluptate sapiente, rem eos libero repellat nisi sed nobis distinctio dignissimos totam, possimus voluptates ipsum?</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis architecto, quae accusantium non praesentium temporibus fugit error cupiditate, ratione saepe tenetur incidunt, animi qui exercitationem eveniet? Incidunt, exercitationem soluta! Fugit.</p>
+					</div>
+				</div>
+			</div>
+
 		</div>
 		<a class="feedsMore" href="#">MORE</a>
 	</div>
 
 	<div class="sectionContainer backGroundCavlentBlue">
-		<div class="sectionContent">
+		<div class="sectionContent centerLayout">
 			<div class="title">About Cavlent</div>
 			<div class="desc">CAVLENT adalah Online Personality Assessment Tools, yang mampu memetakan Pola Perilaku manusia modern dengan tingkat akurasi 87,3%.</div>
 		</div>
 	</div>
 
 	<div class="sectionContainer">
-		<div class="sectionContent reverseLayout">
+		<div class="sectionContent centerLayout">
 			<div class="title">Why Cavlent?</div>
 			<div class="desc">CAVLENT menggunakan alat tes Type Indicator Character (TIC) yang berbasis pola perilaku individu modern. Alat tes ini dikembangkan, diriset, dan telah mendapatkan sertifikasi oleh Forum Pengembangan dan Riset Psikologi Modern, Wereldpsycho, Belanda, pada tahun 2010 (CAVLENT bersinergi dengan Equity Indonesia sebagai Perwakilan dari Wereldpsycho Belanda).</div>
 			<div class="desc">Alat tes TIC Cavlent memiliki kategori akurasi tinggi berbanding dengan standar validitas psikologi. Hal ini membuat TIC dapat menjadi salah satu jalan keluar efektif memetakan perilaku manusia modern.</div>
@@ -118,7 +209,7 @@
 	</div>
 
 	<div class="sectionContainer" id="contactUs">
-		<div class="sectionContent">
+		<div class="sectionContent centerLayout">
 			<div class="title">Contact Us</div>
 			<div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus libero consequatur unde reiciendis suscipit officiis earum accusamus ipsa impedit repellat et totam exercitationem, velit placeat sunt. Quis dicta laborum saepe!</div>
 			<form action="">
