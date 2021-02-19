@@ -99,7 +99,7 @@
 }
 
 .landingTop {
-	display: flex; width: 100%; min-height: 100vh; justify-content: flex-end; background-position: center; background-size: cover; align-items: center; flex-direction: column;
+	display: flex; width: 100%; min-height: 100vh; max-height: 100vh; justify-content: flex-end; background-position: center; background-size: cover; align-items: center; flex-direction: column;
 }
 .landingTop > .landingTopContentContainer {
 	display: flex; flex-direction: column; width: calc(100% - 20% - 40px); max-width: 1000px; height: auto; color: #000; padding: 0; margin: 0 0 20px 0; }
@@ -108,6 +108,9 @@
 }
 .landingTop > .landingTopContentContainer > .desc {
 	font:12px/16px 'Poppins'!important; font-weight: 400!important; margin: 10px 0 0 0!important;
+}
+.landingTop > .landingTopContentContainer .landingTopShowcase {
+	display: flex; justify-content: center; align-items: center; width: 100%; min-height: 600px; background-position: center; background-size: cover;
 }
 
 .landingTop > .feedsContainer {
@@ -196,6 +199,9 @@
 .sectionContainer > .sectionContent {
 	display: flex; flex-direction: column; width: calc(100% - 20% - 40px); max-width: 1000px; height: auto; padding: 100px 0; margin: 0 0 0 0; justify-content: flex-start; align-items: flex-start;
 }
+.sectionContainer > .sectionContent.lessPad {
+	padding: 40px 0;
+}
 .sectionContainer > .sectionContent > .title {
 	font:30px/30px 'Playfair Display'!important; font-weight: 700!important; margin: 0 0 10px 0!important;
 }
@@ -247,16 +253,62 @@
 	margin: 20px 0 0 0;
 }
 
+.footerContainer {
+	display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; width: 100%;
+}
+.footerContainer .siteMap {
+	display: flex; flex-direction: row; align-items: flex-start; justify-content: space-between; width: 100%; margin: 0 0 40px 0;
+}
+.footerContainer .siteMap .siteMapItem {
+	display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; width: calc((100% / 4) - (60px / 4));
+}
+.footerContainer .siteMap .siteMapItem > a {
+	font:12px/12px 'Poppins'!important; font-weight: 400!important; color: rgba(255, 255, 255, 0.6); margin: 10px 0 0 0; width: 100%;
+}
+.footerContainer .siteMap .siteMapItem > a:hover {
+	color: rgba(255, 255, 255, 1); 
+}
+.footerContainer .siteMap .siteMapItem > a:first-child {
+	margin: 0 0 10px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.2); padding: 0 0 5px 0;
+}
+.footerContainer .siteMap .siteMapItem .subMap {
+	display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; width: 100%;
+}
+.footerContainer .siteMap .siteMapItem .subMap > a {
+	font:10px/10px 'Poppins'!important; font-weight: 400!important; color: rgba(255, 255, 255, 0.6); margin: 5px 0 0 0;
+}
+.footerContainer .siteMap .siteMapItem .subMap > a:hover {
+	color: rgba(255, 255, 255, 1);
+}
+.footerContainer .siteMap .siteMapItem .subMap > a:first-child {
+	margin: 0 0 0 0;
+}
+
+.footerContainer .bottomEnd {
+	display: flex; align-items: flex-end; justify-content: flex-start;
+}
+.footerContainer .bottomEnd > .logo {
+	height: 35px; opacity: 0.6;
+}
+.footerContainer .bottomEnd > .desc {
+	margin: 0 0 0 20px; font:10px/10px 'Poppins'!important; font-weight: 400!important; color: rgba(255, 255, 255, 0.6);
+}
+
+
+
 
 /** END OF WEB STYLESHEETS **/
 
 @media screen and (max-width: 768px) {
 	
 	.landingTop {
-		justify-content: flex-end;
+		justify-content: flex-start; min-height: auto; max-height: none;
 	}
 	.landingTop > .landingTopContentContainer {
-		width: calc(100% - 40px); margin: 0 0 20px 0;
+		width: calc(100% - 40px); margin: 0 0 20px 0; 
+	}
+	.landingTop > .landingTopContentContainer .landingTopShowcase {
+		margin-top: 100px; min-height: 400px!important;
 	}
 	.landingTop > .landingTopContentContainer > .title {
 		font:30px/30px 'Playfair Display'!important; font-weight: 700!important; margin: 0!important;
@@ -303,5 +355,16 @@
 	.partnersList > .partnersItem:nth-child(3n+3) {
 		margin: 20px 0 0 0!important;
 	}
+
+	.footerContainer .siteMap {
+		flex-wrap: wrap;
+	}
+	.footerContainer .siteMap .siteMapItem {
+		display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; width: calc((100% / 2) - (20px / 2)); margin-top: 20px;
+	}
+	.footerContainer .siteMap .siteMapItem:nth-child(1), .footerContainer .siteMap .siteMapItem:nth-child(2) {
+		margin-top: 0px;
+	}
+
 
 }
