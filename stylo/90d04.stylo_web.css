@@ -25,14 +25,21 @@
 }
 
 #cavlentweb p {
-	font:14px/18px 'Poppins'; font-weight: 300; margin: 5px 0 0 0;
+	font:14px/18px 'Poppins'; font-weight: 300; margin: 5px 0 0 0!important;
 }
 #cavlentweb p:first-child {
 	margin: 0!important;
 }
 
+.uk-slideshow-items p {
+	font:12px/14px 'Poppins'!important; font-weight: 400!important; margin: 5px 0 0 0!important;
+}
+.uk-slideshow-items li > .uk-overlay {
+	padding: 30px;
+}
+
 .topFixed {
-	display: flex; z-index: 999; position: fixed; width: 100%; height: 80px; justify-content: center; background-color: rgba(255, 255, 255, 1);
+	display: flex; z-index: 999; position: fixed; width: 100%; height: 80px; justify-content: center; background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 100%);
 }
 .topFixed > .topFixedL {
 	display: flex; width: 80px; padding: 0 0 0 0px; align-items: center;
@@ -101,35 +108,51 @@
 .landingTop {
 	display: flex; width: 100%; min-height: 100vh; max-height: 100vh; justify-content: flex-end; background-position: center; background-size: cover; align-items: center; flex-direction: column;
 }
+.landingTop.noFull {
+	justify-content: flex-start; min-height: auto; height: auto; max-height: none;
+}
 .landingTop > .landingTopContentContainer {
-	display: flex; flex-direction: column; width: calc(100% - 20% - 40px); max-width: 1000px; height: auto; color: #000; padding: 0; margin: 0 0 20px 0; }
+	display: flex; flex-direction: column; width: calc(100% - 20% - 40px); max-width: 1000px; height: auto; color: #000; padding: 0; margin: 0 0 20px 0; z-index: 1
+}
+.landingTop.noFull > .landingTopContentContainer {
+	margin: 100px 0 20px 0;
+}
 .landingTop > .landingTopContentContainer > .title {
-	font:40px/40px 'Playfair Display'!important; font-weight: 700!important; margin: 0!important; color: rgba(0,70,125,1.0)!important;
+	font:40px/40px 'Playfair Display'!important; font-weight: 700!important; margin: 0 auto!important; color: rgba(0,70,125,1.0)!important; width: 90%; text-align: center; text-transform: uppercase;
 }
 .landingTop > .landingTopContentContainer > .desc {
 	font:12px/16px 'Poppins'!important; font-weight: 400!important; margin: 10px 0 0 0!important;
 }
+.landingTop > .landingTopContentContainer > .landingTopImage {
+	width: auto; max-height: 40vh;
+}
 .landingTop > .landingTopContentContainer .landingTopShowcase {
 	display: flex; justify-content: center; align-items: center; width: 100%; min-height: 600px; background-position: center; background-size: cover;
 }
+.landingTop > .landingTopBackOverlay {
+	width: 100%; height: 100%; position: absolute; background-color: rgba(255,255,255,0.8); z-index: 0;
+}
 
 .landingTop > .feedsContainer {
-	display: flex; flex-direction: row; width: calc(100% - 20% - 40px); max-width: 1000px; height: auto; color: #000; padding: 0px; margin: 0 0 20px 0; justify-content: space-between; 
+	display: flex; flex-direction: row; width: calc(100% - 20% - 40px); max-width: 1000px; height: auto; color: #000; padding: 0px; margin: 0 0 0 0; justify-content: space-between; z-index: 1; flex-wrap: wrap;
 }
 .landingTop > .feedsContainer > .feedItem {
-	display: flex; width: calc((100% / 3) - 0px - (40px / 3)); background-position: center; background-size: cover; color: #FFF; padding: 0px; justify-content: flex-end; align-items: flex-start; height: 140px; flex-direction: column;
+	display: flex; width: calc((100% / 3) - 0px - (40px / 3)); background-position: center; background-size: cover; color: #FFF; padding: 0px; justify-content: flex-end; align-items: flex-start; height: 140px; flex-direction: column; margin: 0 0 20px 0;
+}
+.landingTop > .feedsContainer > .feedItem.split2 {
+	width: calc((100% / 2) - 0px - (20px / 2)); height: 200px;
 }
 .landingTop > .feedsContainer > .feedItem > .feedItemFilter{
 	display: flex; width: calc(100% - 20px); height: 100%; flex-direction: column; justify-content: flex-end; align-items: flex-start; padding: 10px; background-color: rgba(0, 0, 0, 0.5);
 }
 .landingTop > .feedsContainer > .feedItem .postTime {
-	font:8px/8px 'Poppins'!important; font-weight: 300!important; margin: 5px 0 0 0!important;
+	font:8px/8px 'Poppins'!important; font-weight: 400!important; margin: 5px 0 0 0!important; color: #FFF;
 }
 .landingTop > .feedsContainer > .feedItem .title {
-	font:20px/20px 'Playfair Display'!important; font-weight: 600!important; margin: 0!important; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+	font:20px/20px 'Playfair Display'!important; font-weight: 600!important; margin: 0!important; text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.5); color: #FFF;
 }
 .landingTop > .feedsContainer > .feedItem .desc {
-	font:10px/12px 'Poppins'!important; font-weight: 300!important; margin: 5px 0 0 0!important; display: none;
+	font:10px/12px 'Poppins'!important; font-weight: 400!important; margin: 5px 0 0 0!important; display: flex; height: 24px; overflow: hidden; color: #FFF;
 }
 .landingTop > .feedsContainer > .feedItem .tagContainer {
 	display: flex; margin: 5px 0 0 0;
@@ -144,9 +167,12 @@
 .landingTop > .feedsContainer > .feedItem:hover .desc {
 	display: flex;
 }
+.landingTop > .feedsContainer > .feedItem.split2 .desc {
+	display: flex;
+}
 
 .landingTop > .feedsMore {
-	display: flex; width: calc(100% - 20% - 40px); max-width: 1000px; height: auto; color: #FFF; padding: 0px; margin: 0 0 20px 0; background-color: #000!important; justify-content: center; align-items: center; font:12px/12px 'Poppins'!important; font-weight: 400!important; padding: 10px 0; border: 0;
+	display: flex; width: calc(100% - 20% - 40px); max-width: 1000px; height: auto; color: #FFF; padding: 0px; margin: 0 0 20px 0; background-color: #000!important; justify-content: center; align-items: center; font:12px/12px 'Poppins'!important; font-weight: 400!important; padding: 10px 0; border: 0; z-index: 1
 }
 .landingTop > .feedsMore:hover {
 	background-color: rgba(0,70,125,1.0)!important;
@@ -203,7 +229,10 @@
 	padding: 40px 0;
 }
 .sectionContainer > .sectionContent > .title {
-	font:30px/30px 'Playfair Display'!important; font-weight: 700!important; margin: 0 0 10px 0!important;
+	font:30px/30px 'Playfair Display'!important; font-weight: 700!important; margin: 0 0 10px 0!important; color: rgba(0,70,125,1.0);
+}
+.sectionContainer.backGroundCavlentBlue > .sectionContent > .title {
+	color: #FFF;
 }
 .sectionContainer > .sectionContent > .desc {
 	font:12px/16px 'Poppins'!important; font-weight: 400!important; margin: 10px 0 0 0!important;
@@ -228,6 +257,24 @@
 .sectionContainer > .sectionContent.centerLayout > .desc {
 	text-align: center;
 }
+
+.sectionContainer .sectionContent .sectionImage {
+	width: auto; max-height: 300px; margin: 20px 0;
+}
+.sectionContainer .sectionContent .sectionLogo {
+	width: auto; max-height: 50px; margin: 50px 0;
+}
+
+.sectionContainer .sectionContent > .sosialMediaContainer {
+	width: calc(100% - 20%); height: auto; display: flex; flex-direction: row; margin: 0 0 0 0; padding: 0 10%; align-items: center; text-align: center; justify-content: center;
+}
+.sectionContainer .sectionContent > .sosialMediaContainer > a {
+	width: 50px; height: 50px; border-radius: 50%; display: flex; justify-content: center; align-items: center; background-color: rgba(255,255,255,0.7); color: rgba(0,70,125,1.0)!important; margin: 0 5px;
+}
+.sectionContainer .sectionContent > .sosialMediaContainer > a.active, .sectionContainer .sectionContent > .sosialMediaContainer > a:hover {
+	background-color: rgba(255,255,255,1.0); color: rgba(0,70,125,1.0)!important;
+}
+
 
 .sectionContainer.backGroundGrey05 {
 	background-color: rgba(0,0,0,0.5)!important; color: #FFF!important;
@@ -294,30 +341,37 @@
 	margin: 0 0 0 20px; font:10px/10px 'Poppins'!important; font-weight: 400!important; color: rgba(255, 255, 255, 0.6);
 }
 
-
+.sectionContentSlider {
+	width: 80%;
+}
 
 
 /** END OF WEB STYLESHEETS **/
 
 @media screen and (max-width: 768px) {
 	
-	.landingTop {
-		justify-content: flex-start; min-height: auto; max-height: none;
+	.sectionContentSlider {
+		width: 100%;
 	}
+
+	.landingTop {
+		justify-content: flex-start; min-height: auto; height: auto; max-height: none;
+	}	
 	.landingTop > .landingTopContentContainer {
-		width: calc(100% - 40px); margin: 0 0 20px 0; 
+		width: calc(100% - 40px); margin: 100px 0 20px 0; 
 	}
 	.landingTop > .landingTopContentContainer .landingTopShowcase {
 		margin-top: 100px; min-height: 400px!important;
 	}
 	.landingTop > .landingTopContentContainer > .title {
-		font:30px/30px 'Playfair Display'!important; font-weight: 700!important; margin: 0!important;
+		font:38px/38px 'Playfair Display'!important; font-weight: 700!important; margin: 0 auto!important;
 	}
 
+	
 	.landingTop > .feedsContainer {
 		flex-direction: column; width: calc(100% - 40px); margin: 0 0 10px 0; justify-content: flex-start; 
 	}
-	.landingTop > .feedsContainer > .feedItem {
+	.landingTop > .feedsContainer > .feedItem, .landingTop > .feedsContainer > .feedItem.split2 {
 		display: flex; width: calc(100% - 0px); margin: 10px 0 0 0; height: 120px;
 	}
 	.landingTop > .feedsContainer > .feedItem:first-child {
@@ -332,10 +386,6 @@
 	}
 	.landingTop > .feedsContainer > .feedItem .tagContainer {
 		display: flex;
-	}
-
-	.landingTop > .feedsContainer > .feedItem > .feedItemFilter{
-		background-color: rgba(0, 0, 0, 0.7);
 	}
 	
 	.topFixed > .topFixedR > .nav {
@@ -364,6 +414,40 @@
 	}
 	.footerContainer .siteMap .siteMapItem:nth-child(1), .footerContainer .siteMap .siteMapItem:nth-child(2) {
 		margin-top: 0px;
+	}
+
+	
+
+	.sectionContainer .sectionContent > .feedsContainer {
+		flex-direction: column; width: calc(100% - 0px); margin: 0 0 10px 0; justify-content: flex-start; 
+	}
+	.sectionContainer .sectionContent > .feedsContainer > .feedItem {
+		display: flex; width: calc(100% - 0px); margin: 10px 0 0 0; height: 120px;
+	}
+	.sectionContainer .sectionContent > .feedsContainer > .feedItem:first-child {
+		margin: 0 0 0 0;
+	}
+	.sectionContainer .sectionContent > .feedsMore {
+		width: calc(100% - 40px); margin: 0 0 20px 0;
+	}
+	
+	.sectionContainer .sectionContent > .feedsContainer > .feedItem .desc {
+		display: flex;
+	}
+	.sectionContainer .sectionContent > .feedsContainer > .feedItem .tagContainer {
+		display: flex;
+	}
+
+	.sectionContainer .sectionContent > .feedsContainer > .feedItem > .feedItemFilter{
+		background-color: rgba(0, 0, 0, 0.7);
+	}
+
+	.uk-slideshow-items p {
+		font:10px/12px 'Poppins'!important; font-weight: 400!important; margin: 5px 0 0 0!important;
+	}
+	
+	.uk-slideshow-items li > .uk-overlay {
+		padding: 15px;
 	}
 
 

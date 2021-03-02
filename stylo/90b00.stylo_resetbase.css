@@ -227,6 +227,9 @@ fieldset {
 .backcolor-greyt20 {
 	background-color: rgba(0,0,0,0.2)!important;
 }
+.backcolor-greyt50 {
+	background-color: rgba(0,0,0,0.5)!important;
+}
 
 .backcolor-grey06 {
 	background-color: rgba(0,0,0,0.06)!important;
