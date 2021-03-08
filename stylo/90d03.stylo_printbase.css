@@ -38,6 +38,13 @@ body {
 .report_page:last-child {
 	margin: 10mm auto;
 }
+.report_page .ads {
+	display: flex; position: relative; z-index: 101!important; width: calc(100% - 10mm); height: 30mm; background-color: bisque!important; padding: 0; margin: 0 5mm; align-items: center; justify-content: center; overflow: hidden;
+}
+.report_page .ads div {
+	font:40pt/40pt 'Poppins'!important; font-weight: 500!important; text-align: center;
+}
+
 
 .report_page h1 {
 	font:40pt/40pt 'Poppins'!important; font-weight: 700!important;
@@ -1646,6 +1653,70 @@ STYLE REPORT **/
 
 
 
+.flexSplit4 {
+	justify-content: flex-start;
+}
+
+.flexSplit4 .splitItemChartContainer {
+	display: flex; flex-direction: column; break-inside: avoid; width: calc((100% /4) - 0mm - (9mm / 4)); flex-wrap: wrap; margin-top: 0mm; margin-left: 3mm; justify-content: flex-start; align-items: center;
+}
+.flexSplit4 .splitItemChartContainer:nth-child(1) {
+	margin-left: 0mm;
+}
+.flexSplit4 .splitItemChartContainer .title {
+	font:12pt/12pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 2mm 0; text-transform: uppercase; height: 24pt; display: flex; align-items: center; justify-content: center; color: #00467d!important; width: 100%; text-align: center;
+}
+.flexSplit4 .splitItemChartContainer .title.colorCoded {
+	font:8pt/8pt 'Poppins'!important; font-weight: 500!important; margin: 0 0 0 0; text-transform: uppercase; height: 16pt; display: flex; align-items: center; justify-content: center; color: #00467d!important; width: calc(100% - 6mm); text-align: center; padding: 2mm 3mm;
+}
+.flexSplit4 .splitItemChartContainer .score {
+	font:20pt/20pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; padding: 0; width: 24mm; height: 24mm; display: flex; align-items: center; justify-content: center; text-align: center;
+}
+.flexSplit4 .splitItemChartContainer .score.circle {
+	font:18pt/18pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; padding: 0 0 0 0; width: 24mm; height: 24mm; display: flex; align-items: center; justify-content: center; border-radius: 50%; text-align: center;
+}
+.flexSplit4 .splitItemChartContainer .score.text {
+	font:14pt/14pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; padding: 0 0 0 0; width: 100%; height: 14mm; display: flex; align-items: center; justify-content: center; border-radius: 0%; text-align: center;
+}
+.flexSplit4 .splitItemChartContainer .desc {
+	font:8pt/10pt 'Poppins'!important; font-weight: 500!important; margin: 2mm 0 0 0; width: 100%; min-height: 40pt; text-align: center;
+}
+.flexSplit4.smol .splitItemChartContainer .desc {
+	font:7pt/9pt 'Poppins'!important; font-weight: 500!important; margin: 2mm 0 0 0; width: 100%; min-height: 40pt; text-align: center;
+}
+
+.flexSplit3.smol {
+	justify-content: flex-start;
+}
+
+.flexSplit3.smol .splitItemChartContainer {
+	display: flex; flex-direction: column; break-inside: avoid; width: calc((100% /3) - 0mm - (6mm / 3)); flex-wrap: wrap; margin-top: 0mm; margin-left: 3mm; justify-content: flex-start; align-items: center;
+}
+.flexSplit3.smol .splitItemChartContainer:nth-child(1) {
+	margin-left: 0mm;
+}
+.flexSplit3.smol .splitItemChartContainer .title {
+	font:12pt/12pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 2mm 0; text-transform: uppercase; height: 24pt; display: flex; align-items: center; justify-content: center; color: #00467d!important; width: 100%; text-align: center;
+}
+.flexSplit3.smol .splitItemChartContainer .title.colorCoded {
+	font:8pt/8pt 'Poppins'!important; font-weight: 500!important; margin: 0 0 0 0; text-transform: uppercase; height: 16pt; display: flex; align-items: center; justify-content: center; color: #00467d!important; width: calc(100% - 6mm); text-align: center; padding: 2mm 3mm;
+}
+.flexSplit3.smol .splitItemChartContainer .score {
+	font:20pt/20pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; padding: 0; width: 24mm; height: 24mm; display: flex; align-items: center; justify-content: center; text-align: center;
+}
+.flexSplit3.smol .splitItemChartContainer .score.circle {
+	font:18pt/18pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; padding: 0 0 0 0; width: 24mm; height: 24mm; display: flex; align-items: center; justify-content: center; border-radius: 50%; text-align: center;
+}
+.flexSplit3.smol .splitItemChartContainer .score.text {
+	font:14pt/14pt 'Poppins'!important; font-weight: 700!important; margin: 0 0 0 0; text-transform: uppercase; padding: 0 0 0 0; width: 100%; height: 14mm; display: flex; align-items: center; justify-content: center; border-radius: 0%; text-align: center;
+}
+.flexSplit3.smol .splitItemChartContainer .desc {
+	font:7pt/9pt 'Poppins'!important; font-weight: 500!important; margin: 2mm 0 0 0; width: 100%; min-height: 40pt; text-align: center;
+}
+
+
+
+
 .flexGridContainer > .fg50p3mmgap.boxIt {
 	background-color: rgba(0,0,0,0.08)!important; padding: 3mm; width: calc((100% / 2) - 6mm - 2px - (3mm / 2)); border: 1px solid rgba(0,0,0,0.1)!important;
 }
@@ -1775,6 +1846,166 @@ STYLE REPORT **/
 	width: 30mm; 
 }
 
+.freeSampleContainer {
+	display: flex; flex-direction: row; justify-content:space-between; align-items: center; width: calc(100% - 10mm);  height: calc(100% - 10mm);padding: 5mm; flex-wrap: wrap;
+}
+.freeSampleContainer .freeSampleItem {
+	display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; width: calc((100% / 2) - (5mm / 2)); height: 100%;
+}
+.freeSampleContainer .freeSampleItem .reportInfoContainer {
+	display: flex; flex-direction: column; justify-content: flex-start; align-items: center; width: calc(100% - 6mm); padding: 5mm 3mm; background-color: rgba(0,70,125,0.1)!important; 
+}
+.freeSampleContainer .freeSampleItem .reportInfoContainer .logo {
+	height: 12mm;
+}
+.freeSampleContainer .freeSampleItem .reportInfoContainer .title {
+	font:12pt/12pt 'Poppins'!important; font-weight: 700!important; color: rgba(0,70,125,1)!important; margin: 5mm 0 0 0; text-align: center;
+}
+.freeSampleContainer .freeSampleItem .reportInfoContainer .disclaimer {
+	font:5pt/7pt 'Poppins'!important; font-weight: 400!important; color: rgba(0,0,0,0.6)!important; margin: 2mm 0 0 0; text-align:justify;
+}
+.freeSampleContainer .freeSampleItem .reportInfoContainer .infoContainer {
+	display: flex; flex-direction: row; align-items: flex-start; justify-content: space-between; width: 100%; margin: 2mm 0 0 0; flex-wrap: wrap;
+}
+.freeSampleContainer .freeSampleItem .reportInfoContainer .infoContainer .infoItem {
+	width: calc((100% / 2) - (5mm / 2));
+}
+.freeSampleContainer .freeSampleItem .reportInfoContainer .infoContainer .infoItem .label {
+	font:6pt/6pt 'Poppins'!important; font-weight: 600!important; margin: 2mm 0 0 0; color: rgba(0,0,0,0.6)!important;
+}
+.freeSampleContainer .freeSampleItem .reportInfoContainer .infoContainer .infoItem .info {
+	font:7pt/7pt 'Poppins'!important; font-weight: 600!important; border-bottom: 1px solid rgba(0,0,0,0.1)!important; margin: 1.5mm 0 0 0; padding: 0 1mm 1mm 1mm; color: rgba(0,70,125,1)!important;
+}
+
+.freeSampleContainer .freeSampleItem .reportInfoContainer .supportContainer {
+	display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; width: 100%; margin: 4mm 0 0 0;
+}
+.freeSampleContainer .freeSampleItem .reportInfoContainer .supportContainer .text {
+	font:5pt/5pt 'Poppins'!important; font-weight: 600!important; color: rgba(0,0,0,0.6)!important; text-align: center; width: 100%;
+}
+.freeSampleContainer .freeSampleItem .reportInfoContainer .supportContainer .logoContainer {
+	display: flex; align-items: flex-start; justify-content: center; width: 100%; margin: 2mm 0 0 0;
+}
+.freeSampleContainer .freeSampleItem .reportInfoContainer .supportContainer .logoContainer img {
+	height: 4mm; margin: 0 1mm;
+}
+
+.modContainer {
+	display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; width: calc(100% - 10mm); padding: 5mm; height: auto; -webkit-column-break-inside: avoid; page-break-inside: avoid; break-inside: avoid;
+}
+.modContainer.noPadding {
+	width: calc(100% - 0mm); padding: 2mm 0mm;
+}
+.modContainer > img {
+	height: 40mm; margin: 0 auto;
+}
+.modContainer .mbtiCode {
+	font:40pt/40pt 'Poppins'!important; font-weight: 700!important; color: #FFF!important; text-align: center; width: 100%; text-transform: uppercase; margin: 2mm 0 0 0;
+}
+.modContainer .mbtiTitle {
+	font:16pt/16pt 'Poppins'!important; font-weight: 700!important; color: #FFF!important; text-align: center; width: 100%; text-transform: uppercase; margin: 2mm 0 0 0;
+}
+.modContainer > .title {
+	font:14pt/14pt 'Poppins'!important; font-weight: 700!important; color: rgba(0,70,125,1)!important; text-align: center; width: 100%; text-transform: uppercase; display: flex; justify-content: center; align-items: center;
+}
+.modContainer > .title.whiteText {
+	color: #FFF!important;
+}
+.modContainer > .title.blackText {
+	color: #000!important;
+}
+.modContainer > .title.fixed2Line {
+	height: 28pt;
+}
+.modContainer > .desc {
+	font:8pt/10pt 'Poppins'!important; font-weight: 400!important; width: 100%; text-align:justify; margin: 3mm 0 0 0;
+}
+.modContainer > .desc.whiteText {
+	color: #FFF!important;
+}
+.modContainer > .desc.noTopMargin {
+	margin: 0 0 0 0;
+}
+.modContainer ul {
+	margin: 3mm 0 0 0; padding: 0; list-style: none; width: 100%;
+}
+.modContainer ul li {
+	font:8pt/10pt 'Poppins'!important; font-weight: 400!important; margin: 2mm 0 0 0; padding: 2mm; background-color: rgba(0,70,125,1)!important; color: #FFF!important;
+}
+.modContainer ul li:first-child {
+	margin: 0;
+}
+.modContainer .chartContainer  {
+	display: flex; justify-content: space-between; align-items: flex-start; width: 100%;
+}
+.modContainer .chartContainer .chartItem {
+	display: flex; flex-direction: column; justify-content: flex-start; align-items: center; width:	calc((100% / 2) - (3mm / 2)); margin: 2mm 0 0 0;
+}
+.modContainer .chartContainer .chartItem > .title {
+	font:12pt/12pt 'Poppins'!important; font-weight: 700!important; color: rgba(0,70,125,1)!important; text-align: center; width: 100%; text-transform: uppercase; margin: 0 0 0 0;
+}
+.modContainer .chartContainer .chartItem > .desc {
+	font:8pt/10pt 'Poppins'!important; font-weight: 400!important; width: 100%; text-align:center; margin: 3mm 0 0 0;
+}
+.modContainer .chartContainer .chartItem > .chart {
+	height: 20mm; width: 30mm; display: flex; justify-content: center; align-items: center; font:14pt/14pt 'Poppins'!important; font-weight: 700!important; text-align: center; text-transform: uppercase; overflow: hidden;
+}
+
+.borBot1mm {
+	border-bottom: 0.05mm solid rgba(0,0,0,0.2);
+}
+
+.compactPageContainer {
+	display: flex; flex-direction: column; width: calc(100% - 10mm); padding: 5mm 5mm 5mm 5mm;
+}
+.compactPageContainer .reportInfoContainer {
+	display: flex; justify-content: space-between; align-items: center; width: calc(100% - 0mm); padding: 3mm 0; 
+}
+.compactPageContainer .reportInfoContainer .infoL, .compactPageContainer .reportInfoContainer .infoR {
+	display: flex; flex-direction: row; width: calc((100% / 2) - (5mm / 2)); flex-wrap: wrap; justify-content: space-between;
+}
+.compactPageContainer .reportInfoContainer .infoL .logo {
+	height: 12mm; width: 100%;
+}
+.compactPageContainer .reportInfoContainer .infoL .disclaimer {
+	font:5pt/7pt 'Poppins'!important; font-weight: 400!important; color: rgba(0,0,0,0.6)!important; margin: 3mm 0 0 0; text-align:justify; width: 100%;
+}
+
+.compactPageContainer .reportInfoContainer .infoL .supportContainer {
+	display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; width: 100%; margin: 5mm 0 0 0;
+}
+.compactPageContainer .reportInfoContainer .infoL .supportContainer .text {
+	font:5pt/5pt 'Poppins'!important; font-weight: 600!important; color: rgba(0,0,0,0.6)!important; text-align: center; width: 100%;
+}
+.compactPageContainer .reportInfoContainer .infoL .supportContainer .logoContainer {
+	display: flex; align-items: flex-start; justify-content: center; width: 100%; margin: 2mm 0 0 0;
+}
+.compactPageContainer .reportInfoContainer .infoL .supportContainer .logoContainer img {
+	height: 3mm; margin: 0 2mm;
+}
+
+.compactPageContainer .reportInfoContainer .infoR .infoItem {
+	width: calc((100% / 2) - (5mm / 2)); margin: 2mm 0 0 0;
+}
+.compactPageContainer .reportInfoContainer .infoR .infoItem:nth-child(1), .compactPageContainer .reportInfoContainer .infoR .infoItem:nth-child(2) {
+	margin: 0;
+}
+.compactPageContainer .reportInfoContainer .infoR .infoItem .label {
+	font:6pt/6pt 'Poppins'!important; font-weight: 600!important; margin: 0 0 0 0; color: rgba(0,0,0,0.6)!important;
+}
+.compactPageContainer .reportInfoContainer .infoR .infoItem .info {
+	font:7pt/7pt 'Poppins'!important; font-weight: 600!important; border-bottom: 0.05mm dashed rgba(0,0,0,0.15)!important; margin: 0; padding: 1mm 1mm 1mm 1mm; color: rgba(0,70,125,1)!important;
+}
+
+.compactPageContainer .compactPageContent00 {
+	display: block; columns: 1; column-gap: 0mm;
+}
+.compactPageContainer .compactPageContent01 {
+	display: block; columns: 2; column-gap: 10mm; column-rule: 0.05mm solid rgba(0,0,0,0.2);
+}
+.compactPageContainer .compactPageContent02 {
+	display: block; columns: 3; column-gap: 10mm; column-rule: 0.05mm solid rgba(0,0,0,0.2);
+}
 
 @media print {
 	@page {
