@@ -41,8 +41,11 @@ body {
 .report_page .ads {
 	display: flex; position: relative; z-index: 101!important; width: calc(100% - 10mm); height: 30mm; padding: 0; margin: 0 5mm; align-items: center; justify-content: center; overflow: hidden;
 }
-.report_page .ads div {
-	font:40pt/40pt 'Poppins'!important; font-weight: 500!important; text-align: center;
+.report_page .ads a {
+	width: 100%;
+}
+.report_page .ads img {
+	width: 100%;
 }
 
 
