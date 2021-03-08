@@ -1969,10 +1969,10 @@ STYLE REPORT **/
 	display: flex; flex-direction: row; width: calc((100% / 2) - (5mm / 2)); flex-wrap: wrap; justify-content: space-between;
 }
 .compactPageContainer .reportInfoContainer .infoL .logo {
-	height: 12mm; width: 100%;
+	height: 16mm; width: 100%;
 }
 .compactPageContainer .reportInfoContainer .infoL .disclaimer {
-	font:5pt/7pt 'Poppins'!important; font-weight: 400!important; color: rgba(0,0,0,0.6)!important; margin: 3mm 0 0 0; text-align:justify; width: 100%;
+	font:5pt/7pt 'Poppins'!important; font-weight: 500!important; color: rgba(0,0,0,0.8)!important; margin: 3mm 0 0 0; text-align:justify; width: 100%;
 }
 
 .compactPageContainer .reportInfoContainer .infoL .supportContainer {
