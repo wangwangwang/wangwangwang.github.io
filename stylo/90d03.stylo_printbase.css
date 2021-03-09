@@ -1898,7 +1898,7 @@ STYLE REPORT **/
 	display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; width: calc(100% - 10mm); padding: 5mm; height: auto; -webkit-column-break-inside: avoid; page-break-inside: avoid; break-inside: avoid;
 }
 .modContainer.noPadding {
-	width: calc(100% - 0mm); padding: 2mm 0mm;
+	width: calc(100% - 0mm); padding: 0;
 }
 .modContainer > img {
 	height: 40mm; margin: 0 auto;
@@ -1931,7 +1931,7 @@ STYLE REPORT **/
 	margin: 0 0 0 0;
 }
 .modContainer ul {
-	margin: 1mm 0 0 0; padding: 0; list-style: none; width: 100%;
+	margin: 2mm 0 0 0; padding: 0; list-style: none; width: 100%;
 }
 .modContainer ul li {
 	font:7pt/9pt 'Poppins'!important; font-weight: 400!important; margin: 2mm 0 0 0; padding: 2mm; background-color: rgba(0,70,125,1)!important; color: #FFF!important;
@@ -1963,7 +1963,7 @@ STYLE REPORT **/
 	display: flex; flex-direction: column; width: calc(100% - 10mm); padding: 5mm 5mm 5mm 5mm;
 }
 .compactPageContainer .reportInfoContainer {
-	display: flex; justify-content: space-between; align-items: center; width: calc(100% - 0mm); padding: 3mm 0; 
+	display: flex; justify-content: space-between; align-items: center; width: calc(100% - 0mm); padding: 0mm 0mm 3mm 0; 
 }
 .compactPageContainer .reportInfoContainer .infoL, .compactPageContainer .reportInfoContainer .infoR {
 	display: flex; flex-direction: row; width: calc((100% / 2) - (5mm / 2)); flex-wrap: wrap; justify-content: space-between;
@@ -2012,6 +2012,12 @@ STYLE REPORT **/
 
 .compactPageContainer .compactPageContent00 {
 	display: block; columns: 1; column-gap: 0mm;
+}
+.compactPageContainer .compactPageContent00 .backcolor-greyt40 {
+	padding: 3.5mm;
+}
+.compactPageContainer .compactPageContent00 .backcolor-greyt40 > .desc {
+	font:7pt/9pt 'Poppins'!important; font-weight: 400!important;
 }
 .compactPageContainer .compactPageContent01 {
 	display: block; columns: 2; column-gap: 10mm; column-rule: 0.05mm solid rgba(0,0,0,0.2);
