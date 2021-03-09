@@ -1931,10 +1931,10 @@ STYLE REPORT **/
 	margin: 0 0 0 0;
 }
 .modContainer ul {
-	margin: 3mm 0 0 0; padding: 0; list-style: none; width: 100%;
+	margin: 1mm 0 0 0; padding: 0; list-style: none; width: 100%;
 }
 .modContainer ul li {
-	font:8pt/10pt 'Poppins'!important; font-weight: 400!important; margin: 2mm 0 0 0; padding: 2mm; background-color: rgba(0,70,125,1)!important; color: #FFF!important;
+	font:7pt/9pt 'Poppins'!important; font-weight: 400!important; margin: 2mm 0 0 0; padding: 2mm; background-color: rgba(0,70,125,1)!important; color: #FFF!important;
 }
 .modContainer ul li:first-child {
 	margin: 0;
