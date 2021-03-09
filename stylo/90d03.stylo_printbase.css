@@ -1968,8 +1968,17 @@ STYLE REPORT **/
 .compactPageContainer .reportInfoContainer .infoL, .compactPageContainer .reportInfoContainer .infoR {
 	display: flex; flex-direction: row; width: calc((100% / 2) - (5mm / 2)); flex-wrap: wrap; justify-content: space-between;
 }
-.compactPageContainer .reportInfoContainer .infoL .logo {
-	height: 16mm; width: 100%;
+.compactPageContainer .reportInfoContainer .infoL > .logoContainer {
+	display: flex; align-items: center; justify-content: center; width: 100%; margin: 0 0 0 0;
+}
+.compactPageContainer .reportInfoContainer .infoL > .logoContainer > .logo {
+	height: 16mm; width: auto;
+}
+.compactPageContainer .reportInfoContainer .infoL > .logoContainer.collabProject > .logo {
+	height: 12mm; width: auto;
+}
+.compactPageContainer .reportInfoContainer .infoL > .logoContainer > span {
+	margin: 0 1mm;
 }
 .compactPageContainer .reportInfoContainer .infoL .disclaimer {
 	font:5pt/7pt 'Poppins'!important; font-weight: 500!important; color: rgba(0,0,0,0.8)!important; margin: 3mm 0 0 0; text-align:justify; width: 100%;
